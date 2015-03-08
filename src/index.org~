@@ -1,0 +1,8 @@
+#+TITLE: index
+
+   + Python
+     + [[file:Python/pickle-and-cpickle.org][pickle and cPickle]]
+   + R
+     + [[file:R/Google R Style Notes.org][Google R Style Notes]]
+     + [[file:R/R.org][R]]
+   + [[file:Effective-c++-1.org][Effective C++(Item 1-10)]]
