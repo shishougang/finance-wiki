@@ -1,0 +1,59 @@
+#+OPTIONS: num:nil H:2 toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t TeX:t LaTeX:nil skip:nil d:t tags:not-in-toc
+#+TITLE: US Stock Overview
+
+
+* Overview
++ [[http://www.rightline.net/calendar/market-holidays.html][美股市场假期]]
++ 開市時間
+  + 美國時間：9:30am-4pm
+  + 香港時間：9:30pm-4am(夏令時間)，10:30pm-5am(冬令時間)
++ 業績和營運數據
+  + 美國SEC規定每間公司要公佈季度業績，有些公司更會公佈每月營運數據，透明度高
+  + 季度業績是Form 10-Q，年度業績是Form 10-F
+  + 業績公佈日期，可到finviz, yahoo finance等查看
++ 稅項
+  + 股息稅30%，在派股息時扣除
+  + 填W-8BEN表後，外国人買美股可免資本增值稅
++ 個股股息資料
+  + Ex-Dividend Date=除息日
+  + Dividend Data=派發日
+* Sites
++ [[http://www.freestockcharts.com/][freestockcharts]]
+  + need Microsoft Silverlight
++ [[https://www.quandl.com/][quandl]]
+  + 可下载
+  + 無限年期
++ [[https://research.stlouisfed.org/fred2/][Federal Reserve]]
++ [[http://www.trefis.com/][Trefis]]
+  + 分析公司产品对股票的影响
++ [[http://www.sec.gov/][US Securities and Exchange Commission]]
+  + [[http://www.sec.gov/spotlight/xbrl/viewers.shtml][Interactive Data Viewers]]
+  + http://xbrl.sec.gov/
++ [[http://stockcharts.com/][stockcharts]]
+  + 主要用來看實時股價，免費用戶最長可看3年圖
+  + 可從[[http://stockcharts.com/freecharts/sctr.html?&V=E&I=N#&S=GD][ETF強弱排名]]中看出哪些是強板塊，
++ [[http://finviz.com/][finviz]]
+  + 看市場寬度，即上升下跌比例、新高新低比例、50天線上比例等
+  + Screener非常有用
+  + 每日看創新高的高增長股，即New High + Sale Growth QoQ > 25%，[[http://finviz.com/screener.ashx?v=111&s=ta_newhigh&f=fa_salesqoq_high&ft=2][连接]]
++ [[http://www.investing.com/][investing.com]]
+  + 各地實時指數
+  + 新聞
+  + investing.com的facebook專頁經常有更新，[[https://www.facebook.com/investingdotcom][这里]]
++ [[http://www.barchart.com/][barchart]]
+  + 看哪些是強板塊，[[http://www.barchart.com/stocks/sectors/change.php][这里]]
++ [[http://www.investors.com/default.htm][investors.com]]
+  + 市場、個股新聞
+  + CANSLIM知識
++ [[https://www.tradingview.com/][TradingView]]
+  + 大型圖表，無限年期，可在圖表畫線
++ [[http://finance.yahoo.com/][yahoo finance]]
+  + 股票并可下载
+  + 看世界各地的市場動態
++ [[https://www.google.com/finance][google finance]]
+  + 看世界各地的市場動態
++ [[http://stocktwits.com/][stocktwits]]
+  + 股票版的Twitter，如碰上股價異動(例如大跌)，但找不到任何實時新聞，很
+   大機會可以在網友的tweet裏找到相關資訊
+  + stocktwits的facebook專頁經常有更新，[[https://www.facebook.com/StockTwits][这里]]
+

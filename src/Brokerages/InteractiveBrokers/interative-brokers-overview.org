@@ -1,0 +1,19 @@
+#+OPTIONS: num:nil H:2 toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t TeX:t LaTeX:nil skip:nil d:t tags:not-in-toc
+#+TITLE: Interactive Brokers Overview
+
+
+
+* 电汇
+本地銀行轉賬>特快轉賬(CHATS)，每次收費50港元
+
+#+begin_quote
+收款人資料：
+收款銀行編號：006(花旗銀行)
+收款賬戶號碼：17739993
+收款人姓名：INTERACTIVE BROKERS LLC.
+#+end_quote
+
+附言：For further benefit to: U1234567 / Your Name
+(U1234567是你的IB戶口號碼，Your Name是你的名字)
+
+

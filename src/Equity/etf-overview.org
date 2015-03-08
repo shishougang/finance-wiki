@@ -1,0 +1,46 @@
+#+OPTIONS: num:nil H:2 toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t TeX:t LaTeX:nil skip:nil d:t tags:not-in-toc
+#+TITLE: ETF Overview
+
+
+* ETF
+
+美股指數ETF：
+
+#+BEGIN_VERSE
+SPY - S&P ETF
+QQQ - NASDAQ 100 ETF
+DIA - Dow Jones ETF
+
+其他市場ETF：
+DXJ - 日股ETF(已對沖日元)
+FXI - 富時中國25
+EEM - 新興市場
+EWG - 德國
+
+S&P板塊：
+XLY - cyclicals sector
+XLK - technology sector
+XLI - industrials sector
+XLB - materials sector
+XLE - energy sector
+XLP - consumer staples sector
+XLV - health care sector
+XLU - utilities sector
+XLF - financial sector
+
+個別板塊：
+TAN - 太陽能
+ITB - 建屋
+IBB/BBH - 生物科技
+IAI - 財務
+KRE - 地區銀行
+PBS - 科網+媒體
+XRT - 零售
+
+商品：
+GLD - 黃金
+SLV - 銀
+
+債券：
+TLT - 20年+美國國債
+#+END_VERSE
