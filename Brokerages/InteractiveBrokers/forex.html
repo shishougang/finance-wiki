@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Forex</title>
+<!-- 2015-03-09 Mon 20:44 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="Shi Shougang" />
+<link rel="stylesheet" href="/stylesheets/bootstrap.min.css" media="screen" />
+<link rel="stylesheet" href="/stylesheets/bootstrap-responsive.min.css" media="screen" />
+<link rel="stylesheet" href="/stylesheets/org.css" type="text/css" />
+<link rel="SHORTCUT ICON" href="/favicon.png" type="image/x-icon" />
+<link rel="icon" href="/favicon.png" type="image/ico" />
+<script src="/javascripts/bootstrap.min.js"></script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="preamble" class="status">
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-60502031-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+  document.addEventListener('DOMContentLoaded',function() {
+      document.getElementById("table-of-contents").onclick = function() {
+          var elem = document.getElementById("text-table-of-contents");
+          elem.style.display = elem.style.display == "block" ? "none" : "block";
+      }
+  });
+</script>
+</div>
+<div id="content">
+<h1 class="title">Forex</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">Overview</a></li>
+<li><a href="#sec-2">IB外汇杠杆比率</a></li>
+<li><a href="#sec-3">交易时间</a></li>
+<li><a href="#sec-4">IB换汇</a></li>
+<li><a href="#sec-5">Reference</a>
+<ul>
+<li><a href="#sec-5-1">外汇产品</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1">Overview</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+IB是外汇交易所是IDEAL FX**.<sup><a id="fnr.1" name="fnr.1" class="footref" href="#fn.1">1</a></sup> IDEAL FX包括IDEAL 和 IDEALPRO的外汇执行服务。
+</p>
+
+<ul class="org-ul">
+<li><a href="#forex-product">外汇产品</a>
+</li>
+<li><a href="https://www.interactivebrokers.com/cn/?b=cn&f=/cn/general/currencyHoliday.php">外汇假日表格</a>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2">IB外汇杠杆比率</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+IB杠杆多少倍是根据各地法律及具体情况有上限的。比如港币法定不许超过30倍，以下是IB的外汇杠杆比率：
+</p>
+
+
+<div class="figure">
+<p><img src="./Files/ib-leverage-rate.jpeg" alt="ib-leverage-rate.jpeg" />
+</p>
+</div>
+
+<p>
+大概计算方法:
+</p>
+
+
+<div class="figure">
+<p><img src="./Files/ib-leverage-compute.png" alt="ib-leverage-compute.png" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3">交易时间</h2>
+<div class="outline-text-2" id="text-3">
+<ul class="org-ul">
+<li>开盘时间：北京时间周一05：15分开盘，(因为周一是纽澳银行先开门)
+</li>
+<li>收盘时间：北京时间周六05：00分收盘，(因为一周最晚关门的银行在美国)
+</li>
+<li>美国于每年3月的第二个星期日至11月的第一个星期日实施夏令时(Day-light
+Saving Time)。冬令时间开始后，美国东岸与北京的时差将会由12小时增加至
+13小时。
+</li>
+<li>冬令时间==&gt;上述时间, 递延一个小时
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4">IB换汇</h2>
+<div class="outline-text-2" id="text-4">
+<ul class="org-ul">
+<li>目的地选择 <b>FXCONV</b>.
+</li>
+<li>杠杆式外汇交易,选择 <b>IDEALPRO</b>.
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-5" class="outline-2">
+<h2 id="sec-5">Reference</h2>
+<div class="outline-text-2" id="text-5">
+</div><div id="outline-container-sec-5-1" class="outline-3">
+<h3 id="sec-5-1">外汇产品</h3>
+<div class="outline-text-3" id="text-5-1">
+<p>
+<a id="forex-product" name="forex-product"></a>
+</p>
+<p class="verse">
+IB代码        产品描述 (点击链接查看详情)        代码        货币<br  />
+AUD.CAD        AUSTRALIAN DOLLAR        AUD.CAD        CAD<br  />
+AUD.CHF        AUSTRALIAN DOLLAR        AUD.CHF        CHF<br  />
+AUD.CNH        AUSTRALIAN DOLLAR        AUD.CNH        CNH<br  />
+AUD.HKD        AUSTRALIAN DOLLAR        AUD.HKD        HKD<br  />
+AUD.JPY        AUSTRALIAN DOLLAR        AUD.JPY        JPY<br  />
+AUD.NZD        AUSTRALIAN DOLLAR        AUD.NZD        NZD<br  />
+AUD.SGD        AUSTRALIAN DOLLAR        AUD.SGD        SGD<br  />
+AUD.USD        AUSTRALIAN DOLLAR        AUD.USD        USD<br  />
+GBP.AUD        BRITISH POUND        GBP.AUD        AUD<br  />
+GBP.CAD        BRITISH POUND        GBP.CAD        CAD<br  />
+GBP.CHF        BRITISH POUND        GBP.CHF        CHF<br  />
+GBP.CNH        BRITISH POUND        GBP.CNH        CNH<br  />
+GBP.DKK        BRITISH POUND        GBP.DKK        DKK<br  />
+GBP.HKD        BRITISH POUND        GBP.HKD        HKD<br  />
+GBP.JPY        BRITISH POUND        GBP.JPY        JPY<br  />
+GBP.NOK        BRITISH POUND        GBP.NOK        NOK<br  />
+GBP.NZD        BRITISH POUND        GBP.NZD        NZD<br  />
+GBP.SEK        BRITISH POUND        GBP.SEK        SEK<br  />
+GBP.USD        BRITISH POUND        GBP.USD        USD<br  />
+CAD.CHF        CANADIAN DOLLAR        CAD.CHF        CHF<br  />
+CAD.CNH        CANADIAN DOLLAR        CAD.CNH        CNH<br  />
+CAD.HKD        CANADIAN DOLLAR        CAD.HKD        HKD<br  />
+CAD.JPY        CANADIAN DOLLAR        CAD.JPY        JPY<br  />
+CNH.HKD        CHINESE RENMINBI - OFFSHORE        CNH.HKD        HKD<br  />
+CNH.JPY        CHINESE RENMINBI - OFFSHORE        CNH.JPY        JPY<br  />
+DKK.JPY        DANISH KRONE        DKK.JPY        JPY<br  />
+DKK.NOK        DANISH KRONE        DKK.NOK        NOK<br  />
+DKK.SEK        DANISH KRONE        DKK.SEK        SEK<br  />
+EUR.AUD        EUROPEAN MONETARY UNION EURO        EUR.AUD        AUD<br  />
+EUR.CAD        EUROPEAN MONETARY UNION EURO        EUR.CAD        CAD<br  />
+EUR.CHF        EUROPEAN MONETARY UNION EURO        EUR.CHF        CHF<br  />
+EUR.CNH        EUROPEAN MONETARY UNION EURO        EUR.CNH        CNH<br  />
+EUR.CZK        EUROPEAN MONETARY UNION EURO        EUR.CZK        CZK<br  />
+EUR.DKK        EUROPEAN MONETARY UNION EURO        EUR.DKK        DKK<br  />
+EUR.GBP        EUROPEAN MONETARY UNION EURO        EUR.GBP        GBP<br  />
+EUR.HKD        EUROPEAN MONETARY UNION EURO        EUR.HKD        HKD<br  />
+EUR.HUF        EUROPEAN MONETARY UNION EURO        EUR.HUF        HUF<br  />
+EUR.ILS        EUROPEAN MONETARY UNION EURO        EUR.ILS        ILS<br  />
+EUR.JPY        EUROPEAN MONETARY UNION EURO        EUR.JPY        JPY<br  />
+EUR.MXN        EUROPEAN MONETARY UNION EURO        EUR.MXN        MXN<br  />
+EUR.NOK        EUROPEAN MONETARY UNION EURO        EUR.NOK        NOK<br  />
+EUR.NZD        EUROPEAN MONETARY UNION EURO        EUR.NZD        NZD<br  />
+EUR.RUB        EUROPEAN MONETARY UNION EURO        EUR.RUB        RUB<br  />
+EUR.SEK        EUROPEAN MONETARY UNION EURO        EUR.SEK        SEK<br  />
+EUR.SGD        EUROPEAN MONETARY UNION EURO        EUR.SGD        SGD<br  />
+EUR.USD        EUROPEAN MONETARY UNION EURO        EUR.USD        USD<br  />
+HKD.JPY        HONG KONG DOLLAR        HKD.JPY        JPY<br  />
+KRW.AUD        KOREAN WON        KRW.AUD        AUD<br  />
+KRW.CAD        KOREAN WON        KRW.CAD        CAD<br  />
+KRW.CHF        KOREAN WON        KRW.CHF        CHF<br  />
+KRW.EUR        KOREAN WON        KRW.EUR        EUR<br  />
+KRW.GBP        KOREAN WON        KRW.GBP        GBP<br  />
+KRW.HKD        KOREAN WON        KRW.HKD        HKD<br  />
+KRW.JPY        KOREAN WON        KRW.JPY        JPY<br  />
+KRW.USD        KOREAN WON        KRW.USD        USD<br  />
+MXN.JPY        MEXICAN PESO        MXN.JPY        JPY<br  />
+NZD.CAD        NEW ZEALAND DOLLAR        NZD.CAD        CAD<br  />
+NZD.CHF        NEW ZEALAND DOLLAR        NZD.CHF        CHF<br  />
+NZD.JPY        NEW ZEALAND DOLLAR        NZD.JPY        JPY<br  />
+NZD.USD        NEW ZEALAND DOLLAR        NZD.USD        USD<br  />
+NOK.JPY        NORWEGIAN KRONE        NOK.JPY        JPY<br  />
+NOK.SEK        NORWEGIAN KRONE        NOK.SEK        SEK<br  />
+SGD.CNH        SINGAPORE DOLLAR        SGD.CNH        CNH<br  />
+SGD.JPY        SINGAPORE DOLLAR        SGD.JPY        JPY<br  />
+SEK.JPY        SWEDISH KRONA        SEK.JPY        JPY<br  />
+CHF.CNH        SWISS FRANC        CHF.CNH        CNH<br  />
+CHF.DKK        SWISS FRANC        CHF.DKK        DKK<br  />
+CHF.JPY        SWISS FRANC        CHF.JPY        JPY<br  />
+CHF.NOK        SWISS FRANC        CHF.NOK        NOK<br  />
+CHF.SEK        SWISS FRANC        CHF.SEK        SEK<br  />
+USD.CAD        UNITED STATES DOLLAR        USD.CAD        CAD<br  />
+USD.CHF        UNITED STATES DOLLAR        USD.CHF        CHF<br  />
+USD.CNH        UNITED STATES DOLLAR        USD.CNH        CNH<br  />
+USD.CZK        UNITED STATES DOLLAR        USD.CZK        CZK<br  />
+USD.HKD        UNITED STATES DOLLAR        USD.HKD        HKD<br  />
+USD.HUF        UNITED STATES DOLLAR        USD.HUF        HUF<br  />
+USD.ILS        UNITED STATES DOLLAR        USD.ILS        ILS<br  />
+USD.JPY        UNITED STATES DOLLAR        USD.JPY        JPY<br  />
+USD.MXN        UNITED STATES DOLLAR        USD.MXN        MXN<br  />
+USD.NOK        UNITED STATES DOLLAR        USD.NOK        NOK<br  />
+USD.RUB        UNITED STATES DOLLAR        USD.RUB        RUB<br  />
+USD.SEK        UNITED STATES DOLLAR        USD.SEK        SEK<br  />
+USD.SGD        UNITED STATES DOLLAR        USD.SGD        SGD<br  />
+</p>
+</div>
+</div>
+</div>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
+
+<div class="footdef"><sup><a id="fn.1" name="fn.1" class="footnum" href="#fnr.1">1</a></sup> <p class="footpara">
+<a href="https://www.interactivebrokers.com/cn/index.php?f=products&p=fx">https://www.interactivebrokers.com/cn/index.php?f=products&p=fx</a>
+</p></div>
+
+
+</div>
+</div></div>
+<div id="postamble" class="status">
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'finance-wiki';
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+</div>
+</body>
+</html>
