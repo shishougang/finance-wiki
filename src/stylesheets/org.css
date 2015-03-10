@@ -52,6 +52,8 @@ body {
     padding-left: 170px;
     padding-right:170px;
     text-align:left;
+    font-size: 13pt;
+    line-height: 18pt;
 }
 
 blockquote p {
