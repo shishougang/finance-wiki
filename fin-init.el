@@ -1,5 +1,5 @@
 
-(show-paren-mode 1)
+;(show-paren-mode 1)
 (menu-bar-mode 0)
 
 (setq make-backup-files nil
@@ -105,3 +105,8 @@
         `("fin"
            :components ("fin-notes" "fin-static")
            :author "shougangshi@gmail.com"))
+
+(defun publish-fin ()
+   "Publish org."
+   (interactive)
+     (org-publish-project "fin"))

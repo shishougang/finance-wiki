@@ -2,11 +2,13 @@
 
    + Brokerages
      + InteractiveBrokers
-       + [[file:Brokerages/InteractiveBrokers/forex.org][Forex]]
+       + [[file:Brokerages/InteractiveBrokers/forex.org][Forex of IB]]
        + [[file:Brokerages/InteractiveBrokers/interative-brokers-overview.org][Interactive Brokers Overview]]
    + Equity
      + [[file:Equity/etf-overview.org][ETF Overview]]
      + [[file:Equity/us-stock-overview.org][US Stock Overview]]
+   + Futures
+     + [[file:Futures/futures-overview.org][Futures Overview]]
    + Options
      + [[file:Options/options-overview.org][Options Overview]]
    + [[file:template.org][]]

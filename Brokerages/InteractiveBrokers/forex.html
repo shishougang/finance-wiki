@@ -3,8 +3,8 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<title>Forex</title>
-<!-- 2015-03-09 Mon 20:44 -->
+<title>Forex of IB</title>
+<!-- 2015-03-10 Tue 20:27 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="Shi Shougang" />
@@ -84,7 +84,7 @@ for the JavaScript code in this tag.
 </script>
 </div>
 <div id="content">
-<h1 class="title">Forex</h1>
+<h1 class="title">Forex of IB</h1>
 <div id="table-of-contents">
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
@@ -93,9 +93,11 @@ for the JavaScript code in this tag.
 <li><a href="#sec-2">IB外汇杠杆比率</a></li>
 <li><a href="#sec-3">交易时间</a></li>
 <li><a href="#sec-4">IB换汇</a></li>
-<li><a href="#sec-5">Reference</a>
+<li><a href="#sec-5">外汇手续费收费标准</a></li>
+<li><a href="#sec-6">外汇括号定单</a></li>
+<li><a href="#sec-7">Reference</a>
 <ul>
-<li><a href="#sec-5-1">外汇产品</a></li>
+<li><a href="#sec-7-1">外汇产品</a></li>
 </ul>
 </li>
 </ul>
@@ -170,15 +172,54 @@ Saving Time)。冬令时间开始后，美国东岸与北京的时差将会由12
 <li>杠杆式外汇交易,选择 <b>IDEALPRO</b>.
 </li>
 </ul>
-</div>
-</div>
 
+<p>
+外汇交易时，外汇传递途径分为：Idealpro 和 Fxconv,这二者之间的区别是：
+Idealpro会改变虚拟仓位的头寸，而Fxconv 不会改变虚拟头寸的仓位。
+</p>
+</div>
+</div>
 <div id="outline-container-sec-5" class="outline-2">
-<h2 id="sec-5">Reference</h2>
+<h2 id="sec-5">外汇手续费收费标准</h2>
 <div class="outline-text-2" id="text-5">
-</div><div id="outline-container-sec-5-1" class="outline-3">
-<h3 id="sec-5-1">外汇产品</h3>
-<div class="outline-text-3" id="text-5-1">
+<p>
+IB的手续费是单边交易额的十万分之二，比如如果交易10万英镑日元，就是2英镑。但是最低手续费是每笔交易2.5美元。
+</p>
+<ul class="org-ul">
+<li>即，如果交易1万英镑日元，则应收2.5美元，算成英镑为1.25英镑左右。
+</li>
+<li>如果交易10万美元，则收取2.5美元。
+</li>
+<li>如果交易12.5万美元，则收取2.5美元。
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-6" class="outline-2">
+<h2 id="sec-6">外汇括号定单</h2>
+<div class="outline-text-2" id="text-6">
+<p>
+问：IB的外汇交易可以让止赢单成交后止损单自动取消吗？如果我持有一个外汇头寸，分别设置了LIMIT止赢单和STOP止损单。如果我的止赢单被触发了，系统可以自动取消那个止损单吗？如果不可以，那我不是要一直在电脑前人工看着？24小时不合眼？
+</p>
+
+<p>
+答：下单时，右键点击“附上”，选择：括号定单：第一张单是父单，右键“附上”的时候，选择“括号定单”，这样就把你的单子的盈亏情况，用个括号，“括”了起来。
+</p>
+
+<ol class="org-ol">
+<li>当父单成交之后，两张子单开始工作；
+</li>
+<li>两张子单只要有一个成交，另外一张也将自动撤掉。
+</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-sec-7" class="outline-2">
+<h2 id="sec-7">Reference</h2>
+<div class="outline-text-2" id="text-7">
+</div><div id="outline-container-sec-7-1" class="outline-3">
+<h3 id="sec-7-1">外汇产品</h3>
+<div class="outline-text-3" id="text-7-1">
 <p>
 <a id="forex-product" name="forex-product"></a>
 </p>

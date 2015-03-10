@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>Interactive Brokers Overview</title>
-<!-- 2015-03-09 Mon 20:44 -->
+<!-- 2015-03-10 Tue 20:27 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="Shi Shougang" />
@@ -89,7 +89,17 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#sec-1">电汇</a></li>
+<li><a href="#sec-1">交易成本</a></li>
+<li><a href="#sec-2">电汇</a></li>
+<li><a href="#sec-3">利息和融资</a></li>
+<li><a href="#sec-4">演示版的用户名和密码</a></li>
+<li><a href="#sec-5">数据订阅</a></li>
+<li><a href="#sec-6">software</a></li>
+<li><a href="#sec-7">“指定时间”指令单详解</a></li>
+<li><a href="#sec-8">API</a></li>
+<li><a href="#sec-9">IB取款限额</a></li>
+<li><a href="#sec-10">股指期货的IB代码</a></li>
+<li><a href="#sec-11">联系电话</a></li>
 </ul>
 </div>
 </div>
@@ -97,8 +107,51 @@ for the JavaScript code in this tag.
 
 
 <div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1">电汇</h2>
+<h2 id="sec-1">交易成本<sup><a id="fnr.1" name="fnr.1" class="footref" href="#fn.1">1</a></sup></h2>
 <div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li>美股方面：固定佣金单边每股半美分，买卖来回每股1美分，采用智能路由方式传递交易指令直接进场DMA(Direct Market Access)，不会把客户订单流卖给第三方
+</li>
+<li>美股期权：美股期权0.7美元/手（大于10分的期权）或0.5美元/手 （在5分到
+10分之间的期权），或0.25美元（在5分以内的期权）
+</li>
+<li>港股方面：交易额的万分之8.8，千分之0.88，不到千分之1。如果选择分层式的港股佣金，手续费可以从万分之9起步，量大可优惠到万分之5及更低万分之
+1.5。
+</li>
+<li>现货外汇保证金方面：ECN外汇模式，连接11家大型银行，传递客户的外汇交易指令。如果一笔外汇交易金额小于12.5万美元，佣金就收2.5美元；如果一笔外汇交易额大于12.5万美元，就收十万分之2的手续费。
+</li>
+<li>现货金银：ECN模式，每笔佣金收取交易额的十万分之1.5，最低每笔交易2美元。
+</li>
+<li>期货方面：大部分的美国本土的期货品种,IB收取0.85美分到0.25美分的佣金，另外要加上1块多美元的交易所非会员费用，以及2美分的NFA监管费，基本上美国产品都在两三美元左右。
+</li>
+
+<li>优惠方式：以上所有的费用，都可以加总算量，当月达到1000单边手之后就自动优惠0.2
+美元；当月量达到1万张以后会再自动降价0.2美元；当月量达2万张以后的部分再强0.2美元。下月重新开始累计优惠。
+</li>
+
+<li>HKEx的恒指期货，大恒指HSI
+起步：全部费用$19.30/单边手。当月(日历月)该帐户内所有的期货及期权品种的合约数&lt;1000手时，佣金按照单边19.3港币计算（IB部分8.5美元＋10元交易所费＋0.8元SFC监管费）。量大优惠：在当月超过1000单边手到1万手之间时，1千张之后的单按照$15.80收取（IB部分$5＋交易所费$10＋SFC监管费
+$0.8）收取，来回$31.6, 计0.63点。在当月交易量在1万到2万之间时，1万张之后的单按照$14.30港币计算，来回28.60元。在当月交易量超过2万之后，后面的单按照单边12.8港币来计算（内含交易所费10港币，SFC监管费0.8港币，
+IB收取$2元）。
+</li>
+
+<li>IPE几个品种的手续费如下
+IB的IPE布伦特原油COIL、柴油GOIL、取暖油HOIL及汽油RBOB的阶梯式或叫非捆绑式手续费（全包括）为：IB佣金1.05+ 交易所费0.73 +及结算费
+0.09=1.87美元。当月账户及分账户所有期货交易量一旦达到1000张以上，从
+1001张算起为，IB的佣金部分从1.05美元降低0.4美元，到0.65美元，全价为
+1.47美元，超过1万张后，全部佣金降低为1.27美元/手。（下月再从头开始算起，从1.87美元开始计费）
+</li>
+
+<li>新加坡A50新华50指数期货代码XINA50。其阶梯式佣金为1.45375美元=$1.05(IB手续费)+0.4交易所费
++0.03第三方费+0.0075的监管费。固定式佣金为2.85美元/手单边。
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2">电汇</h2>
+<div class="outline-text-2" id="text-2">
 <p>
 本地銀行轉賬&gt;特快轉賬(CHATS)，每次收費50港元
 </p>
@@ -116,7 +169,136 @@ for the JavaScript code in this tag.
 </p>
 </div>
 </div>
+
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3"><a href="https://www.interactivebrokers.com.hk/cn/index.php?f=interest&p=overview">利息和融资</a></h2>
+<div class="outline-text-2" id="text-3">
+<ul class="org-ul">
+<li><a href="https://www.interactivebrokers.com.hk/cn/index.php?f=interest&p=schedule">利率表</a>
+</li>
+</ul>
 </div>
+</div>
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4">演示版的用户名和密码</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+用户名：edemo  密码：demouser
+</p>
+</div>
+</div>
+<div id="outline-container-sec-5" class="outline-2">
+<h2 id="sec-5">数据订阅</h2>
+<div class="outline-text-2" id="text-5">
+<ul class="org-ul">
+<li>如果订阅了美国每月10元的打包数据（佣金超过30美元免费），则美国的大部分股票、期货、期权都会显示，除了NYBOT的产品，以及被NYSE的LIFFE收购了去的YG小黄金等产品（原来属于ECBOT)不能显示。这个小黄金YG的报价需要订阅费每月1美元。大黄金期货GC、原油CL、小标普ES、及农产品黄豆ZS等都被包含在10元打包数据里。
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-6" class="outline-2">
+<h2 id="sec-6">software</h2>
+<div class="outline-text-2" id="text-6">
+<ul class="org-ul">
+<li><a href="https://www.interactivebrokers.com/en/software/tws/twsguide.htm">TWS Guide</a>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-7" class="outline-2">
+<h2 id="sec-7">“指定时间”指令单详解</h2>
+<div class="outline-text-2" id="text-7">
+<p>
+“强定时间类”Time in Force的指令设立方法:
+</p>
+<ul class="org-ul">
+<li>DAY此单日内有效。
+</li>
+<li>GTC此单将一直有效，在下个日历季度的最后一天的交易结束时自动取消
+</li>
+<li>GTD此单在某天某时某分前会一直有效，到那个时候就自动取消；
+</li>
+<li>GAT此单将保留，直到某天某时某分后才会有效。
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-8" class="outline-2">
+<h2 id="sec-8">API</h2>
+<div class="outline-text-2" id="text-8">
+<ul class="org-ul">
+<li><a href="https://groups.yahoo.com/neo/groups/TWSAPI/info?yguid=62886805">雅虎的IB API英文讨论组</a>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-9" class="outline-2">
+<h2 id="sec-9">IB取款限额</h2>
+<div class="outline-text-2" id="text-9">
+<p>
+没有参加安全登录系统的账户在一天内及任意五天期间内的可以提取的资金和转账将有数额限制。
+</p>
+
+<p>
+安全装置 /每天最高取款 /5个工作日内的最高取款
+</p>
+
+<ul class="org-ul">
+<li>没有/5万美元/ 10万美元
+</li>
+<li>安全代码卡 /20万美元 /60万美元
+</li>
+<li>Alpine装置 /50万美元 /1.5百万美元
+</li>
+<li>黄金/白银卡 无限额 无限额
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-10" class="outline-2">
+<h2 id="sec-10">股指期货的IB代码</h2>
+<div class="outline-text-2" id="text-10">
+<ul class="org-ul">
+<li>道琼工业指数（Dow Jones Industrial Average）：“DD, INDU, YM”分别是
+25，10，和5美元/点。
+</li>
+<li>标准普尔500指数（S&amp;P 500 Index）: 小标普"ES", 大标普“SPX”
+</li>
+<li>纳斯达克指数: "NQ"
+</li>
+<li>伦敦金融时报指数（或伦敦金融时报100种股价指数the British FTSE 100）,代码“Z”
+</li>
+<li>法国证商公会指数（或法国证商公会40种股价指数，the French CAC 40），“CAC40”
+</li>
+<li>德国法兰克福股价指数（the German DAX）， "DAX"
+</li>
+<li>日经225指数Nikkei 225,新加坡日经"SGXNK"，OSE大阪交易所"N225" OSE大阪小日经“N225M"。
+</li>
+<li>恒生指数 "HSI"，小日经"MHI"
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-11" class="outline-2">
+<h2 id="sec-11">联系电话</h2>
+<div class="outline-text-2" id="text-11">
+<p>
+<a href="https://www.interactivebrokers.com.hk/cn/?f=customerService&ib_entity=cn">https://www.interactivebrokers.com.hk/cn/?f=customerService&ib_entity=cn</a>
+</p>
+</div>
+</div>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
+
+<div class="footdef"><sup><a id="fn.1" name="fn.1" class="footnum" href="#fnr.1">1</a></sup> <p class="footpara">
+<a href="http://blog.sina.com.cn/s/blog_6619728801012jwl.html">http://blog.sina.com.cn/s/blog_6619728801012jwl.html</a>
+</p></div>
+
+
+</div>
+</div></div>
 <div id="postamble" class="status">
 <div id="disqus_thread"></div>
 <script type="text/javascript">
