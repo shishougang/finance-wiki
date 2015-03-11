@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>Forex of IB</title>
-<!-- 2015-03-10 Tue 20:27 -->
+<!-- 2015-03-11 Wed 23:10 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="Shi Shougang" />
@@ -93,11 +93,13 @@ for the JavaScript code in this tag.
 <li><a href="#sec-2">IB外汇杠杆比率</a></li>
 <li><a href="#sec-3">交易时间</a></li>
 <li><a href="#sec-4">IB换汇</a></li>
-<li><a href="#sec-5">外汇手续费收费标准</a></li>
-<li><a href="#sec-6">外汇括号定单</a></li>
-<li><a href="#sec-7">Reference</a>
+<li><a href="#sec-5">IdealPro和Ideal的差别</a></li>
+<li><a href="#sec-6">外汇手续费收费标准</a></li>
+<li><a href="#sec-7">外汇括号定单</a></li>
+<li><a href="#sec-8">外汇最小交易金额和最大交易金额</a></li>
+<li><a href="#sec-9">Reference</a>
 <ul>
-<li><a href="#sec-7-1">外汇产品</a></li>
+<li><a href="#sec-9-1">外汇产品</a></li>
 </ul>
 </li>
 </ul>
@@ -180,8 +182,29 @@ Idealpro会改变虚拟仓位的头寸，而Fxconv 不会改变虚拟头寸的�
 </div>
 </div>
 <div id="outline-container-sec-5" class="outline-2">
-<h2 id="sec-5">外汇手续费收费标准</h2>
+<h2 id="sec-5">IdealPro和Ideal的差别</h2>
 <div class="outline-text-2" id="text-5">
+<ol class="org-ol">
+<li>Idealpro专业外汇交易平台，点差低,ECN，需要交易2.5万美元以上的外币，如果低于这个数额，将被传送到IDEAL的平台上。Ideal是非专业的外汇交易平台，点差比ECN大一些，更像普通的Market Maker, 是方便客户作一些外汇兑换的活动，比如你有10000美金想换成澳元，即可买澳元美元，就通过
+IDEAL来执行。而如果你想买4万的澳元同时抛售相应的美元，则可通过
+IDEALPRO来执行，点差更低。在通过IDEALPRO来交易的时候，如果IDEAL平台的点差更优越，我们将把您的单子部分传递到IDEAL上成交。
+</li>
+
+<li>成交之后，两者的结果没有差别。只是单子传递路径的差别。
+</li>
+<li>两个平台的交易成本不同，除了IDEAL的点差稍微高些，其佣金也高些，为交易金额的万分之一，每笔最低2.5美元。IDEALPRO的佣金为十万分之二，每笔最低2.5美元。
+</li>
+<li>在IB的“外汇交易者”页面上，Idealpro就直接写为EUR.USD等，无加注。而
+IDEAL都会在后面加注，比如EUR.USD(IDEAL).以方便分别。
+</li>
+<li>在“外汇交易者”中增加新的外汇代码的方法为，敲入EUR，回车，选择外汇，选择合适的货币，回车。不要直接敲入EUR.USD.这样系统不认。
+</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-sec-6" class="outline-2">
+<h2 id="sec-6">外汇手续费收费标准</h2>
+<div class="outline-text-2" id="text-6">
 <p>
 IB的手续费是单边交易额的十万分之二，比如如果交易10万英镑日元，就是2英镑。但是最低手续费是每笔交易2.5美元。
 </p>
@@ -195,9 +218,9 @@ IB的手续费是单边交易额的十万分之二，比如如果交易10万英�
 </ul>
 </div>
 </div>
-<div id="outline-container-sec-6" class="outline-2">
-<h2 id="sec-6">外汇括号定单</h2>
-<div class="outline-text-2" id="text-6">
+<div id="outline-container-sec-7" class="outline-2">
+<h2 id="sec-7">外汇括号定单</h2>
+<div class="outline-text-2" id="text-7">
 <p>
 问：IB的外汇交易可以让止赢单成交后止损单自动取消吗？如果我持有一个外汇头寸，分别设置了LIMIT止赢单和STOP止损单。如果我的止赢单被触发了，系统可以自动取消那个止损单吗？如果不可以，那我不是要一直在电脑前人工看着？24小时不合眼？
 </p>
@@ -214,12 +237,30 @@ IB的手续费是单边交易额的十万分之二，比如如果交易10万英�
 </ol>
 </div>
 </div>
-<div id="outline-container-sec-7" class="outline-2">
-<h2 id="sec-7">Reference</h2>
-<div class="outline-text-2" id="text-7">
-</div><div id="outline-container-sec-7-1" class="outline-3">
-<h3 id="sec-7-1">外汇产品</h3>
-<div class="outline-text-3" id="text-7-1">
+<div id="outline-container-sec-8" class="outline-2">
+<h2 id="sec-8">外汇最小交易金额和最大交易金额</h2>
+<div class="outline-text-2" id="text-8">
+<p class="verse">
+Underlying Currency  Minimum Order Size  Maximum Order Size<br  />
+AUD  30,000       7,000,000<br  />
+CAD  27,000       6,000,000<br  />
+CHF  30,000       7,000,000<br  />
+EUR  18,000       4,500,000<br  />
+GBP  13,000       3,000,000<br  />
+HKD  200,000      45,000,000<br  />
+JPY  3,000,000   700,000,000<br  />
+MXN  250,000     60,000,000<br  />
+SEK  175,000     50,000,000<br  />
+USD  25,000      6,000,000<br  />
+</p>
+</div>
+</div>
+<div id="outline-container-sec-9" class="outline-2">
+<h2 id="sec-9">Reference</h2>
+<div class="outline-text-2" id="text-9">
+</div><div id="outline-container-sec-9-1" class="outline-3">
+<h3 id="sec-9-1">外汇产品</h3>
+<div class="outline-text-3" id="text-9-1">
 <p>
 <a id="forex-product" name="forex-product"></a>
 </p>

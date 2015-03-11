@@ -2,7 +2,6 @@
 #+TITLE: Interactive Brokers Overview
 
 
-
 * 交易成本[fn:1]
 + 美股方面：固定佣金单边每股半美分，买卖来回每股1美分，采用智能路由方
   式传递交易指令直接进场DMA(Direct Market Access)，不会把客户订单流卖
@@ -71,6 +70,32 @@
   去的YG小黄金等产品（原来属于ECBOT)不能显示。这个小黄金YG的报价需要订
   阅费每月1美元。大黄金期货GC、原油CL、小标普ES、及农产品黄豆ZS等都被
   包含在10元打包数据里。
+** IB提供的美国期货品种的即时报价图表收费标准
++ 如果当月月0佣金（没做交易），则被收取10美金（包含了活动费和这个10美金报价费），
++ 如果当月佣金5美金，则被收取10（报价费）＋5（佣金）＝15美金；
++ 如果当月佣金13美金，则被收取13＋10＝23美金；
++ 如果当月佣金23美金，则被收取23＋10（报价）＝33美金；
++ 如果当月佣金30美金，则被收取30＋10－10（免除佣金）＝30美金；
++ 如果当月佣金33美金，则被收取33＋10－10＝33美金。
+* 做空美股保证金收取计算方法[fn:2]
+初始保证金：30% X 股票价值
+
+维持保证金：
++ 如果股票价格>= 5美元，则其中最大值『最小值（30% X 杠杆参数，100%）X 价格，5美元）』
++ 如果股票价格<= 5美元，则其中最大值（100 X 股票价值，2.50美元 X 股票数）
+
++ 最低的抛空占用保证金为2000美元
++ 当股票在$16.67美元价格以上，按照30%来计算保证金
++ 当股票在$5到$16.67美元之间，按照$5/股来计算保证金
++ 当股票在$2.5到$5美元之间，按照全额100%来计算保证金
++ 当股票在$2.5美元以下，按照$2.5美元/股来计算保证金
+* SGX新加坡交易所
++ XINA50 新华50指数FTSE/XINHUA CHINA A50 CN USD（流动性很低，但是大陆朋友问的较多）
++ STW 摩台指MSCI TAIWAN INDEX TW USD
++ NIFTY 印度NIFTY指数 S&P CNX NIFTY INDEX IN USD
++ SGXNK 日元新加坡日经指数 SGX: NIKKEI 225 NK JPY
++ N225U 美元新加坡日经指数 SGX: USD NIKKEI 225 INDEX NU USD
+
 * software
 + [[https://www.interactivebrokers.com/en/software/tws/twsguide.htm][TWS Guide]]
 
@@ -92,6 +117,48 @@
 + 安全代码卡 /20万美元 /60万美元
 + Alpine装置 /50万美元 /1.5百万美元
 + 黄金/白银卡 无限额 无限额
+* 常见指数或商品的ETF
+#+begin_verse
+原油现货ETF: 美国油基金(AMEX:USO)
+原油期货ETF: 美国12个月油基金(AMEX: USL)
+成品油ETF: 美国燃料油基金（AMEX:UHN)
+天然气ETF: 美国天然气基金（AMEX:UNG)
+综合金属矿业ETF: S&P Metals and Mining SPDR(XME)。
+農產品ETF: DBA
+農產企業ETF: MOO
+煤礦ETF: KOL
+鋼鐵ETF: SLX
+黄金ETF: GLD
+道指ETF：DIA
+纳指ETF: QQQQ
+标普ETF: SPY
+
+DOG 放空美國道瓊30指數股票型基金
+SH 放空美國標普500指數股票型基金
+DUG 兩倍放空道瓊石油及天然氣指數股票型基金
+DIA 美國道瓊工業指數股票型基金
+SPY 美國標普500指數股票型基金
+QQQQ 美國QQQ指數股票型基金
+EEM MSCI新興市場指數股票型基金
+ILF S&P拉丁美洲40指數股票型基金
+EEB,EEM 金磚四國指數股票型基金
+DBA DB農產品指數股票型基金
+GLD 道富黃金指數股票型基金
+DBC DB原物料商品指數股票型基金
+XLV 道富健康護理指數股票型基金
+TIP 浮動利率抗通膨公債指數基金
+AGG 綜合債券指數基金
+IYR 道瓊美國不動產指數
+IBB 那斯達克生技指數基金
+XLF 蜘蛛SPDR金融產業指數基金
+IWM 羅素2000指數基金
+FEZ 道瓊歐盟50指數基金
+EFA 歐澳遠東指數基金
+EWH 香港指數基金
+EWJ 日本指數基金
+EWY 南韓指數基金
+EWT 台湾指数基金
+#+end_verse
 * 股指期货的IB代码
 + 道琼工业指数（Dow Jones Industrial Average）：“DD, INDU, YM”分别是
   25，10，和5美元/点。
@@ -102,14 +169,59 @@
 + 德国法兰克福股价指数（the German DAX）， "DAX"
 + 日经225指数Nikkei 225,新加坡日经"SGXNK"，OSE大阪交易所"N225" OSE大阪小日经“N225M"。
 + 恒生指数 "HSI"，小日经"MHI"
+* TWS常用的期货品种代码
+所有美元产品的佣金水平都是0.25-1.20美元/单边每手，另加交易所费（非会员
+为1元多），再加0.01美分的NFA监管费。
+
+举例：NYMEX的原油佣金最高为2.31美元。IPE的布伦特原油佣金最高为单边2.02
+美元。单位1000桶。代码在下面查找，分别为CL和COIL。1个跳动为0.01美元，
+代表了10美元利益。
+
+#+begin_verse
+代码 名称 交易所 合约大小
+外汇期货板块，比如JPY,GBP,AUD,CAD,CHF
+ZN 美国十年国债期货 CBOT 乘数1000
+CL 轻甜原油 NYMEX 乘数1000
+NG 天然气 NYMEX 乘数10000
+COIL 布伦特原油 IPE 乘数1000
+SI 白银 NYMEX 乘数5000
+QI 小白银 NYMEX 乘数2500
+QM 小原油 NYMEX 乘数500
+HG 铜 NYMEX 乘数25000
+GC 黄金 NYMEX 乘数100
+ZS 黄豆 ECBOT 乘数5000
+ZL 豆油 ECBOT 乘数60000
+ZM 豆粕 ECBOT 乘数100
+ZC 玉米 ECBOT 乘数5000
+ZW 小麦 ECBOT 乘数5000
+ZG 黄金 ECBOT 乘数100
+YG 小黄金 ECBOT 乘数33.2
+DD $25 大道指 ECBOT 每点$25
+YM $5 小道指 ECBOT 每点$5
+ZI 5000盎司白银ECBOT 乘数5000
+K200 韩国指数 KSE 乘数50万
+HSI 恒生指数 HKFE 乘数50
+MHI 小恒指 HKFE 乘数10
+HHI.HK H股指数 HKFE 乘数50
+MCH.HK 小H指数 HKFE 乘数10
+ES 小标普500 GLOBEX 乘数50
+EMD 小标普中型400 GLOBEX 乘数100
+ER2 罗素2000 GLOBEX 乘数100
+RMB 人民币美元 GLOBEX 乘数10万
+NQ 小纳指100 GLOBEX 乘数20
+DX 美元指数 NYBOT 乘数1000
+
+SGXNKM SGX: NIKKEI 225 MINI
+SGXNK SGX: NIKKEI 225
+#+end_verse
 * 联系电话
 https://www.interactivebrokers.com.hk/cn/?f=customerService&ib_entity=cn
-
-
 
 * Footnotes
 
 [fn:1] http://blog.sina.com.cn/s/blog_6619728801012jwl.html
+
+[fn:2] http://www.interactivebrokers.com.hk/cn/p.php?f=margin&p=stk
 
 
 

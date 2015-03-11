@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>Interactive Brokers Overview</title>
-<!-- 2015-03-10 Tue 20:27 -->
+<!-- 2015-03-11 Wed 23:10 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="Shi Shougang" />
@@ -93,17 +93,24 @@ for the JavaScript code in this tag.
 <li><a href="#sec-2">电汇</a></li>
 <li><a href="#sec-3">利息和融资</a></li>
 <li><a href="#sec-4">演示版的用户名和密码</a></li>
-<li><a href="#sec-5">数据订阅</a></li>
-<li><a href="#sec-6">software</a></li>
-<li><a href="#sec-7">“指定时间”指令单详解</a></li>
-<li><a href="#sec-8">API</a></li>
-<li><a href="#sec-9">IB取款限额</a></li>
-<li><a href="#sec-10">股指期货的IB代码</a></li>
-<li><a href="#sec-11">联系电话</a></li>
+<li><a href="#sec-5">数据订阅</a>
+<ul>
+<li><a href="#sec-5-1">IB提供的美国期货品种的即时报价图表收费标准</a></li>
+</ul>
+</li>
+<li><a href="#sec-6">做空美股保证金收取计算方法</a></li>
+<li><a href="#sec-7">SGX新加坡交易所</a></li>
+<li><a href="#sec-8">software</a></li>
+<li><a href="#sec-9">“指定时间”指令单详解</a></li>
+<li><a href="#sec-10">API</a></li>
+<li><a href="#sec-11">IB取款限额</a></li>
+<li><a href="#sec-12">常见指数或商品的ETF</a></li>
+<li><a href="#sec-13">股指期货的IB代码</a></li>
+<li><a href="#sec-14">TWS常用的期货品种代码</a></li>
+<li><a href="#sec-15">联系电话</a></li>
 </ul>
 </div>
 </div>
-
 
 
 <div id="outline-container-sec-1" class="outline-2">
@@ -195,10 +202,76 @@ IB的IPE布伦特原油COIL、柴油GOIL、取暖油HOIL及汽油RBOB的阶梯�
 </li>
 </ul>
 </div>
+<div id="outline-container-sec-5-1" class="outline-3">
+<h3 id="sec-5-1">IB提供的美国期货品种的即时报价图表收费标准</h3>
+<div class="outline-text-3" id="text-5-1">
+<ul class="org-ul">
+<li>如果当月月0佣金（没做交易），则被收取10美金（包含了活动费和这个10美金报价费），
+</li>
+<li>如果当月佣金5美金，则被收取10（报价费）＋5（佣金）＝15美金；
+</li>
+<li>如果当月佣金13美金，则被收取13＋10＝23美金；
+</li>
+<li>如果当月佣金23美金，则被收取23＋10（报价）＝33美金；
+</li>
+<li>如果当月佣金30美金，则被收取30＋10－10（免除佣金）＝30美金；
+</li>
+<li>如果当月佣金33美金，则被收取33＋10－10＝33美金。
+</li>
+</ul>
+</div>
+</div>
 </div>
 <div id="outline-container-sec-6" class="outline-2">
-<h2 id="sec-6">software</h2>
+<h2 id="sec-6">做空美股保证金收取计算方法<sup><a id="fnr.2" name="fnr.2" class="footref" href="#fn.2">2</a></sup></h2>
 <div class="outline-text-2" id="text-6">
+<p>
+初始保证金：30% X 股票价值
+</p>
+
+<p>
+维持保证金：
+</p>
+<ul class="org-ul">
+<li>如果股票价格&gt;= 5美元，则其中最大值『最小值（30% X 杠杆参数，100%）X 价格，5美元）』
+</li>
+<li>如果股票价格&lt;= 5美元，则其中最大值（100 X 股票价值，2.50美元 X 股票数）
+</li>
+
+<li>最低的抛空占用保证金为2000美元
+</li>
+<li>当股票在$16.67美元价格以上，按照30%来计算保证金
+</li>
+<li>当股票在$5到$16.67美元之间，按照$5/股来计算保证金
+</li>
+<li>当股票在$2.5到$5美元之间，按照全额100%来计算保证金
+</li>
+<li>当股票在$2.5美元以下，按照$2.5美元/股来计算保证金
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-7" class="outline-2">
+<h2 id="sec-7">SGX新加坡交易所</h2>
+<div class="outline-text-2" id="text-7">
+<ul class="org-ul">
+<li>XINA50 新华50指数FTSE/XINHUA CHINA A50 CN USD（流动性很低，但是大陆朋友问的较多）
+</li>
+<li>STW 摩台指MSCI TAIWAN INDEX TW USD
+</li>
+<li>NIFTY 印度NIFTY指数 S&amp;P CNX NIFTY INDEX IN USD
+</li>
+<li>SGXNK 日元新加坡日经指数 SGX: NIKKEI 225 NK JPY
+</li>
+<li>N225U 美元新加坡日经指数 SGX: USD NIKKEI 225 INDEX NU USD
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-8" class="outline-2">
+<h2 id="sec-8">software</h2>
+<div class="outline-text-2" id="text-8">
 <ul class="org-ul">
 <li><a href="https://www.interactivebrokers.com/en/software/tws/twsguide.htm">TWS Guide</a>
 </li>
@@ -206,9 +279,9 @@ IB的IPE布伦特原油COIL、柴油GOIL、取暖油HOIL及汽油RBOB的阶梯�
 </div>
 </div>
 
-<div id="outline-container-sec-7" class="outline-2">
-<h2 id="sec-7">“指定时间”指令单详解</h2>
-<div class="outline-text-2" id="text-7">
+<div id="outline-container-sec-9" class="outline-2">
+<h2 id="sec-9">“指定时间”指令单详解</h2>
+<div class="outline-text-2" id="text-9">
 <p>
 “强定时间类”Time in Force的指令设立方法:
 </p>
@@ -224,18 +297,18 @@ IB的IPE布伦特原油COIL、柴油GOIL、取暖油HOIL及汽油RBOB的阶梯�
 </ul>
 </div>
 </div>
-<div id="outline-container-sec-8" class="outline-2">
-<h2 id="sec-8">API</h2>
-<div class="outline-text-2" id="text-8">
+<div id="outline-container-sec-10" class="outline-2">
+<h2 id="sec-10">API</h2>
+<div class="outline-text-2" id="text-10">
 <ul class="org-ul">
 <li><a href="https://groups.yahoo.com/neo/groups/TWSAPI/info?yguid=62886805">雅虎的IB API英文讨论组</a>
 </li>
 </ul>
 </div>
 </div>
-<div id="outline-container-sec-9" class="outline-2">
-<h2 id="sec-9">IB取款限额</h2>
-<div class="outline-text-2" id="text-9">
+<div id="outline-container-sec-11" class="outline-2">
+<h2 id="sec-11">IB取款限额</h2>
+<div class="outline-text-2" id="text-11">
 <p>
 没有参加安全登录系统的账户在一天内及任意五天期间内的可以提取的资金和转账将有数额限制。
 </p>
@@ -256,9 +329,55 @@ IB的IPE布伦特原油COIL、柴油GOIL、取暖油HOIL及汽油RBOB的阶梯�
 </ul>
 </div>
 </div>
-<div id="outline-container-sec-10" class="outline-2">
-<h2 id="sec-10">股指期货的IB代码</h2>
-<div class="outline-text-2" id="text-10">
+<div id="outline-container-sec-12" class="outline-2">
+<h2 id="sec-12">常见指数或商品的ETF</h2>
+<div class="outline-text-2" id="text-12">
+<p class="verse">
+原油现货ETF: 美国油基金(AMEX:USO)<br  />
+原油期货ETF: 美国12个月油基金(AMEX: USL)<br  />
+成品油ETF: 美国燃料油基金（AMEX:UHN)<br  />
+天然气ETF: 美国天然气基金（AMEX:UNG)<br  />
+综合金属矿业ETF: S&amp;P Metals and Mining SPDR(XME)。<br  />
+農產品ETF: DBA<br  />
+農產企業ETF: MOO<br  />
+煤礦ETF: KOL<br  />
+鋼鐵ETF: SLX<br  />
+黄金ETF: GLD<br  />
+道指ETF：DIA<br  />
+纳指ETF: QQQQ<br  />
+标普ETF: SPY<br  />
+<br  />
+DOG 放空美國道瓊30指數股票型基金<br  />
+SH 放空美國標普500指數股票型基金<br  />
+DUG 兩倍放空道瓊石油及天然氣指數股票型基金<br  />
+DIA 美國道瓊工業指數股票型基金<br  />
+SPY 美國標普500指數股票型基金<br  />
+QQQQ 美國QQQ指數股票型基金<br  />
+EEM MSCI新興市場指數股票型基金<br  />
+ILF S&amp;P拉丁美洲40指數股票型基金<br  />
+EEB,EEM 金磚四國指數股票型基金<br  />
+DBA DB農產品指數股票型基金<br  />
+GLD 道富黃金指數股票型基金<br  />
+DBC DB原物料商品指數股票型基金<br  />
+XLV 道富健康護理指數股票型基金<br  />
+TIP 浮動利率抗通膨公債指數基金<br  />
+AGG 綜合債券指數基金<br  />
+IYR 道瓊美國不動產指數<br  />
+IBB 那斯達克生技指數基金<br  />
+XLF 蜘蛛SPDR金融產業指數基金<br  />
+IWM 羅素2000指數基金<br  />
+FEZ 道瓊歐盟50指數基金<br  />
+EFA 歐澳遠東指數基金<br  />
+EWH 香港指數基金<br  />
+EWJ 日本指數基金<br  />
+EWY 南韓指數基金<br  />
+EWT 台湾指数基金<br  />
+</p>
+</div>
+</div>
+<div id="outline-container-sec-13" class="outline-2">
+<h2 id="sec-13">股指期货的IB代码</h2>
+<div class="outline-text-2" id="text-13">
 <ul class="org-ul">
 <li>道琼工业指数（Dow Jones Industrial Average）：“DD, INDU, YM”分别是
 25，10，和5美元/点。
@@ -280,9 +399,60 @@ IB的IPE布伦特原油COIL、柴油GOIL、取暖油HOIL及汽油RBOB的阶梯�
 </ul>
 </div>
 </div>
-<div id="outline-container-sec-11" class="outline-2">
-<h2 id="sec-11">联系电话</h2>
-<div class="outline-text-2" id="text-11">
+<div id="outline-container-sec-14" class="outline-2">
+<h2 id="sec-14">TWS常用的期货品种代码</h2>
+<div class="outline-text-2" id="text-14">
+<p>
+所有美元产品的佣金水平都是0.25-1.20美元/单边每手，另加交易所费（非会员为1元多），再加0.01美分的NFA监管费。
+</p>
+
+<p>
+举例：NYMEX的原油佣金最高为2.31美元。IPE的布伦特原油佣金最高为单边2.02
+美元。单位1000桶。代码在下面查找，分别为CL和COIL。1个跳动为0.01美元，代表了10美元利益。
+</p>
+
+<p class="verse">
+代码 名称 交易所 合约大小<br  />
+外汇期货板块，比如JPY,GBP,AUD,CAD,CHF<br  />
+ZN 美国十年国债期货 CBOT 乘数1000<br  />
+CL 轻甜原油 NYMEX 乘数1000<br  />
+NG 天然气 NYMEX 乘数10000<br  />
+COIL 布伦特原油 IPE 乘数1000<br  />
+SI 白银 NYMEX 乘数5000<br  />
+QI 小白银 NYMEX 乘数2500<br  />
+QM 小原油 NYMEX 乘数500<br  />
+HG 铜 NYMEX 乘数25000<br  />
+GC 黄金 NYMEX 乘数100<br  />
+ZS 黄豆 ECBOT 乘数5000<br  />
+ZL 豆油 ECBOT 乘数60000<br  />
+ZM 豆粕 ECBOT 乘数100<br  />
+ZC 玉米 ECBOT 乘数5000<br  />
+ZW 小麦 ECBOT 乘数5000<br  />
+ZG 黄金 ECBOT 乘数100<br  />
+YG 小黄金 ECBOT 乘数33.2<br  />
+DD $25 大道指 ECBOT 每点$25<br  />
+YM $5 小道指 ECBOT 每点$5<br  />
+ZI 5000盎司白银ECBOT 乘数5000<br  />
+K200 韩国指数 KSE 乘数50万<br  />
+HSI 恒生指数 HKFE 乘数50<br  />
+MHI 小恒指 HKFE 乘数10<br  />
+HHI.HK H股指数 HKFE 乘数50<br  />
+MCH.HK 小H指数 HKFE 乘数10<br  />
+ES 小标普500 GLOBEX 乘数50<br  />
+EMD 小标普中型400 GLOBEX 乘数100<br  />
+ER2 罗素2000 GLOBEX 乘数100<br  />
+RMB 人民币美元 GLOBEX 乘数10万<br  />
+NQ 小纳指100 GLOBEX 乘数20<br  />
+DX 美元指数 NYBOT 乘数1000<br  />
+<br  />
+SGXNKM SGX: NIKKEI 225 MINI<br  />
+SGXNK SGX: NIKKEI 225<br  />
+</p>
+</div>
+</div>
+<div id="outline-container-sec-15" class="outline-2">
+<h2 id="sec-15">联系电话</h2>
+<div class="outline-text-2" id="text-15">
 <p>
 <a href="https://www.interactivebrokers.com.hk/cn/?f=customerService&ib_entity=cn">https://www.interactivebrokers.com.hk/cn/?f=customerService&ib_entity=cn</a>
 </p>
@@ -294,6 +464,10 @@ IB的IPE布伦特原油COIL、柴油GOIL、取暖油HOIL及汽油RBOB的阶梯�
 
 <div class="footdef"><sup><a id="fn.1" name="fn.1" class="footnum" href="#fnr.1">1</a></sup> <p class="footpara">
 <a href="http://blog.sina.com.cn/s/blog_6619728801012jwl.html">http://blog.sina.com.cn/s/blog_6619728801012jwl.html</a>
+</p></div>
+
+<div class="footdef"><sup><a id="fn.2" name="fn.2" class="footnum" href="#fnr.2">2</a></sup> <p class="footpara">
+<a href="http://www.interactivebrokers.com.hk/cn/p.php?f=margin&p=stk">http://www.interactivebrokers.com.hk/cn/p.php?f=margin&p=stk</a>
 </p></div>
 
 
