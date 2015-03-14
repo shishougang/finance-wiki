@@ -10,9 +10,9 @@ IB是外汇交易所是IDEAL FX**.[fn:1] IDEAL FX包括IDEAL 和 IDEALPRO的外�
 
 * IB外汇杠杆比率
 IB杠杆多少倍是根据各地法律及具体情况有上限的。比如港币法定不许超过30倍，
-以下是IB的外汇杠杆比率：
+以下是IB的外汇杠杆比率:[fn:2]
 
-[[./Files/ib-leverage-rate.jpeg]]
+[[./Files/forex-leverage-ib.jpg]]
 
 大概计算方法:
 
@@ -169,6 +169,8 @@ USD.SGD	UNITED STATES DOLLAR	USD.SGD	SGD
 * Footnotes
 
 [fn:1] https://www.interactivebrokers.com/cn/index.php?f=products&p=fx
+
+[fn:2] https://www.interactivebrokers.com/cn/index.php?f=marginnew&p=forex
 
 
 
