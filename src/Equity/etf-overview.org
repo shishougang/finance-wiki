@@ -22,6 +22,11 @@
     and telecom companies, making the fund somewhat of a bet against
     these sectors that are dominated by state-owned enterprises.
 ** 做多
++ [[http://www.etf.com/ASHR][Deutsche X-trackers Harvest CSI 300 China A-Shares ETF(ASHR)]]
+  + The Deutsche X-trackers Harvest CSI 300 China A-Shares ETF tracks
+    an index of the 300 largest and most liquid Chinese shares traded
+    on the *Shanghai and Shenzhen exchanges*.
+  + Financials41.38%
 + [[http://www.etf.com/FXI][iShares China Large-Cap ETF(AMEX:FXI)]]
   + The iShares FTSE China 25 tracks an index of the 25 largest and
     most liquid Chinese stocks traded on the *Hong Kong Stock Exchange*.
@@ -188,6 +193,8 @@
 + VelocityShares 3x Long Crude Oil ETN(UWTI)
 + 原油指数ETF-ProSharesDJ-UBS两倍做空(SCO)
 + VelocityShares 3x Inverse Crude Oil ETN(DWTI)
++ 石油指数ETF-美国(AMEX:USO)
+
 ** 黄金相关ETF
 + 黄金ETF-SPDR(AMEX:GLD)
   + GLD is the largest, if not the cheapest, of the five ETFs that
@@ -196,6 +203,14 @@
 + 黄金ETF-ProShares两倍做多(UGL)
 + 黄金ETF-PowerShares DB两倍做空(DZZ)
 + 黄金ETF-ProShares两倍做空(GLL)
++ Direxion Daily Gold Miners Bull 3X ETF(AMEX:NUGT)
++ Direxion Daily Jr Gld Mnrs Bull 3X ETF(AMEX:JNUG)
++ 金矿指数ETF-Market Vectors 美交所(AMEX:GDX)
+** 铜
++ 铜分类指数ETF-iPath Dow Jones-UBS(AMEX:JJC)
++ 铜矿ETF-Global X(AMEX:COPX)
++ 铜指数ETF-First Trust ISE Global(NASDAQ:CU)
+
 ** 白银相关ETF
 + 白银ETF-ProShares两倍做多(AGQ)
 + 白银ETF-ProShares两倍做空(ZSL)
@@ -209,8 +224,13 @@
 + 两倍做空欧元 ProShares UltraShort Euro(EUO)
   + EUO provides 2x daily leverage and inverse exposure to the
     plain-vanilla USD/EUR cross. 
++ 欧元ETF-CurrencyShares(AMEX:FXE)
 + 两倍做空日元 日元ETF-ProShares (YCS)
 + 两倍做多日元 ProShares Ultra Yen(YCL)
+
++ CurrencyShares Japanese Yen ETF(AMEX:FXY)
+
++ 英镑ETF-CurrencyShares(AMEX:FXB)
 + 做多人民币 人民币ETF-WisdomTree Dreyfus(CYB)
 + [[http://www.etf.com/DBV][PowerShares DB G10 Currency Harvest ETF(DBV)]]
   + The G10 currency universe from which the index selects currently
