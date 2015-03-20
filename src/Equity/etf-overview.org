@@ -150,10 +150,46 @@
 市场波动性预期的一种衡量方法。在股市暴跌市场发生恐慌性抛售时，该指数上
 涨。
 
-+ ProShares Ultra VIX Short-Term Futures(UVXY)
-+ VelocityShares Daily 2x VIX ST ETN(TVIX)
-+ ProShares TR II(SVXY)
-+ VelocityShares Daily Inverse VIX ST ETN(XIV)
+SVXY的管理费是0.95%，比XIV的管理费1.35%低一些。
+另外SVXY是ETF，可以看到实际持有的期货。XIV是ETN，理论上有信用风险，就
+是Credit Suisse AG破产的话XIV也无法兑付。不过发行ETN的都是大银行，破产
+可能性很小。[fn:2]
+
++ 做空VIX短期期货指数 (Inverse (-1x) of S&P 500 VIX Short-Term Futures Index)
+  + $PROSHARES TR II(SVXY)$
+    http://www.proshares.com/funds/svxy.html
+  + $VelocityShares Daily Inverse VIX ST ETN(XIV)$
+    http://www.velocitysharesetns.com/xiv
+
++ 做空VIX中期期货指数 (Inverse (-1x) of S&P 500 VIX Mid-Term Futures Index)
+  + $VelocityShares Daily Inverse VIX MT ETN(ZIV)$
+    http://www.velocitysharesetns.com/ziv
+
++ 做多VIX短期期货指数 (S&P 500 VIX Short-Term Futures Index)
+  + $恐慌指数ETF-iPath S&P(VXX)$
+    http://www.ipathetn.com/us/product/vxx/
+  + $短期期货波动率指数ETF-ProShares(VIXY)$
+    http://www.proshares.com/funds/vixy.html
+
++ 两倍做多VIX短期期货指数 (Twice (2x) of S&P 500 VIX Short-Term Futures Index)
+  + $ProShares Ultra VIX Short-Term Futures(UVXY)$
+    http://www.proshares.com/funds/uvxy.html
+  + $VelocityShares Daily 2x VIX ST ETN(TVIX)$
+    http://www.velocitysharesetns.com/tvix
+
++ 做多VIX中期期货指数 (S&P 500 VIX Mid-Term Futures Index)
+  + $中期期货波动率指数ETF-iPath S&P(VXZ)$
+    http://www.ipathetn.com/us/product/vxz/
+  + $PROSHARES TR II(VIXM)$
+    http://www.proshares.com/funds/vixm.html
+
+*** 参考
+ProShares’ SVXY and UVXY vs. VelocityShares’ XIV and TVIX
+http://sixfigureinvesting.com/2011/10/proshar…
+Careful, This ETF Returned 167% In 2 Years
+http://www.etf.com/sections/blog/22913-carefu…
+Barbell investing with XIV / SVXY
+http://dontfearthebear.com/2014/07/02/barbell…
 ** other
 + Vanguard Small-Cap Growth(VBK)
   + Vanguard Small-Cap Growth ETF seeks to track the MSCI US Small Cap
@@ -246,4 +282,6 @@
 * Footnotes
 
 [fn:1] http://www.etf.com/YINN
+
+[fn:2] http://xueqiu.com/7761077940/31965694
 

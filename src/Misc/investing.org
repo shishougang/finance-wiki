@@ -1,0 +1,26 @@
+#+OPTIONS: num:nil H:2 toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t TeX:t LaTeX:nil skip:nil d:t tags:not-in-toc
+#+TITLE: Investing Overview
+
+
+
+
+* Learning
++ [[http://www.investopedia.com/][Investopedia]]
+* Reading
++ [[http://www.streetofwalls.com/finance-training-courses/hedge-fund-training/hedge-fund-books/][A huge list of the best books on investing]]
++ [[http://www.reddit.com/r//comments/166ha8/what_are_rinvestings_favorite_books_future_side/][reddit investing books]]
++ [[http://www.berkshirehathaway.com/letters/letters.html][Warren Buffett's Shareholder Letters]]
++ [[http://www.reddit.com/r/investing/comments/18qwso/future_side_bar_link_best_sites_for_news/][websites]]
++ [[http://www.wallstreetoasis.com/forums/on-the-job-with-simple-as%E2%80%A6-my-research-process][A guide to stock research!]]
+  + A hedge fund analyst explains his stock research process. Full of
+    excellent links to videos, articles, and books. MUST READ!
++ [[http://www.scribd.com/doc/215096244/Careers-in-Investing][Investing careers guide]]
+  + Bluestem Asset Management gives a detailed breakdown of the
+    different types of investing jobs and some advice on how to get
+    them.
+
+
+
+
+
+

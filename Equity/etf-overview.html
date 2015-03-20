@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>ETF Overview</title>
-<!-- 2015-03-15 Sun 10:52 -->
+<!-- 2015-03-20 Fri 23:32 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="Shi Shougang" />
@@ -58,6 +58,48 @@ for the JavaScript code in this tag.
    if(elem.cacheClassTarget)
      target.className = elem.cacheClassTarget;
  }
+/*]]>*///-->
+</script>
+<script type="text/javascript" src="http://orgmode.org/mathjax/MathJax.js"></script>
+<script type="text/javascript">
+<!--/*--><![CDATA[/*><!--*/
+    MathJax.Hub.Config({
+        // Only one of the two following lines, depending on user settings
+        // First allows browser-native MathML display, second forces HTML/CSS
+        //  config: ["MMLorHTML.js"], jax: ["input/TeX"],
+            jax: ["input/TeX", "output/HTML-CSS"],
+        extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js",
+                     "TeX/noUndefined.js"],
+        tex2jax: {
+            inlineMath: [ ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"], ["\\begin{displaymath}","\\end{displaymath}"] ],
+            skipTags: ["script","noscript","style","textarea","pre","code"],
+            ignoreClass: "tex2jax_ignore",
+            processEscapes: false,
+            processEnvironments: true,
+            preview: "TeX"
+        },
+        showProcessingMessages: true,
+        displayAlign: "center",
+        displayIndent: "2em",
+
+        "HTML-CSS": {
+             scale: 100,
+             availableFonts: ["STIX","TeX"],
+             preferredFont: "TeX",
+             webFont: "TeX",
+             imageFont: "TeX",
+             showMathMenu: true,
+        },
+        MMLorHTML: {
+             prefer: {
+                 MSIE:    "MML",
+                 Firefox: "MML",
+                 Opera:   "HTML",
+                 other:   "HTML"
+             }
+        }
+    });
 /*]]>*///-->
 </script>
 </head>
@@ -447,17 +489,76 @@ universe of securities traded in Japan.
 恐慌指数又称芝加哥期权交易所VIX指数（CBOE Volatility Index），是芝加哥期权交易所市场波动率指数的交易代码，常见于衡量标准普尔500指数期权的隐含波动性。通常被称为“恐慌指数”或“恐慌指标”，它是了解市场对未来30天市场波动性预期的一种衡量方法。在股市暴跌市场发生恐慌性抛售时，该指数上涨。
 </p>
 
+<p>
+SVXY的管理费是0.95%，比XIV的管理费1.35%低一些。另外SVXY是ETF，可以看到实际持有的期货。XIV是ETN，理论上有信用风险，就是Credit Suisse AG破产的话XIV也无法兑付。不过发行ETN的都是大银行，破产可能性很小。<sup><a id="fnr.2" name="fnr.2" class="footref" href="#fn.2">2</a></sup>
+</p>
+
 <ul class="org-ul">
-<li>ProShares Ultra VIX Short-Term Futures(UVXY)
+<li>做空VIX短期期货指数 (Inverse (-1x) of S&amp;P 500 VIX Short-Term Futures Index)
+<ul class="org-ul">
+<li>\(PROSHARES TR II(SVXY)\)
+    <a href="http://www.proshares.com/funds/svxy.html">http://www.proshares.com/funds/svxy.html</a>
 </li>
-<li>VelocityShares Daily 2x VIX ST ETN(TVIX)
+<li>\(VelocityShares Daily Inverse VIX ST ETN(XIV)\)
+    <a href="http://www.velocitysharesetns.com/xiv">http://www.velocitysharesetns.com/xiv</a>
 </li>
-<li>ProShares TR II(SVXY)
+</ul>
 </li>
-<li>VelocityShares Daily Inverse VIX ST ETN(XIV)
+
+<li>做空VIX中期期货指数 (Inverse (-1x) of S&amp;P 500 VIX Mid-Term Futures Index)
+<ul class="org-ul">
+<li>\(VelocityShares Daily Inverse VIX MT ETN(ZIV)\)
+    <a href="http://www.velocitysharesetns.com/ziv">http://www.velocitysharesetns.com/ziv</a>
+</li>
+</ul>
+</li>
+
+<li>做多VIX短期期货指数 (S&amp;P 500 VIX Short-Term Futures Index)
+<ul class="org-ul">
+<li>\(恐慌指数ETF-iPath S&P(VXX)\)
+    <a href="http://www.ipathetn.com/us/product/vxx/">http://www.ipathetn.com/us/product/vxx/</a>
+</li>
+<li>\(短期期货波动率指数ETF-ProShares(VIXY)\)
+    <a href="http://www.proshares.com/funds/vixy.html">http://www.proshares.com/funds/vixy.html</a>
+</li>
+</ul>
+</li>
+
+<li>两倍做多VIX短期期货指数 (Twice (2x) of S&amp;P 500 VIX Short-Term Futures Index)
+<ul class="org-ul">
+<li>\(ProShares Ultra VIX Short-Term Futures(UVXY)\)
+    <a href="http://www.proshares.com/funds/uvxy.html">http://www.proshares.com/funds/uvxy.html</a>
+</li>
+<li>\(VelocityShares Daily 2x VIX ST ETN(TVIX)\)
+    <a href="http://www.velocitysharesetns.com/tvix">http://www.velocitysharesetns.com/tvix</a>
+</li>
+</ul>
+</li>
+
+<li>做多VIX中期期货指数 (S&amp;P 500 VIX Mid-Term Futures Index)
+<ul class="org-ul">
+<li>\(中期期货波动率指数ETF-iPath S&P(VXZ)\)
+    <a href="http://www.ipathetn.com/us/product/vxz/">http://www.ipathetn.com/us/product/vxz/</a>
+</li>
+<li>\(PROSHARES TR II(VIXM)\)
+    <a href="http://www.proshares.com/funds/vixm.html">http://www.proshares.com/funds/vixm.html</a>
+</li>
+</ul>
 </li>
 </ul>
 </div>
+
+<ul class="org-ul"><li><a id="sec-5-5-1" name="sec-5-5-1"></a>参考<br  /><div class="outline-text-4" id="text-5-5-1">
+<p>
+ProShares’ SVXY and UVXY vs. VelocityShares’ XIV and TVIX
+<a href="http://sixfigureinvesting.com/2011/10/proshar">http://sixfigureinvesting.com/2011/10/proshar</a>…
+Careful, This ETF Returned 167% In 2 Years
+<a href="http://www.etf.com/sections/blog/22913-carefu">http://www.etf.com/sections/blog/22913-carefu</a>…
+Barbell investing with XIV / SVXY
+<a href="http://dontfearthebear.com/2014/07/02/barbell">http://dontfearthebear.com/2014/07/02/barbell</a>…
+</p>
+</div>
+</li></ul>
 </div>
 <div id="outline-container-sec-5-6" class="outline-3">
 <h3 id="sec-5-6">other</h3>
@@ -668,6 +769,10 @@ contracts.
 
 <div class="footdef"><sup><a id="fn.1" name="fn.1" class="footnum" href="#fnr.1">1</a></sup> <p class="footpara">
 <a href="http://www.etf.com/YINN">http://www.etf.com/YINN</a>
+</p></div>
+
+<div class="footdef"><sup><a id="fn.2" name="fn.2" class="footnum" href="#fnr.2">2</a></sup> <p class="footpara">
+<a href="http://xueqiu.com/7761077940/31965694">http://xueqiu.com/7761077940/31965694</a>
 </p></div>
 
 

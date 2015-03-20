@@ -56,4 +56,15 @@
   + 股票版的Twitter，如碰上股價異動(例如大跌)，但找不到任何實時新聞，很
    大機會可以在網友的tweet裏找到相關資訊
   + stocktwits的facebook專頁經常有更新，[[https://www.facebook.com/StockTwits][这里]]
++ [[http://www.hotstockmarket.com/][HotStockMarket.com]]
+  + Traders forum
++ [[http://www.investopedia.com/][Investopedia]]
++ [[http://www.marketwatch.com/][MarketWatch.com]]
+  + Market News
++ [[http://seekingalpha.com/][SeekingAlpha.com]]
+  + opinions and analysis
++ [[http://www.estimize.com/calendar][Estimize Earnings Calendar]]
++ [[http://www.zerohedge.com/][Zero Hedge]]
+
+
 

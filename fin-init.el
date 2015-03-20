@@ -1,9 +1,11 @@
 
-;(show-paren-mode 1)
+(show-paren-mode 1)
 (menu-bar-mode 0)
 
 (setq make-backup-files nil
       vc-handled-backends nil)
+
+(setq org-startup-folded  t)
 
 (setq org-export-default-language "en"
       org-export-html-extension "html"

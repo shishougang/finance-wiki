@@ -9,6 +9,8 @@
      + [[file:Equity/us-stock-overview.org][US Stock Overview]]
    + Futures
      + [[file:Futures/futures-overview.org][Futures Overview]]
+   + Misc
+     + [[file:Misc/investing.org][Investing Overview]]
    + Options
      + [[file:Options/options-overview.org][Options Overview]]
    + [[file:template.org][]]
