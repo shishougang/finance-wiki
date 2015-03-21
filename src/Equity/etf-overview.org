@@ -156,40 +156,40 @@ SVXY的管理费是0.95%，比XIV的管理费1.35%低一些。
 可能性很小。[fn:2]
 
 + 做空VIX短期期货指数 (Inverse (-1x) of S&P 500 VIX Short-Term Futures Index)
-  + $PROSHARES TR II(SVXY)$
+  + PROSHARES TR II(SVXY)
     http://www.proshares.com/funds/svxy.html
-  + $VelocityShares Daily Inverse VIX ST ETN(XIV)$
+  + VelocityShares Daily Inverse VIX ST ETN(XIV)
     http://www.velocitysharesetns.com/xiv
 
 + 做空VIX中期期货指数 (Inverse (-1x) of S&P 500 VIX Mid-Term Futures Index)
-  + $VelocityShares Daily Inverse VIX MT ETN(ZIV)$
+  + VelocityShares Daily Inverse VIX MT ETN(ZIV)
     http://www.velocitysharesetns.com/ziv
 
 + 做多VIX短期期货指数 (S&P 500 VIX Short-Term Futures Index)
-  + $恐慌指数ETF-iPath S&P(VXX)$
+  + 恐慌指数ETF-iPath S&P(VXX)
     http://www.ipathetn.com/us/product/vxx/
-  + $短期期货波动率指数ETF-ProShares(VIXY)$
+  + 短期期货波动率指数ETF-ProShares(VIXY)
     http://www.proshares.com/funds/vixy.html
 
 + 两倍做多VIX短期期货指数 (Twice (2x) of S&P 500 VIX Short-Term Futures Index)
-  + $ProShares Ultra VIX Short-Term Futures(UVXY)$
+  + ProShares Ultra VIX Short-Term Futures(UVXY)
     http://www.proshares.com/funds/uvxy.html
-  + $VelocityShares Daily 2x VIX ST ETN(TVIX)$
+  + VelocityShares Daily 2x VIX ST ETN(TVIX)
     http://www.velocitysharesetns.com/tvix
 
 + 做多VIX中期期货指数 (S&P 500 VIX Mid-Term Futures Index)
-  + $中期期货波动率指数ETF-iPath S&P(VXZ)$
+  + 中期期货波动率指数ETF-iPath S&P(VXZ)
     http://www.ipathetn.com/us/product/vxz/
-  + $PROSHARES TR II(VIXM)$
+  + PROSHARES TR II(VIXM)
     http://www.proshares.com/funds/vixm.html
 
 *** 参考
-ProShares’ SVXY and UVXY vs. VelocityShares’ XIV and TVIX
-http://sixfigureinvesting.com/2011/10/proshar…
-Careful, This ETF Returned 167% In 2 Years
-http://www.etf.com/sections/blog/22913-carefu…
-Barbell investing with XIV / SVXY
-http://dontfearthebear.com/2014/07/02/barbell…
++ ProShares’ SVXY and UVXY vs. VelocityShares’ XIV and TVIX
+  http://sixfigureinvesting.com/2011/10/proshar…
++ Careful, This ETF Returned 167% In 2 Years
+  http://www.etf.com/sections/blog/22913-carefu…
++ Barbell investing with XIV / SVXY
+  http://dontfearthebear.com/2014/07/02/barbell…
 ** other
 + Vanguard Small-Cap Growth(VBK)
   + Vanguard Small-Cap Growth ETF seeks to track the MSCI US Small Cap
