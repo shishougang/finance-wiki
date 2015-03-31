@@ -5,3 +5,14 @@
 * site
 + [[http://www.ivolatility.com/][ivolatility]]
 
+* Options
+What Are Options
+
+http://www.minyanville.com/trading-and-investing/personal-finance/articles/options-trading-basics-implied-volatility-what/7/10/2012/id/42258?refresh=1
+
+http://en.wikipedia.org/wiki/Option_(finance)
+
+http://en.wikipedia.org/wiki/Black%E2%80%93Scholes_model
+
+http://en.wikipedia.org/wiki/Greeks_(finance)
+

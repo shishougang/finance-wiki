@@ -1,0 +1,23 @@
+#+OPTIONS: num:nil H:2 toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t TeX:t LaTeX:nil skip:nil d:t tags:not-in-toc
+#+TITLE: Options Strategies
+
+
+http://www.minyanville.com/trading-and-investing/commodities-and-options/articles/options-trading-implied-volatility-time-decay/3/6/2012/id/39739?refresh=1
+
+* Calendar spread
+http://en.wikipedia.org/wiki/Calendar_spread
+
+
+* cc
+#+begin_src python
+
+#+end_src
+
+#+begin_src c++
+
+#+end_src
+
+
+#+begin_src sh
+
+#+end_src

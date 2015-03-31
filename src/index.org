@@ -13,4 +13,5 @@
      + [[file:Misc/investing.org][Investing Overview]]
    + Options
      + [[file:Options/options-overview.org][Options Overview]]
+     + [[file:Options/options-strategies.org][Options Strategies]]
    + [[file:template.org][]]
