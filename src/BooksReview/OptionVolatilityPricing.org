@@ -3,6 +3,27 @@
 
 * The language of options
 
+** Contract specifications
+Two *types*:
+1. Call option: the right to buy or take a long position in a given
+   asset at a fixed price on or before a specified data.
+2. Put option: the right to sell or take a short position in a given
+   asset.
+
+The *difference* between an option and a futures contract:
+1. A futures contract requires delivery at a fixed price. The seller
+   must make delivery and the buyer must take delivery of the asset.
+2. The buyer of an option can choose to take delivery(a call) or make
+   delivery(a put).
+
+
+The *exercise price*, or *strike price* is the price at which the
+underlying will be delivered should the holder of an option choose to
+exercise his right to buy or sell.
+
+*expiration date*: The date after which the option may no longer be
+exercised is the expiration date.
+
 
 
 
