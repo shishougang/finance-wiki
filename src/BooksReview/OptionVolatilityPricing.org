@@ -2,7 +2,6 @@
 #+TITLE: Option Volatility & Pricing, Advanced Trading Strategies and Techniques
 
 * The language of options
-
 ** Contract specifications
 Two *types*:
 1. Call option: the right to buy or take a long position in a given
@@ -23,6 +22,148 @@ exercise his right to buy or sell.
 
 *expiration date*: The date after which the option may no longer be
 exercised is the expiration date.
+
+The premium paid for an option can be separated into two components,
+the *intrinsic value* and the *time value*.
+
+The additional amount ofpremium beyond the intrinsic value which
+traders are willing to pay for an option is the time value, sometimes
+also referred to as the option's time premium or extrinsic value.  
+
+An option's premium is always composed of precisely its intrinsic
+value and its time value. If a $400 gold call is trading at $50 with gold
+at $435 per ounce, the time value of the call must be $15 , since the
+intrinsic value is $35. The two components must add up to the option's
+total premium of $50. 
+
+If the option has no time value,its price will consist solely of
+intrinsic value. The option is trading at *parity*.
+
+Any option which has a positive intrinsic value is said to be
+*in-the-money* by the amount of the intrinsic value. An option which
+has no intrinsic value is said to be *out-of-the-money*.
+
+An option whose exercise price is identical to the current price of
+the underlying contract is said to be *at-the-money*, such an option
+is also out-of-the-money since it has no intrinsic value.
+
+The distinction between an at-the-money and out-of-the-money option 
+because an at-the-money option has the greatest amount of time premium
+and is usually traded very actively.
+
+** MARGIN REQUIREMENTS
+When a trader makes an opening trade on an exchange, the exchange may
+require the trader to deposit some amount of *margin*, or good faith
+capital.
+
+* Elementary Strategies
+** SIMPLE BUY AND SELL STRATEGIES
++ long and short an underlying contract
+[[./files/long-and-short-equity.jpg]]
+
++ long a call
+[[./files/long-and-short-equity.jpg]]
+
+** RISK REWARD CHARACTERISTICS
++ long positions in 95, 100,and 105 calls
+[[./files/risk-reward-ex1.jpg]]
++ the profit and loss from a short position in the 95, 100, and 105
+  calls
+[[./files/risk-reward-ex2.jpg]]
++ long positions in 95, 100,and 105 puts
+[[./files/risk-reward-ex3.jpg]]
++ the short put positions in 95, 100,and 105 puts
+[[./files/risk-reward-ex4.jpg]]
+
+** COMBINATION STRATEGIES
++ the profit and loss at expiration from the combined purchase of a
+  100 call for 2.70, and a 100 put for 3.70
+[[./files/combination-ex1.jpg]]
++ short them
+[[./files/combination-ex2.jpg]]
++ sell a 95 put for 1.55 and a 105 call for 1.15
+[[./files/combination-ex3.jpg]]
++ sell the 90 call and purchase the 100 call
+[[./files/combination-ex4.jpg]]
++ buy a 105 put for 7.10 and sell a 100 put for 3.70, for a total
+  debit of 3.40
+[[./files/combination-ex5.jpg]]
+** CONSTRUCT AN EXPlRATION GRAPH
+1. If the graph bends, it wìll do so at an exercise price. Therefore,
+   we can calculate the proflt or 10ss at each exercise price involved
+   and simply connect these points with straight lines.
+2. If the position is 10ng and short equa1 numbers of cal1s (puts),
+   the potential downside (upside) risk or reward wi11be equal ωthe
+   total debit or credit required to establish the position.
+3. Ab ove highest exercise price all calls will go into-the-money, so
+   the entire position will act like an underlying position which is
+   either long or short underlying contracts equal to the number of
+   net long or short calls. Below the lowest exercise price all puts
+   will go into-the-money, so the entire position will act like an
+   underlying position which is either long or short underlying
+   contracts equal to the number of net long or short puts.
+*** example 1
++ long one 95 call at 5.50
++ short three 105 calls at 1.15
+
+[[./files/construct-ex1-1.jpg]]
+
+[[./files/construct-ex1-2.jpg]]
+*** example 2
++ short one 90 cdll at 9.35
++ long two 100 calls at 2.70
++ short four 95 puts at 1.55
++ long two 100 puts at 3.70
+
+[[./files/construct-ex2-1.jpg]]
+
+[[./files/construct-ex2-2.jpg]]
+*** example 3
++ long one 100 call at 2.70
++ short one 100 put at 3.70
+
+[[./files/construct-ex2-1.jpg]]
+*** example 4
++ long one 90 put at .45
++ short one 100 call at 2.70
++ long one underlying contract at 99.00
+
+[[./files/construct-ex2-1.jpg]]
+
+* Introduction to Theoretical Pricing Models
+If he purchases options, not only must he be right about market
+direction, he must also be right about *market speed*. 
+
+The minimum factors you must consider:
+1. The price of the underlying contract.
+2. The exercise price.
+3. The amount of time remaining to expiration.
+4. The direction in which he expects the underlying market move.
+5. The speed at which he expects the underlying market to move.
+
+** THEORETICAL VALUE 
+The two most common considerations in a financial investment are the
+expected return and carrying costs. And, in fact, dividends are an
+additional consideration in evaluating options on stock.
+
+The goal of option evaluation is to determine, through the use of
+theoretical pricing models, the theoretical value of an option. The
+trader can then make an intelligent decision whether the option is
+overpriced or underpriced in the marketplace, and whether the
+theoretical edage is sufficient to justify going into the marketplace
+and making a trade.
+
+** A WORD ON MODELS
+
+** A SIMPLE APPROACH
+53
+
+
+
+
+
+
+
 
 
 

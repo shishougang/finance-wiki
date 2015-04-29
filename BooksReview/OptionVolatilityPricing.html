@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>Option Volatility &amp; Pricing, Advanced Trading Strategies and Techniques</title>
-<!-- 2015-04-27 Mon 23:17 -->
+<!-- 2015-04-30 Thu 00:29 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="Shi Shougang" />
@@ -92,6 +92,22 @@ for the JavaScript code in this tag.
 <li><a href="#sec-1">The language of options</a>
 <ul>
 <li><a href="#sec-1-1">Contract specifications</a></li>
+<li><a href="#sec-1-2">MARGIN REQUIREMENTS</a></li>
+</ul>
+</li>
+<li><a href="#sec-2">Elementary Strategies</a>
+<ul>
+<li><a href="#sec-2-1">SIMPLE BUY AND SELL STRATEGIES</a></li>
+<li><a href="#sec-2-2">RISK REWARD CHARACTERISTICS</a></li>
+<li><a href="#sec-2-3">COMBINATION STRATEGIES</a></li>
+<li><a href="#sec-2-4">CONSTRUCT AN EXPlRATION GRAPH</a></li>
+</ul>
+</li>
+<li><a href="#sec-3">Introduction to Theoretical Pricing Models</a>
+<ul>
+<li><a href="#sec-3-1">THEORETICAL VALUE</a></li>
+<li><a href="#sec-3-2">A WORD ON MODELS</a></li>
+<li><a href="#sec-3-3">A SIMPLE APPROACH</a></li>
 </ul>
 </li>
 </ul>
@@ -138,6 +154,344 @@ exercise his right to buy or sell.
 <p>
 <b>expiration date</b>: The date after which the option may no longer be
 exercised is the expiration date.
+</p>
+
+<p>
+The premium paid for an option can be separated into two components,
+the <b>intrinsic value</b> and the <b>time value</b>.
+</p>
+
+<p>
+The additional amount ofpremium beyond the intrinsic value which
+traders are willing to pay for an option is the time value, sometimes
+also referred to as the option's time premium or extrinsic value.  
+</p>
+
+<p>
+An option's premium is always composed of precisely its intrinsic
+value and its time value. If a $400 gold call is trading at $50 with gold
+at $435 per ounce, the time value of the call must be $15 , since the
+intrinsic value is $35. The two components must add up to the option's
+total premium of $50. 
+</p>
+
+<p>
+If the option has no time value,its price will consist solely of
+intrinsic value. The option is trading at <b>parity</b>.
+</p>
+
+<p>
+Any option which has a positive intrinsic value is said to be
+<b>in-the-money</b> by the amount of the intrinsic value. An option which
+has no intrinsic value is said to be <b>out-of-the-money</b>.
+</p>
+
+<p>
+An option whose exercise price is identical to the current price of
+the underlying contract is said to be <b>at-the-money</b>, such an option
+is also out-of-the-money since it has no intrinsic value.
+</p>
+
+<p>
+The distinction between an at-the-money and out-of-the-money option 
+because an at-the-money option has the greatest amount of time premium
+and is usually traded very actively.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-1-2" class="outline-3">
+<h3 id="sec-1-2">MARGIN REQUIREMENTS</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+When a trader makes an opening trade on an exchange, the exchange may
+require the trader to deposit some amount of <b>margin</b>, or good faith
+capital.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2">Elementary Strategies</h2>
+<div class="outline-text-2" id="text-2">
+</div><div id="outline-container-sec-2-1" class="outline-3">
+<h3 id="sec-2-1">SIMPLE BUY AND SELL STRATEGIES</h3>
+<div class="outline-text-3" id="text-2-1">
+<ul class="org-ul">
+<li>long and short an underlying contract
+</li>
+</ul>
+
+<div class="figure">
+<p><img src="./files/long-and-short-equity.jpg" alt="long-and-short-equity.jpg" />
+</p>
+</div>
+
+<ul class="org-ul">
+<li>long a call
+</li>
+</ul>
+
+<div class="figure">
+<p><img src="./files/long-and-short-equity.jpg" alt="long-and-short-equity.jpg" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-2-2" class="outline-3">
+<h3 id="sec-2-2">RISK REWARD CHARACTERISTICS</h3>
+<div class="outline-text-3" id="text-2-2">
+<ul class="org-ul">
+<li>long positions in 95, 100,and 105 calls
+</li>
+</ul>
+
+<div class="figure">
+<p><img src="./files/risk-reward-ex1.jpg" alt="risk-reward-ex1.jpg" />
+</p>
+</div>
+<ul class="org-ul">
+<li>the profit and loss from a short position in the 95, 100, and 105
+calls
+</li>
+</ul>
+
+<div class="figure">
+<p><img src="./files/risk-reward-ex2.jpg" alt="risk-reward-ex2.jpg" />
+</p>
+</div>
+<ul class="org-ul">
+<li>long positions in 95, 100,and 105 puts
+</li>
+</ul>
+
+<div class="figure">
+<p><img src="./files/risk-reward-ex3.jpg" alt="risk-reward-ex3.jpg" />
+</p>
+</div>
+<ul class="org-ul">
+<li>the short put positions in 95, 100,and 105 puts
+</li>
+</ul>
+
+<div class="figure">
+<p><img src="./files/risk-reward-ex4.jpg" alt="risk-reward-ex4.jpg" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-2-3" class="outline-3">
+<h3 id="sec-2-3">COMBINATION STRATEGIES</h3>
+<div class="outline-text-3" id="text-2-3">
+<ul class="org-ul">
+<li>the profit and loss at expiration from the combined purchase of a
+100 call for 2.70, and a 100 put for 3.70
+</li>
+</ul>
+
+<div class="figure">
+<p><img src="./files/combination-ex1.jpg" alt="combination-ex1.jpg" />
+</p>
+</div>
+<ul class="org-ul">
+<li>short them
+</li>
+</ul>
+
+<div class="figure">
+<p><img src="./files/combination-ex2.jpg" alt="combination-ex2.jpg" />
+</p>
+</div>
+<ul class="org-ul">
+<li>sell a 95 put for 1.55 and a 105 call for 1.15
+</li>
+</ul>
+
+<div class="figure">
+<p><img src="./files/combination-ex3.jpg" alt="combination-ex3.jpg" />
+</p>
+</div>
+<ul class="org-ul">
+<li>sell the 90 call and purchase the 100 call
+</li>
+</ul>
+
+<div class="figure">
+<p><img src="./files/combination-ex4.jpg" alt="combination-ex4.jpg" />
+</p>
+</div>
+<ul class="org-ul">
+<li>buy a 105 put for 7.10 and sell a 100 put for 3.70, for a total
+debit of 3.40
+</li>
+</ul>
+
+<div class="figure">
+<p><img src="./files/combination-ex5.jpg" alt="combination-ex5.jpg" />
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-2-4" class="outline-3">
+<h3 id="sec-2-4">CONSTRUCT AN EXPlRATION GRAPH</h3>
+<div class="outline-text-3" id="text-2-4">
+<ol class="org-ol">
+<li>If the graph bends, it wìll do so at an exercise price. Therefore,
+we can calculate the proflt or 10ss at each exercise price involved
+and simply connect these points with straight lines.
+</li>
+<li>If the position is 10ng and short equa1 numbers of cal1s (puts),
+the potential downside (upside) risk or reward wi11be equal ωthe
+total debit or credit required to establish the position.
+</li>
+<li>Ab ove highest exercise price all calls will go into-the-money, so
+the entire position will act like an underlying position which is
+either long or short underlying contracts equal to the number of
+net long or short calls. Below the lowest exercise price all puts
+will go into-the-money, so the entire position will act like an
+underlying position which is either long or short underlying
+contracts equal to the number of net long or short puts.
+</li>
+</ol>
+</div>
+<ul class="org-ul"><li><a id="sec-2-4-1" name="sec-2-4-1"></a>example 1<br  /><div class="outline-text-4" id="text-2-4-1">
+<ul class="org-ul">
+<li>long one 95 call at 5.50
+</li>
+<li>short three 105 calls at 1.15
+</li>
+</ul>
+
+
+<div class="figure">
+<p><img src="./files/construct-ex1-1.jpg" alt="construct-ex1-1.jpg" />
+</p>
+</div>
+
+
+<div class="figure">
+<p><img src="./files/construct-ex1-2.jpg" alt="construct-ex1-2.jpg" />
+</p>
+</div>
+</div>
+</li>
+<li><a id="sec-2-4-2" name="sec-2-4-2"></a>example 2<br  /><div class="outline-text-4" id="text-2-4-2">
+<ul class="org-ul">
+<li>short one 90 cdll at 9.35
+</li>
+<li>long two 100 calls at 2.70
+</li>
+<li>short four 95 puts at 1.55
+</li>
+<li>long two 100 puts at 3.70
+</li>
+</ul>
+
+
+<div class="figure">
+<p><img src="./files/construct-ex2-1.jpg" alt="construct-ex2-1.jpg" />
+</p>
+</div>
+
+
+<div class="figure">
+<p><img src="./files/construct-ex2-2.jpg" alt="construct-ex2-2.jpg" />
+</p>
+</div>
+</div>
+</li>
+<li><a id="sec-2-4-3" name="sec-2-4-3"></a>example 3<br  /><div class="outline-text-4" id="text-2-4-3">
+<ul class="org-ul">
+<li>long one 100 call at 2.70
+</li>
+<li>short one 100 put at 3.70
+</li>
+</ul>
+
+
+<div class="figure">
+<p><img src="./files/construct-ex2-1.jpg" alt="construct-ex2-1.jpg" />
+</p>
+</div>
+</div>
+</li>
+<li><a id="sec-2-4-4" name="sec-2-4-4"></a>example 4<br  /><div class="outline-text-4" id="text-2-4-4">
+<ul class="org-ul">
+<li>long one 90 put at .45
+</li>
+<li>short one 100 call at 2.70
+</li>
+<li>long one underlying contract at 99.00
+</li>
+</ul>
+
+
+<div class="figure">
+<p><img src="./files/construct-ex2-1.jpg" alt="construct-ex2-1.jpg" />
+</p>
+</div>
+</div>
+</li></ul>
+</div>
+</div>
+
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3">Introduction to Theoretical Pricing Models</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+If he purchases options, not only must he be right about market
+direction, he must also be right about <b>market speed</b>. 
+</p>
+
+<p>
+The minimum factors you must consider:
+</p>
+<ol class="org-ol">
+<li>The price of the underlying contract.
+</li>
+<li>The exercise price.
+</li>
+<li>The amount of time remaining to expiration.
+</li>
+<li>The direction in which he expects the underlying market move.
+</li>
+<li>The speed at which he expects the underlying market to move.
+</li>
+</ol>
+</div>
+
+<div id="outline-container-sec-3-1" class="outline-3">
+<h3 id="sec-3-1">THEORETICAL VALUE</h3>
+<div class="outline-text-3" id="text-3-1">
+<p>
+The two most common considerations in a financial investment are the
+expected return and carrying costs. And, in fact, dividends are an
+additional consideration in evaluating options on stock.
+</p>
+
+<p>
+The goal of option evaluation is to determine, through the use of
+theoretical pricing models, the theoretical value of an option. The
+trader can then make an intelligent decision whether the option is
+overpriced or underpriced in the marketplace, and whether the
+theoretical edage is sufficient to justify going into the marketplace
+and making a trade.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-3-2" class="outline-3">
+<h3 id="sec-3-2">A WORD ON MODELS</h3>
+</div>
+
+<div id="outline-container-sec-3-3" class="outline-3">
+<h3 id="sec-3-3">A SIMPLE APPROACH</h3>
+<div class="outline-text-3" id="text-3-3">
+<p>
+53
 </p>
 </div>
 </div>
