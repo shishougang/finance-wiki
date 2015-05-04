@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>Option Volatility &amp; Pricing, Advanced Trading Strategies and Techniques</title>
-<!-- 2015-04-30 Thu 00:29 -->
+<!-- 2015-05-04 Mon 21:56 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="Shi Shougang" />
@@ -106,10 +106,17 @@ for the JavaScript code in this tag.
 <li><a href="#sec-3">Introduction to Theoretical Pricing Models</a>
 <ul>
 <li><a href="#sec-3-1">THEORETICAL VALUE</a></li>
-<li><a href="#sec-3-2">A WORD ON MODELS</a></li>
-<li><a href="#sec-3-3">A SIMPLE APPROACH</a></li>
+<li><a href="#sec-3-2">A SIMPLE APPROACH</a></li>
 </ul>
 </li>
+<li><a href="#sec-4">Volatility</a>
+<ul>
+<li><a href="#sec-4-1">RANDOM WALKS AND NORMAL DISTRIBUTIONS</a></li>
+<li><a href="#sec-4-2">LOGNORMAL DISTRIBUTIONS</a></li>
+<li><a href="#sec-4-3">TYPES OF VOLATILITIES</a></li>
+</ul>
+</li>
+<li><a href="#sec-5">Using an Option's Theoretical Value</a></li>
 </ul>
 </div>
 </div>
@@ -484,16 +491,215 @@ and making a trade.
 </div>
 
 <div id="outline-container-sec-3-2" class="outline-3">
-<h3 id="sec-3-2">A WORD ON MODELS</h3>
-</div>
-
-<div id="outline-container-sec-3-3" class="outline-3">
-<h3 id="sec-3-3">A SIMPLE APPROACH</h3>
-<div class="outline-text-3" id="text-3-3">
+<h3 id="sec-3-2">A SIMPLE APPROACH</h3>
+<div class="outline-text-3" id="text-3-2">
 <p>
-53
+We can now summarize the necessary steps in developing a model: 
+</p>
+<ol class="org-ol">
+<li>Propose a series of possible prices at expiration for the
+underlying contract.
+</li>
+<li>Assign an appropriate probability to each possible price.
+</li>
+<li>Maintain an arbitrage-free underlying market.
+</li>
+<li>From the prices and probabi1ities in steps 1, 2, and 3, calculate
+the expected  return for the option.
+</li>
+<li>From the option's expected return, deduct the carrying cost.
+</li>
+</ol>
+
+<p>
+In its original form, the Black-Scholes Model was intended to evaluate
+European options (no early exercise permitted) on non-dividend paying
+stocks. Shortly after its introduction, realizing that rnost stocks do
+pay dividends, Black and Scholes added a dividend cornponent. In 1976,
+Fischer Black rnade slight rnodifications to the rnodel to allow for
+the evaluation of options on futures contracts. And in 1983, Mark
+Garman and Steven Kohlhagen made several other modifications to allow
+for the evaluation of options on foreign currencies. The futures
+version and the foreign currencyversion are known officially as the
+Black Model and the Garman-Kohlhagen Model, respectively. But the
+evaluation rnethod in each version, whether the original Black-Scholes
+Model for stock options, the Black Model for futures options, or the
+Garman-Kohlhagen Model for foreign currency options, is so similar
+that they have all come to be known as simply the Black-Scholes Model.
+The various forrns of the model differ primarily in how they calculate
+the forward price of由eunderlying contract, and an option trader will
+simply choose the form appropriate to the underlying instrument.
+</p>
+
+<p>
+In order to calculate an option's theoretical value using the
+Black-Scholes Model, we need to know at a minimum five characteristics
+of the option and its underlying contract. There are:
+</p>
+
+<ol class="org-ol">
+<li>The option's exercise price.
+</li>
+<li>The amount of time remaining to expiration.
+</li>
+<li>The current price of the underlying contract.
+</li>
+<li>The risk-free interest rate over the life of the option.
+</li>
+<li>The volatility of the underlying contract.
+</li>
+</ol>
+
+<p>
+Black and Scholes also incorporated into their model the concept of
+the <b>riskless hedge</b>. To take advantage of a theoretically mispriced
+option，it is necessary to establish a hedge by offsetting the option
+position with this theoretically equivalent underlying position. That
+is, whatever option position we take, we must take an opposing market
+position in the underlying contract. The correct proportion of
+underlying contracts needed to establish this riskless hedge is known
+as the <b>hedge ratlo</b>.
 </p>
 </div>
+</div>
+</div>
+
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4">Volatility</h2>
+<div class="outline-text-2" id="text-4">
+</div><div id="outline-container-sec-4-1" class="outline-3">
+<h3 id="sec-4-1">RANDOM WALKS AND NORMAL DISTRIBUTIONS</h3>
+<div class="outline-text-3" id="text-4-1">
+<p>
+Thís leads to an important distínction between evaluation of an
+underlying contract and evaluation of an option. If we assume at
+prices are distributed along a normal distribution curve, the value of
+an underlying contract depends on where the peak of the curve is
+located, while the value of an option depends on how fast le curve
+spreads out.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-4-2" class="outline-3">
+<h3 id="sec-4-2">LOGNORMAL DISTRIBUTIONS</h3>
+<div class="outline-text-3" id="text-4-2">
+<p>
+A continuously compounded rate of return of +12% yields a profit of
+$127.50 after one year,while a continuously compounded rate of return
+of -12% yields a loss of only $113.08.
+</p>
+
+<p>
+When price changes are assumed to be normally distributed, the
+continuous compounding of these price changes wiU cause the prices at
+maturity to be <b>lognormally distributed</b>. 
+</p>
+
+<p>
+The Black-Scholes Model is a contínuous time model. It assumes at the
+volatility of an underlying instrument is constant over the life of
+the option, but that this volatility is continuously compounded. These two
+assumptions mean that the possible prices of the underlying instrument
+at expiration ofthe option are lognormally distributed. 
+</p>
+
+<p>
+It also explains why options with higher exercise prices caηy more
+value than options with lower exercise prices,where both exercise prices
+appear to be an identical amount away from the price of the underlying
+instrument. 
+</p>
+
+<p>
+Summarize the most irnportant assurnptions governing price movement
+int the Black-Scholes Model:
+</p>
+
+<ol class="org-ol">
+<li>Changes in the price of an underlying instrurnent are randorn and
+cannot be artificially manipulated, nor is it possible to predict
+beforehand direction in which prices will move.
+</li>
+<li>The percent changes in the price of an underlying instrurnent are
+norrnally distributed.
+</li>
+<li>Because the percent changes in the price of the underlying
+instrurnent are assumed to be continuously cornpounded, the prices
+of the underlying instrument at expiration will be lognormally
+distributed.
+</li>
+<li>The mean of the lognormal distribution will be located at the
+forward price of the underlying contract.
+</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-sec-4-3" class="outline-3">
+<h3 id="sec-4-3">TYPES OF VOLATILITIES</h3>
+<div class="outline-text-3" id="text-4-3">
+<ul class="org-ul">
+<li>Future Volatility: Future volatility is what every trader would like
+to know, the volatility at best describes the future distribution of
+prices for an underlying contract.
+</li>
+<li>Historical Volatility
+</li>
+<li>Forecast Volatility
+</li>
+<li>Implied Volatility: It is volatility being implied to the
+underlying contract through the pricing of the option in the
+marketplace. Even though the term premium real1y refers to an
+option's price, it is common among traders to refer to the implied
+volati1ity as the premium or premium level. If the current implied
+volatility is high by historical standards, or high relative to the
+recent historical volatility of the underlying contract, a trader
+might say that premium levels are high; if implied volatility is
+unusuallylow,he might say that premium levels are low.  
+
+<p>
+He might
+then look at the difference between each option's theoretical value
+and its price in marke lace selling any options which were
+overpriced relative to the theoretical value, and buying any options
+which were underpriced. 
+</p>
+</li>
+<li>Seasonal Volatility: 
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-5" class="outline-2">
+<h2 id="sec-5">Using an Option's Theoretical Value</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+The purchase or sale of a theoretically mispriced option requires us
+to  establish a hedge by taking an opposing positlon in the
+underlying contract. When this is done correctly, for small changes
+in the price of the underlying, the increase (decrease) in the value
+of the optlon position will exactly offset the decrease  (increase) in
+the value of the opposing position in the underlying contract. Such a
+hedge is unbiased, or <b>neutral</b>, as to the direction of the underlying
+contract.
+</p>
+
+<p>
+The number which enables us to establish a neutral hedge under current
+market  conditions is a by-product of theoretical pricing model and is
+known as the <b>hedge ratio</b> or, more commonly, the <b>delta</b>. 
+</p>
+
+<ol class="org-ol">
+<li>The delta of a call option is always somewhere between 0 and 1.00. 
+</li>
+<li>The delta of an option can change as market conditions change. 
+</li>
+<li>An underlying contract always has a delta of 1.00. 
+</li>
+</ol>
 </div>
 </div>
 </div>
