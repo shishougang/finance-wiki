@@ -1,0 +1,26 @@
+#+OPTIONS: num:nil H:2 toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t TeX:t LaTeX:nil skip:nil d:t tags:not-in-toc
+#+TITLE: Materials Sector
+
+
+* firm
+The top buys from the firm: ATI in steel, CNX in coal, ABX and KGC in
+precious metals, KALU in aluminum, and SCCO in copper, plus
+diversified miners FCX and VALE.[fn:1]
+
+Vulcan Materials (VMC) gets just 1% of its revenue overseas, while
+Airgas (ARG) has just 2%; those least exposed to the U.S. economy
+include Newmont Mining (NEM), which gets all of its revenue abroad,
+and International Flavors (IFF) and Owens-Illinois (OI), which each
+get 23%-24% of sales at home.
+
+
+* ETF
+XME, XLB, EMT, PICK, JUNR, MSXX
+
+
+* Footnotes
+
+[fn:1]
+http://247wallst.com/commodities-metals/2013/09/11/merrill-lynch-sees-huge-contrarian-value-in-global-mining-and-steel-companies/
+
+

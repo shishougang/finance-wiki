@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>Option Volatility &amp; Pricing, Advanced Trading Strategies and Techniques</title>
-<!-- 2015-05-04 Mon 21:56 -->
+<!-- 2015-05-10 Sun 23:59 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="Shi Shougang" />
@@ -117,6 +117,21 @@ for the JavaScript code in this tag.
 </ul>
 </li>
 <li><a href="#sec-5">Using an Option's Theoretical Value</a></li>
+<li><a href="#sec-6">Option Values and Changing Market Conditions</a>
+<ul>
+<li><a href="#sec-6-1">THE DELTA</a></li>
+<li><a href="#sec-6-2">THE GAMMA</a></li>
+<li><a href="#sec-6-3">THE THETA</a></li>
+<li><a href="#sec-6-4">THE VEGA OR KAPPA</a></li>
+<li><a href="#sec-6-5">THE RHO</a></li>
+<li><a href="#sec-6-6">SUMMARY</a></li>
+</ul>
+</li>
+<li><a href="#sec-7">Introduction to Spreading</a>
+<ul>
+<li><a href="#sec-7-1">WHY SPREAD?</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
@@ -700,6 +715,239 @@ known as the <b>hedge ratio</b> or, more commonly, the <b>delta</b>.
 <li>An underlying contract always has a delta of 1.00. 
 </li>
 </ol>
+
+<p>
+The steps we have thus far taken illustrate the correct procedure in
+using an option theoretical value:
+</p>
+<ol class="org-ol">
+<li>Purchase (sell) undervalued (overvalued) options.
+</li>
+<li>Establish a delta neutraI hedge against the underlying contract.
+</li>
+<li>Adjust the hedge at regular intervals to remain delta neutral.
+</li>
+</ol>
+
+<p>
+At that time we plan to close out the position by:
+</p>
+<ol class="org-ol">
+<li>Letting any out-of-the-money options expire worthless.
+</li>
+<li>Selling any in-the-money options at parity (intrinsic value) or,
+equiva1ently, exercising them and offsetting them against the
+underlying futures contract.
+</li>
+<li>Liquidating any outstanding futures contracts at the market price.
+</li>
+</ol>
+
+
+<p>
+1n a frictionless market we assume that: 
+</p>
+<ol class="org-ol">
+<li>Traders can freely buy or sell the underlying contract without
+restriction 
+</li>
+<li>AlI traders can borrow and lend money at the same rate. 
+</li>
+<li>Transaction costs are zero. 
+</li>
+<li>There are no tax considerations. 
+</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-sec-6" class="outline-2">
+<h2 id="sec-6">Option Values and Changing Market Conditions</h2>
+<div class="outline-text-2" id="text-6">
+</div><div id="outline-container-sec-6-1" class="outline-3">
+<h3 id="sec-6-1">THE DELTA</h3>
+<div class="outline-text-3" id="text-6-1">
+<p>
+three interpretations of delta:
+</p>
+<ul class="org-ul">
+<li>the hedge ratio
+</li>
+<li>Rate of Change in the theoretical value: The de1ta is a measure of how an optio 's value
+changes with respect to a change in the price of the underlying
+contract.
+</li>
+<li>Theoretical or Equivalent Underlying Position 
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-6-2" class="outline-3">
+<h3 id="sec-6-2">THE GAMMA</h3>
+<div class="outline-text-3" id="text-6-2">
+<p>
+The gamma sometimes referred to as the curvature of an option,
+is the rate at which an option's delta changes as the price of the
+underlying changes. 
+</p>
+
+<p>
+If an option has a gamrna of 5for each point rise (fal1) in the price
+of the und.erlying,the option will gain (lose) 5 de1tas.
+</p>
+
+<p>
+Every option trader learns to look carefully not only at current
+directional risk (the delta), but also at how that directional risk
+will change if the underlying market begins ωmove (the gamma).
+</p>
+</div>
+</div>
+<div id="outline-container-sec-6-3" class="outline-3">
+<h3 id="sec-6-3">THE THETA</h3>
+<div class="outline-text-3" id="text-6-3">
+<p>
+The <b>theta(θ)</b> ，or tíme decay factor,is the rate at which an
+option loses value as time passes.
+</p>
+</div>
+</div>
+<div id="outline-container-sec-6-4" class="outline-3">
+<h3 id="sec-6-4">THE VEGA OR KAPPA</h3>
+<div class="outline-text-3" id="text-6-4">
+<p>
+The <b>vega</b> of an option is usually given in point change ín theoretical
+value for each one percentage point change in volatility.
+</p>
+
+<p>
+Since vega is not a Greek letter, a common alternative in academic
+literature, where Greek letters are preferred, is kappa (K).
+</p>
+</div>
+</div>
+<div id="outline-container-sec-6-5" class="outline-3">
+<h3 id="sec-6-5">THE RHO</h3>
+<div class="outline-text-3" id="text-6-5">
+<p>
+The sensitivity of an optio 's theoretical value to a change in
+interest rates is given by its rho (P).
+</p>
+</div>
+</div>
+<div id="outline-container-sec-6-6" class="outline-3">
+<h3 id="sec-6-6">SUMMARY</h3>
+<div class="outline-text-3" id="text-6-6">
+<ul class="org-ul">
+<li>Delta: Deltas range from zero for far out-of.the-money calls to 100
+for deeply in-the-money calls, and from zero for far
+out-of-the-money puts to -100 for deeply in-the-money puts.
+
+<p>
+At-the-money calls have deltas of approximately 50, and at-the-money
+puts approximately -50.
+</p>
+
+<p>
+As time passes,or as we decrease our volatility assumption,call
+deltas move away om 50,and puts deltas away from -50. As we increase
+our volatility assumption, cal1 deltas move towards 50, and put
+deltas towards -50.
+</p>
+</li>
+<li>Gamma: At-the-money options have greater gammas than either in- or
+out-of-the-money options with otherwise identical contract
+specifications.
+
+<p>
+As we increase our volati1ity assumptíon, the gamma of an in~ or
+out-of~the~money option rises, while gamma of an at le~money option
+falls. As we decrease our volatility assumption, or as time to
+expiration grows shorter, the gamma of an in~ or out-of~the money
+option falls, while the gamma of an at~the-money option rises,
+sometimes dramatically.
+</p>
+</li>
+<li>Theta: At-the~money options have greater etas than either in~ or
+out~ofthe-money options with otherwise identical contract
+specifications.
+
+<p>
+The theta of an at-the-money option increases as expiration
+approaches. A short-term, at-the-money option will a1 ways decay
+more quickly than a long-term, at-the-money option.
+</p>
+
+<p>
+As we increase (decrease) our volatility assumption, the theta of an
+option will rise (fall). Higher volatility means there is greater
+time value associated with the option, so at each day's decay wil1
+also be greater when no movement occurs.
+</p>
+</li>
+<li>Vega: At-the-money options have greater vegas than either in- or
+out-ofthe-money options With otherwise identical contract
+specifications.
+
+<p>
+Out-of-the-money options have the greatest vega as apercent of
+theoretical value.
+</p>
+</li>
+</ul>
+
+<p>
+The various positions and their respective signs are given in Figure
+6-26. The sign of the delta， gamma, theta, or vega, toge er with the
+magnitude of the numbers, tel1 the trader which changes in market
+conditions will either help or hurt his position, and to what degree.
+The positive or negative effect of changing market conditions is
+summarized in Figure 6-27.
+</p>
+
+
+
+<div class="figure">
+<p><img src="./files/option-variable.jpg" alt="option-variable.jpg" />
+</p>
+</div>
+
+<p>
+An option's <b>elasticity</b>, sometimes denoted with the Greek letter
+omega(or less commonly the Greek letter lambda), is the relative
+percent change in an option's value for a given percent change in the
+price of the underlying contract.
+</p>
+
+<p>
+The elasticity is sometimes referred to as the option's <b>leverage
+value</b>. The greater an option's elasticity, the more highly leverage
+the option.
+</p>
+
+<p>
+An easy method of calculating:
+</p>
+
+<p>
+elasticity = (underlying price) / (theoretical value) * delta
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-7" class="outline-2">
+<h2 id="sec-7">Introduction to Spreading</h2>
+<div class="outline-text-2" id="text-7">
+<p>
+Spreading is simply a way of enabling an optlon trader to take
+advantage of theoretlcally mispriced options, while at the same time
+reducing the effects of short-term changes in market conditions so
+that he can safely hold an optlon positlon to maturity.
+</p>
+</div>
+
+<div id="outline-container-sec-7-1" class="outline-3">
+<h3 id="sec-7-1">WHY SPREAD?</h3>
 </div>
 </div>
 </div>

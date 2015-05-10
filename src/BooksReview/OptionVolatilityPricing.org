@@ -284,5 +284,128 @@ known as the *hedge ratio* or, more commonly, the *delta*.
 2. The delta of an option can change as market conditions change. 
 3. An underlying contract always has a delta of 1.00. 
 
+The steps we have thus far taken illustrate the correct procedure in
+using an option theoretical value:
+1. Purchase (sell) undervalued (overvalued) options.
+2. Establish a delta neutraI hedge against the underlying contract.
+3. Adjust the hedge at regular intervals to remain delta neutral.
+
+At that time we plan to close out the position by:
+1. Letting any out-of-the-money options expire worthless.
+2. Selling any in-the-money options at parity (intrinsic value) or,
+   equiva1ently, exercising them and offsetting them against the
+   underlying futures contract.
+3. Liquidating any outstanding futures contracts at the market price.
+
+
+1n a frictionless market we assume that: 
+1.  Traders can freely buy or sell the underlying contract without
+    restriction 
+2.  AlI traders can borrow and lend money at the same rate. 
+3.  Transaction costs are zero. 
+4.  There are no tax considerations. 
+* Option Values and Changing Market Conditions 
+** THE DELTA
+three interpretations of delta:
++ the hedge ratio
++ Rate of Change in the theoretical value: The de1ta is a measure of how an optio 's value
+  changes with respect to a change in the price of the underlying
+  contract.
++ Theoretical or Equivalent Underlying Position 
+** THE GAMMA
+The gamma sometimes referred to as the curvature of an option,
+is the rate at which an option's delta changes as the price of the
+underlying changes. 
+
+If an option has a gamrna of 5for each point rise (fal1) in the price
+of the und.erlying,the option will gain (lose) 5 de1tas.
+
+Every option trader learns to look carefully not only at current
+directional risk (the delta), but also at how that directional risk
+will change if the underlying market begins ωmove (the gamma).
+** THE THETA
+The *theta(θ)* ，or tíme decay factor,is the rate at which an
+option loses value as time passes.
+** THE VEGA OR KAPPA
+The *vega* of an option is usually given in point change ín theoretical
+value for each one percentage point change in volatility.
+
+Since vega is not a Greek letter, a common alternative in academic
+literature, where Greek letters are preferred, is kappa (K).
+** THE RHO
+The sensitivity of an optio 's theoretical value to a change in
+interest rates is given by its rho (P).
+** SUMMARY
++ Delta: Deltas range from zero for far out-of.the-money calls to 100
+  for deeply in-the-money calls, and from zero for far
+  out-of-the-money puts to -100 for deeply in-the-money puts.
+
+  At-the-money calls have deltas of approximately 50, and at-the-money
+  puts approximately -50.
+
+  As time passes,or as we decrease our volatility assumption,call
+  deltas move away om 50,and puts deltas away from -50. As we increase
+  our volatility assumption, cal1 deltas move towards 50, and put
+  deltas towards -50.
++ Gamma: At-the-money options have greater gammas than either in- or
+  out-of-the-money options with otherwise identical contract
+  specifications.
+
+  As we increase our volati1ity assumptíon, the gamma of an in~ or
+  out-of~the~money option rises, while gamma of an at le~money option
+  falls. As we decrease our volatility assumption, or as time to
+  expiration grows shorter, the gamma of an in~ or out-of~the money
+  option falls, while the gamma of an at~the-money option rises,
+  sometimes dramatically.
++ Theta: At-the~money options have greater etas than either in~ or
+  out~ofthe-money options with otherwise identical contract
+  specifications.
+
+  The theta of an at-the-money option increases as expiration
+  approaches. A short-term, at-the-money option will a1 ways decay
+  more quickly than a long-term, at-the-money option.
+  
+  As we increase (decrease) our volatility assumption, the theta of an
+  option will rise (fall). Higher volatility means there is greater
+  time value associated with the option, so at each day's decay wil1
+  also be greater when no movement occurs.
++ Vega: At-the-money options have greater vegas than either in- or
+  out-ofthe-money options With otherwise identical contract
+  specifications.
+  
+  Out-of-the-money options have the greatest vega as apercent of
+  theoretical value.
+
+The various positions and their respective signs are given in Figure
+6-26. The sign of the delta， gamma, theta, or vega, toge er with the
+magnitude of the numbers, tel1 the trader which changes in market
+conditions will either help or hurt his position, and to what degree.
+The positive or negative effect of changing market conditions is
+summarized in Figure 6-27.
+
+
+[[./files/option-variable.jpg]]
+
+An option's *elasticity*, sometimes denoted with the Greek letter
+omega(or less commonly the Greek letter lambda), is the relative
+percent change in an option's value for a given percent change in the
+price of the underlying contract.
+
+The elasticity is sometimes referred to as the option's *leverage
+value*. The greater an option's elasticity, the more highly leverage
+the option.
+
+An easy method of calculating:
+
+elasticity = (underlying price) / (theoretical value) * delta
+
+* Introduction to Spreading
+Spreading is simply a way of enabling an optlon trader to take
+advantage of theoretlcally mispriced options, while at the same time
+reducing the effects of short-term changes in market conditions so
+that he can safely hold an optlon positlon to maturity.
+
+** WHY SPREAD?
+
 
 
