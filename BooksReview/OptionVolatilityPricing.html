@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>Option Volatility &amp; Pricing, Advanced Trading Strategies and Techniques</title>
-<!-- 2015-05-10 Sun 23:59 -->
+<!-- 2015-05-17 Sun 14:49 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="Shi Shougang" />
@@ -130,6 +130,18 @@ for the JavaScript code in this tag.
 <li><a href="#sec-7">Introduction to Spreading</a>
 <ul>
 <li><a href="#sec-7-1">WHY SPREAD?</a></li>
+</ul>
+</li>
+<li><a href="#sec-8">Volatility Spreads</a>
+<ul>
+<li><a href="#sec-8-1">BACKSPREAD</a></li>
+<li><a href="#sec-8-2">RATIO VERTICAL SPREAD</a></li>
+<li><a href="#sec-8-3">STRADDLE</a></li>
+<li><a href="#sec-8-4">STRANGLE</a></li>
+<li><a href="#sec-8-5">BUTTERFLY</a></li>
+<li><a href="#sec-8-6">TIME SPREAD (calendar spread or horizontal spread)</a></li>
+<li><a href="#sec-8-7">THE EFFECT OF CHANGING INTEREST RATES AND DIVIDENDS</a></li>
+<li><a href="#sec-8-8">DIAGONAL SPREADS</a></li>
 </ul>
 </li>
 </ul>
@@ -948,6 +960,351 @@ that he can safely hold an optlon positlon to maturity.
 
 <div id="outline-container-sec-7-1" class="outline-3">
 <h3 id="sec-7-1">WHY SPREAD?</h3>
+<div class="outline-text-3" id="text-7-1">
+<p>
+At some point the intelligent trader will have to consider not only
+the potential profit, but also the risk  associated with a strategy.
+</p>
+
+<p>
+No trader will survive very long if his livelihood depends on
+estimating each input with 100% accuracy. Even when he incorrectly
+estimates the inputs, the experienced trader can survive if he has
+constructed intelligent spread strategies which allow for a wide
+margin of error.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-8" class="outline-2">
+<h2 id="sec-8">Volatility Spreads</h2>
+<div class="outline-text-2" id="text-8">
+<p>
+Regardless ofwhich method we choose, each spread will  have certain
+features in common: 
+</p>
+
+<ul class="org-ul">
+<li>Eachspread will be approximately delta neutral. 
+</li>
+<li>Each spread will be sensitive to  changes in  the  price of the
+underlying instrument.
+</li>
+<li>Each spread will be sensitive to changes in implied volatility.
+</li>
+<li>Each spread wil1  be sensitive to the passage of time.
+</li>
+</ul>
+</div>
+
+<div id="outline-container-sec-8-1" class="outline-3">
+<h3 id="sec-8-1">BACKSPREAD</h3>
+<div class="outline-text-3" id="text-8-1">
+<p>
+A backspread is a delta neutral spread which consists of more long
+(purchased) options than short (sold) options where all options expire
+at the same time. 
+</p>
+
+<p>
+A call backspread consists of long calls at a higher exercise price
+and short calls at a lower exercise price. A put backspread consists
+of long puts at a lower exercise price and short puts at a higher
+exercise price. 
+</p>
+
+
+<p>
+If no movement occurs, a backspread is likely to be a losing strategy. 
+</p>
+
+
+<div class="figure">
+<p><img src="./files/call-backspread.jpeg" alt="call-backspread.jpeg" />
+</p>
+</div>
+
+
+<div class="figure">
+<p><img src="./files/put-backspread.jpeg" alt="put-backspread.jpeg" />
+</p>
+</div>
+
+<p>
+A trader will tend ωchoose the type ofbackspread which reflects his
+opinion about market direction. If he foresees a market with great
+upside potential, he will tend to choose a call backspread; if he
+foresees a market with great downside potential he will tend to choose
+a put backspread. He will avoid backspreads in quiet markets since the
+underlying contract is unlikely to move very far in either direction. 
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-8-2" class="outline-3">
+<h3 id="sec-8-2">RATIO VERTICAL SPREAD</h3>
+<div class="outline-text-3" id="text-8-2">
+<p>
+A trader who takes the opposite side of a backspread also has a delta
+neutral spread, but he is short more contracts than long, with all
+options expiring at the same time. Such a spread is sometimes referred
+to as a ratio spread or a vertical spread.
+</p>
+
+<p>
+Designate the opposite of a backspread as a ratio vertical spread.
+</p>
+
+
+<div class="figure">
+<p><img src="./files/call-ratio-vertical-spread.jpeg" alt="call-ratio-vertical-spread.jpeg" />
+</p>
+</div>
+
+
+<div class="figure">
+<p><img src="./files/put-ratio-vertical-spread.jpeg" alt="put-ratio-vertical-spread.jpeg" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-8-3" class="outline-3">
+<h3 id="sec-8-3">STRADDLE</h3>
+<div class="outline-text-3" id="text-8-3">
+<p>
+A straddle consists of either a long call and a long put, or a short
+call and a short put, where both options have the same exercise price
+and expire at the same time. 
+</p>
+
+<p>
+If both the call and put are purchased, the trader is said to be long
+the straddle; if both options are sold, the trader is said to be short
+the straddle. 
+</p>
+
+
+<div class="figure">
+<p><img src="./files/long-straddle.jpeg" alt="long-straddle.jpeg" />
+</p>
+</div>
+
+
+<div class="figure">
+<p><img src="./files/short-straddle.jpeg" alt="short-straddle.jpeg" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-8-4" class="outline-3">
+<h3 id="sec-8-4">STRANGLE</h3>
+<div class="outline-text-3" id="text-8-4">
+<p>
+Like a straddle, a strangle consists of a long call and a long put, or
+a short call and a short put, where both options expire at the same
+time. In a strangle, however， the options have different exercise
+prices. If both options are purchased, the trader is long the
+strangle if both options are sold, the trader is short the strangle.
+</p>
+
+
+<div class="figure">
+<p><img src="./files/long-strangle.jpeg" alt="long-strangle.jpeg" />
+</p>
+</div>
+
+
+<div class="figure">
+<p><img src="./files/short-strangle.jpeg" alt="short-strangle.jpeg" />
+</p>
+</div>
+
+<p>
+To avoid confusion a strangle is commonly assumed to consist of
+out-the-money options. If the underlying market is current1y at 100
+and a trader wants to purchase the June 95/105 strangle, it is assumed
+that he wants to purchase a June 95 put and a June 105 call. When both
+options are in-the-money, the position is sometimes referred to as a
+<b>guts</b>.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-8-5" class="outline-3">
+<h3 id="sec-8-5">BUTTERFLY</h3>
+<div class="outline-text-3" id="text-8-5">
+<p>
+A butterfly consists of options at three equally spaced exercise
+prices, where all options are of the same type (either all calls or
+all puts) and expire at the same time.
+</p>
+
+<p>
+In a long butterfly the outside exercise prices are purchased and the
+insíde exercise price is s01d, and vice versa for a short butterfly.
+</p>
+
+<p>
+It is always 1 x 2 x 1, with two of each inside exercise price traded
+for each one of the outside exercíse prices. If the ratio is other
+than 1 x 2 x 1, the spread is no longer a butterfly. 
+</p>
+
+
+<div class="figure">
+<p><img src="./files/long-butterfly.jpeg" alt="long-butterfly.jpeg" />
+</p>
+</div>
+
+
+<div class="figure">
+<p><img src="./files/short-butterfly.jpeg" alt="short-butterfly.jpeg" />
+</p>
+</div>
+
+<p>
+a long butterfly tends to act like a ratio vertica1 spread and a short
+butterfly tends to act like a backspread.
+</p>
+</div>
+</div>
+<div id="outline-container-sec-8-6" class="outline-3">
+<h3 id="sec-8-6">TIME SPREAD (calendar spread or horizontal spread)</h3>
+<div class="outline-text-3" id="text-8-6">
+<p>
+Time spreads, sometimes referred to as calendar spreads or horizontal
+spreads, consist of opposing positions whlch expire in different
+months. The most common type of time spread consists o
+</p>
+
+<p>
+The most common type of time spread consists of opposing positions in
+two options of the same type  (either both calls or both puts) where
+both options have the same exercise price. When the long-term option
+is purchased and the short-term option is sold, a trader is long the
+time spread; when the short-term option is purchased and the long-term
+option is sold, the trader is short the time spread. 
+</p>
+
+
+
+
+<div class="figure">
+<p><img src="./files/long-time-spread.jpeg" alt="long-time-spread.jpeg" />
+</p>
+</div>
+
+
+<div class="figure">
+<p><img src="./files/short-time-spread.jpeg" alt="short-time-spread.jpeg" />
+</p>
+</div>
+
+
+<p>
+If we assume that the options making up a time spread are
+approxjmately at-the-money, time spreads have two important
+characteristics:
+</p>
+
+<ul class="org-ul">
+<li>A long time spread always wants the underlying market sit still. 
+Since a short-term at-the-money option always decays more quickly
+than a longterm at-the-money option, regardless of whether the
+options are calls or puts, both a long call time spread and a long
+put time spread want the underlying market to sit sti1l. Ideally,
+both spreads would like the short-term option to expire right
+at-the-money so that the long-term option will retain as much time
+value as possible while the short-term option expires worthless. 
+</li>
+</ul>
+
+
+<div class="figure">
+<p><img src="./files/effect-of-time-passage-time-spreads.jpeg" alt="effect-of-time-passage-time-spreads.jpeg" />
+</p>
+</div>
+
+<ul class="org-ul">
+<li>A long time spread always benefits jrom an increase in implied
+volatility.
+As time to expiration increases, the vega of an option increases.
+This means that a long-term option is always more sensitive in total
+points to a change in volatility than a short-term option with the
+same exercise price. 
+</li>
+</ul>
+
+
+<div class="figure">
+<p><img src="./files/effect-of-volatility-time-spreads.jpeg" alt="effect-of-volatility-time-spreads.jpeg" />
+</p>
+</div>
+
+
+<p>
+These two opposing forces, the decay in an option's value due to the
+passage of time and the change in an option's value due to changes in
+volatility, give time spreads their unique characteristics. When a
+trader buys or sel1s a time spread, he is not only attempting to
+forecast movement in the underlying market. He is剖sotrying to
+forecast changes in imp1ied volatility.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-8-7" class="outline-3">
+<h3 id="sec-8-7">THE EFFECT OF CHANGING INTEREST RATES AND DIVIDENDS</h3>
+<div class="outline-text-3" id="text-8-7">
+<p>
+If we are considering stock options with different expiration dates,we
+mut consider two different forward prices. Andthese two forward prices
+may not be equaly sensitive to a change in interest rates. 
+</p>
+
+<p>
+If interest rates increase，the time spread will widen because the
+June forward price will rise more quickly than the March forward
+price. Therefore, a long (short) call time spread in the stock option
+market must have a positive (negative) rho.
+</p>
+
+<p>
+if interest rates increase, the put time spread will narrow.
+Therefore, a long (short) put time spread in the stock option market
+must have a negative (positive) rho.
+</p>
+
+<p>
+An increase (decrease) in dividends lowers (raises) the forward price
+of stock.
+</p>
+
+<p>
+In a time spread, if a dividend payment is expected between expiration
+of the short-term and long-term option, the long-term option will be
+affected by the lowered forward price of the stock. Hence, an increase
+in dividends, if at least one dividend payment is expected between the
+expiration dates, will cause call time spreads to narrow and put time
+spreads to widen. A decrease in dividends will have the opposite
+effect, with call time spreads widening and put time spreads
+narrowing. The effect of changing interest rates and dividends on
+stock option time spreads is shown below:
+</p>
+
+
+<div class="figure">
+<p><img src="./files/effects-interest-rates-dividends-time-spreads.jpg" alt="effects-interest-rates-dividends-time-spreads.jpg" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-8-8" class="outline-3">
+<h3 id="sec-8-8">DIAGONAL SPREADS</h3>
 </div>
 </div>
 </div>
