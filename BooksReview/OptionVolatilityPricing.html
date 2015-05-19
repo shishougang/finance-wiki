@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>Option Volatility &amp; Pricing, Advanced Trading Strategies and Techniques</title>
-<!-- 2015-05-17 Sun 14:49 -->
+<!-- 2015-05-19 Tue 22:42 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="Shi Shougang" />
@@ -142,6 +142,36 @@ for the JavaScript code in this tag.
 <li><a href="#sec-8-6">TIME SPREAD (calendar spread or horizontal spread)</a></li>
 <li><a href="#sec-8-7">THE EFFECT OF CHANGING INTEREST RATES AND DIVIDENDS</a></li>
 <li><a href="#sec-8-8">DIAGONAL SPREADS</a></li>
+<li><a href="#sec-8-9">OTHER VARIATIONS</a></li>
+<li><a href="#sec-8-10">SPREAD SENSITIVITIES</a></li>
+<li><a href="#sec-8-11">CHOOSING AN APPROPRlATE STRATEGY</a></li>
+<li><a href="#sec-8-12">ADJUSTMENTS</a></li>
+<li><a href="#sec-8-13">ENTERING A SPREAD ORDER</a></li>
+</ul>
+</li>
+<li><a href="#sec-9">Risk Considerations</a>
+<ul>
+<li><a href="#sec-9-1">CHOOSING THE BEST SPREAD</a></li>
+<li><a href="#sec-9-2">PRACTICAL CONSIDERATIONS</a></li>
+<li><a href="#sec-9-3">HOW MUCH MARGIN FOR ERROR?</a></li>
+<li><a href="#sec-9-4">DIVIDENDS AND INTEREST</a></li>
+<li><a href="#sec-9-5">WHAT IS A GOOD SPREAD?</a></li>
+<li><a href="#sec-9-6">ADJUSTMENTS</a></li>
+<li><a href="#sec-9-7">A QUESTION OF STYLE</a></li>
+<li><a href="#sec-9-8">LIQUIDITY</a></li>
+</ul>
+</li>
+<li><a href="#sec-10">Bull and Bear Spreads</a>
+<ul>
+<li><a href="#sec-10-1">NAKED POSITIONS</a></li>
+<li><a href="#sec-10-2">BULL AND BEAR RATIO SPREADS</a></li>
+<li><a href="#sec-10-3">BULL AND BEAR BUTTERFLIES AND TlME SPREADS</a></li>
+<li><a href="#sec-10-4">VERTICAL SPREADS</a></li>
+</ul>
+</li>
+<li><a href="#sec-11">Option Arbitrage</a>
+<ul>
+<li><a href="#sec-11-1">SYNTHETIC POSITIONS</a></li>
 </ul>
 </li>
 </ul>
@@ -1305,6 +1335,537 @@ stock option time spreads is shown below:
 
 <div id="outline-container-sec-8-8" class="outline-3">
 <h3 id="sec-8-8">DIAGONAL SPREADS</h3>
+<div class="outline-text-3" id="text-8-8">
+<p>
+A diagonal spread Is similar to a time spread, except that the options
+have different exercise prices.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-8-9" class="outline-3">
+<h3 id="sec-8-9">OTHER VARIATIONS</h3>
+<div class="outline-text-3" id="text-8-9">
+<p>
+<b>A Christmas tree</b> (also referred to as a ladd is a term which can be
+applied to a variety of spreads. The spread usually consists of three
+different exercise prices where all options are of the same type and
+expire at the same time. In a long (short) call Christmas tree, one
+call is purchased (sold) at the lowest exercise price,and one call is
+sold (purchased) at each of the higher exercise prices. In a long
+(short) put Christmas tree, one put is purchased (sold) at the highest
+exercise price, and one put is sold (purchased) at each of the lower
+exercise prices.
+</p>
+
+
+<p>
+Long Christmas trees , when done delta neutral， can be thought of as
+particular types of ratio vertical spreads. Such spreads therefore
+increase in value if the underlying market either sits still or moves
+very slowly. Short Christmas trees can be thought of as particular
+types of backspreads, and therefore increase in value with big moves
+in the underlying market.
+</p>
+
+
+<div class="figure">
+<p><img src="./files/christmas-trees.jpg" alt="christmas-trees.jpg" />
+</p>
+</div>
+
+
+<p>
+It is possible to construct a spread which has the same
+characteristics as a butterfly by purchasing a straddle (strangle)
+and selling a strangle (straddle) where the straddle is executed at
+an exercise price midway between the strangle's exercise prices. All
+options must expire at the same time. Because the position wants the
+same outcome as a butterfly, it is known as an <b>iron butterfly</b>.
+</p>
+
+
+<div class="figure">
+<p><img src="./files/iron-butterffiles.jpg" alt="iron-butterffiles.jpg" />
+</p>
+</div>
+
+<p>
+Another variation on a butterfly, known as a <b>condor</b>, can be constructed
+by splitting the inside exercise prices. Now the position consists of
+four options at consecutive exercise prices where the two outside
+options are purchased and the two inside options sold (a long condor),
+or the two inside options are purchased and the two outside options
+sold (a short condor). As with a butterfly, all options must be of the
+same type(all calls or all puts) and expire at the same time.
+</p>
+
+
+<div class="figure">
+<p><img src="./files/long-short-condors.jpg" alt="long-short-condors.jpg" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-8-10" class="outline-3">
+<h3 id="sec-8-10">SPREAD SENSITIVITIES</h3>
+<div class="outline-text-3" id="text-8-10">
+
+<div class="figure">
+<p><img src="./files/category-gamma-vega.jpg" alt="category-gamma-vega.jpg" />
+</p>
+</div>
+
+
+<div class="figure">
+<p><img src="./files/charact-volatility-spreads.jpg" alt="charact-volatility-spreads.jpg" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-8-11" class="outline-3">
+<h3 id="sec-8-11">CHOOSING AN APPROPRlATE STRATEGY</h3>
+<div class="outline-text-3" id="text-8-11">
+<p>
+With so many spreads avai1 able, how do we know which type of spread
+is best? 
+</p>
+
+<p>
+Ideally, we would like ωconstruct a spread by purchasing options
+which are underpriced and se1li ng options which are overpriced. 
+</p>
+
+<p>
+If options general/y appear underprtced (low implied volatility),
+look for spreads with a positive vega. This includes strategies in
+backspread or long time spread category. !f options generally appear
+overpriced (high implied volatility)，look for spreads wtth a negative
+vega. This includes strategies in the ratio vertical or short time
+spread category.
+</p>
+
+<p>
+Long time spreads are likely to be profitable when implied
+volatility is low but is expected to rise; short time spreads are
+likely to be profttable when implied volatility is high but is
+expected to fail.
+</p>
+</div>
+</div>
+<div id="outline-container-sec-8-12" class="outline-3">
+<h3 id="sec-8-12">ADJUSTMENTS</h3>
+<div class="outline-text-3" id="text-8-12">
+<p>
+The optimum use of a theoretical pricing model requires a trader to
+continuously maintain a delta neutral position throughout the life of
+the spread.
+</p>
+
+<ol class="org-ol">
+<li>Adjust at regular intervals &#x2013; In theory, the adjustment process is
+assumed to be continuous because volatility is assumed to be a
+continuous measure of the speed of the market.
+</li>
+<li>Adjust when the positlon becomes a predetermlned number 01 deltas
+or short.
+</li>
+<li>Adjust by feel.
+</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-sec-8-13" class="outline-3">
+<h3 id="sec-8-13">ENTERING A SPREAD ORDER</h3>
+<div class="outline-text-3" id="text-8-13">
+<p>
+The following contingency orders, all ofwhich are defined in Appendix
+A, are often used in option markets: 
+</p>
+
+<p class="verse">
+All  Or None<br  />
+Fill Or Kill<br  />
+Immediate Or Cancel<br  />
+Market If Touched<br  />
+Market On Close<br  />
+Not Held<br  />
+One Cancels The Other<br  />
+Stop Umit Order<br  />
+Stop Loss Order<br  />
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-9" class="outline-2">
+<h2 id="sec-9">Risk Considerations</h2>
+<div class="outline-text-2" id="text-9">
+</div><div id="outline-container-sec-9-1" class="outline-3">
+<h3 id="sec-9-1">CHOOSING THE BEST SPREAD</h3>
+<div class="outline-text-3" id="text-9-1">
+<p>
+We can summarize these risks as follows: 
+</p>
+<ul class="org-ul">
+<li>Delta (DirectionaI) Risk-The risk that the underlying market will
+move in one direction rather than another. When we create a position
+which is delta neutral, we are trying to ensure that initially the
+position has no particular preference as to the direction in which
+the underlying instrument will move. A delta neutral position does
+not necessarily eliminate all directional risk, but it usually
+leaves us immune to directional risks within a limited range.
+</li>
+<li>Gamma (Curvature) Risk -The risk of a large move in the underlying
+contract, regardless of direction. The gamma position is a measure
+of how sensitive a position is to such large moves. A positive
+gamma position does not really have gamma risk since such a position
+will, in theory, increase in value with movement in the underlying
+contract. A negative gamma position, however, can quickly lose its
+theoretical edge with a large move in the underlying contract. The
+consequences of such a move must always be a consideration when
+analyzing the relative merits of different positions.
+</li>
+<li>Theta (Time Decay) Risk一Therisk that time will pass with no
+movement in the underlying contract.  This is the opposite side of
+gamma risk. Positions with positive gamma become more valuable With
+large moves in the underlying. But if movement helps, the passage of
+time hurts. A positive gamma always goes hand in hand with a
+negative theta. A trader with a negative theta will always have to
+consider the risk in terms of how much time can pass before the
+spread's theoretical edge disappears. The position wants movement,
+but if the movement fails to occur within the next day, or next
+week, or next month, will be spread, in theory, still be profitable?
+</li>
+<li>Vega (Volatility) Risk &#x2014; The risk that the volatility which we
+input into the theoretical pricing model will be incorrect. If we
+input an incorrect volatility, we will be assuming an incorrect
+distribution of underlying prices over time. Since some positions
+have a positive vega and are hurt by declining volatility, and some
+positions have a negative vega and are hurt by rising volatility,
+the vega represents a risk to every position. A trader must always
+consider how much the volatility can move againsthim before
+thepotential profit from a position disappears.
+</li>
+<li>Rho (Interest Rate) Risk-The risk that interest rates will change
+over the life of the option. A position with a positive rho will be
+helped (hurt) by an increase (decline) in interest rates, while a
+position with a negative rho wil1 show just the opposite
+characteristics. Generally, the interest rate is the least
+important of the inputs into a theoretical pricing model, and it is
+unlikely, except for special situations, that a trader will give
+extensive thought to rho risk associated with a position.
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-9-2" class="outline-3">
+<h3 id="sec-9-2">PRACTICAL CONSIDERATIONS</h3>
+<div class="outline-text-3" id="text-9-2">
+<p>
+While there is no substitute for experience, most traders quickly
+learn an important rule: straddles and strangles are the riskiest of 
+all spreads.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-9-3" class="outline-3">
+<h3 id="sec-9-3">HOW MUCH MARGIN FOR ERROR?</h3>
+<div class="outline-text-3" id="text-9-3">
+<p>
+Perhaps a better way to approach the question is to ask not what is a
+reasonable margin for error, but rather to ask what is the correct
+size in which to do a spread given a known margin for error.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-9-4" class="outline-3">
+<h3 id="sec-9-4">DIVIDENDS AND INTEREST</h3>
+</div>
+<div id="outline-container-sec-9-5" class="outline-3">
+<h3 id="sec-9-5">WHAT IS A GOOD SPREAD?</h3>
+<div class="outline-text-3" id="text-9-5">
+<p>
+It is impossible ωtake into consideration everypossible risk. A
+spread which passed every risk test would probably have so little
+theoretical edge that it wouldn't be worth doing. But the trader who
+allows himself a reasonable margin for error will find that even his
+losses will not lead to financial ruin. A good spread is not
+necessarily the one that shows the greatest proflt when things go
+well; it may be the one which shows the least loss when things go
+badly. Winning trades always take care of themselves. Losing trades,
+which don't glve back al1 the profits from the winning ones, are just
+as important.
+</p>
+</div>
+</div>
+<div id="outline-container-sec-9-6" class="outline-3">
+<h3 id="sec-9-6">ADJUSTMENTS</h3>
+<div class="outline-text-3" id="text-9-6">
+<p>
+An adjustment to trader's delta position may reduce his directional
+risk, but if he simultaneously increases his gamma, theta, or vega
+risk, he may inadvertently be exchanging one type of risk for another. 
+</p>
+
+<ul class="org-ul">
+<li>A delta adjustment made with the underlying contract is essentially a
+risk neutral adjustment.
+</li>
+<li>An adjustment made with options may reduce the delta risk, but will
+also change the other nsk characteristfcs assocíated wtth the
+position.
+</li>
+</ul>
+
+<p>
+A disciplined trader knows that sometimes, because of risk
+considerations, the best course ls to reduce the size of the spread,
+even if it means gi.ving up some theoretical edge. This may be hard on
+the trader's ego, particular1y 1f he must personally go back into the
+market and either buy back options which he originally sold at a lower
+price, or sell out options whîch he originally purchased at a higher
+price. However, if a trader is unwilling to swallow his pride from
+time to time, and admit that he made a mistake, his trading career is
+certain to be a short one. 
+</p>
+
+<p>
+If a trader finds that any de1ta adjustment in the option market that
+reduces his risk will also reduce his theoretical edge，and he is
+unwil1ing to give up any theoretical edge, his only recourse is to
+make h1s adjustments in the underlying market. An underlying contract
+has no gamma, theta, or vega, so the risks of the position will remain
+essentially the same.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-9-7" class="outline-3">
+<h3 id="sec-9-7">A QUESTION OF STYLE</h3>
+<div class="outline-text-3" id="text-9-7">
+<p>
+In practice, however, many option traders begin theîr trading careers
+by taking positions in the underlying market, where direction is the
+primary consideration. Many traders therefore deve10p a style of
+trading based on presumed directional moves in the underlying market.
+A trader might，for examp1e, be a trend follower, adhering to the
+philosophy that "the trend is your friend." Or he might be a
+contrarian. preferring to "buy weakness, sell strength." 
+</p>
+</div>
+</div>
+<div id="outline-container-sec-9-8" class="outline-3">
+<h3 id="sec-9-8">LIQUIDITY</h3>
+<div class="outline-text-3" id="text-9-8">
+<p>
+An important consideration in deciding whether to enter into a trade
+is often the ease with which the trader can reverse the trade. Liquid
+option markets, where there are many buyers and sellers, are much less
+risky than illiquid markets, where there are few buyers and sellers.
+In the same way, a spread which consists of very liquid options is
+much less risky出ana spread which consists of one or more illiquid
+options.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-10" class="outline-2">
+<h2 id="sec-10">Bull and Bear Spreads</h2>
+<div class="outline-text-2" id="text-10">
+</div><div id="outline-container-sec-10-1" class="outline-3">
+<h3 id="sec-10-1">NAKED POSITIONS</h3>
+<div class="outline-text-3" id="text-10-1">
+<p>
+If all options are overpríced (high implied volatility), we might
+sell puts to create a bullish position, or sel1 calls to create a
+bearish position. If al1  options are underpriced (low implied
+volatility), we might buy calls ωcreate a bullish position, or 
+buy puts to create a bearish position. 
+</p>
+
+<p>
+The problem with this approach is that，as with all non-hedged
+positions, there is very llttle margin error.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-10-2" class="outline-3">
+<h3 id="sec-10-2">BULL AND BEAR RATIO SPREADS</h3>
+<div class="outline-text-3" id="text-10-2">
+<p>
+If a trader believes that implied volatility is too hlgh, one sensible
+strategy is a ratio vertical spread.
+</p>
+
+<p>
+Even though the trader was correct ín his bullish sentiment, the
+position was primarily a volatility spread, so that the volatility
+characteristics of the position eventually outweighed any
+considerations of market direction.
+</p>
+
+<p>
+Since this spread is a volatility spread, the primary consideration,
+as before, is the volatility of the market. Only secondarily are
+we concerned with the direction of movement. If the trader
+overestimates volatility, and the market moves more slowly than
+expected, the spread which was initially de1ta positive can instead
+become delta negative.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-10-3" class="outline-3">
+<h3 id="sec-10-3">BULL AND BEAR BUTTERFLIES AND TlME SPREADS</h3>
+<div class="outline-text-3" id="text-10-3">
+<p>
+If the  underlying market is currently at 100, he might choose to buy
+the June 105/110/115 call butterfly. Since this position wants the
+underlying market at 110 at expiration, and it is currently at 100,
+the position is a bull butterfly. This will be reflected in the
+position having a positive delta.  
+</p>
+
+<p>
+Unfortunately, if the underlying market moves too swift1y, say to 120,
+the butterfly can invert from a positive to a negative delta position.
+</p>
+
+<p>
+Conversely, if the trader is bearish, he can always choose to buy a
+butterfly where the inside exercise price is below the current price
+of the underlying market. But again, if the market moves down too
+quickly and goes through the inside exercise price, the position will
+invert from a negative to a positive delta.
+</p>
+
+<p>
+In a simi1ar manner, a trader can choose time spreads 由atare either
+bul1ish or bearish. A long time spread always wants the near-term
+contract to  expire exactly at-the-money. A long time spread will be
+initial1y bullish if the exercise price of the time spread is above
+the current price of the underly1ng market.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-10-4" class="outline-3">
+<h3 id="sec-10-4">VERTICAL SPREADS</h3>
+<div class="outline-text-3" id="text-10-4">
+<p>
+Vertical spreads are not on1y initially bullish or bearish, but
+they remain bullish or bearish no matter how market conditions change. A
+vertical spread always consists of one long (purchased) option and one
+short (sold) option, where both options are of the same type (either
+both calls or both puts) and expire at the same time. The options are
+distinguished only by their different exercise prices. Typical vertical
+spreads might be:
+</p>
+
+<p class="verse">
+buy 1 June 100 call<br  />
+se111 June 105 cal1<br  />
+or<br  />
+buy 1 March 105 put<br  />
+se111 March 95 put<br  />
+</p>
+
+<p>
+If a trader wants to do a vertical spread, he has essentially four
+choices. If he is bullish he can choose a bull vertical call spread or
+a bull vertical put spread; if he is bearish he can choose a bear
+vertical call spread or a bear vertical put spread. For example: 
+</p>
+
+<p class="verse">
+bull call spread: buy a June 100 call<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;sell  a June 105 call<br  />
+bull put spread:  buy a June 100 put<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;sell a June 105 put<br  />
+bear call spread: sell a June 100 call<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;buy a June 105 call<br  />
+bear put spread:  sell a June 100 put<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;buy a June 105 put<br  />
+</p>
+
+<p>
+Two factors determine the total directional characteristlcs of a
+vertlcal spread: 
+</p>
+<ol class="org-ol">
+<li>The delta of the specific vertical spread 
+</li>
+<li>The size in which the spread is executed
+</li>
+</ol>
+
+<p>
+The greater the distance between exercise prices, the greater the
+delta value associated with the spread. A 95/110 bull spread wil1 be
+more bullish than a 100/110 bull spread, which will, ín turn, be more
+bullish than a 100/105 bull spread. 
+</p>
+
+
+<div class="figure">
+<p><img src="./files/vertical-spread-compare.jpeg" alt="vertical-spread-compare.jpeg" />
+</p>
+</div>
+
+
+<p>
+Once a trader decides on an expiratlon month in which to  take his
+directlonal position, he must decide which specific spread is best.
+That is, he must decide which exercise prices to use. A common
+approach is focus on the at-the-money optlons. If a trader does this,
+he will have the fol1owing choices:
+</p>
+
+
+<div class="figure">
+<p><img src="./files/at-the-money-vertical-spread.jpeg" alt="at-the-money-vertical-spread.jpeg" />
+</p>
+</div>
+
+<p>
+The reason becomes clear if we recall one of the characteristics of
+option evaluation introduced in Chapter 6: If we consider three
+options, an in-the-money， at-the-money， and out-of-the-money option
+which are identical except for their exercise prices, the at-the-money
+option is always the most sensitive in total points to a change in
+volatility. 
+</p>
+
+<p>
+This characteristic leads to a very simple rule for choosing bull and
+bear vertical spreads:
+</p>
+
+<blockquote>
+<p>
+If implied volatility is too low, vertical spreads should focus on purchasing
+the at-the-money optlon. If implied volatility is too high, vertical spreads
+should focus on selling the at-the-money options.
+</p>
+</blockquote>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-sec-11" class="outline-2">
+<h2 id="sec-11">Option Arbitrage</h2>
+<div class="outline-text-2" id="text-11">
+</div><div id="outline-container-sec-11-1" class="outline-3">
+<h3 id="sec-11-1">SYNTHETIC POSITIONS</h3>
 </div>
 </div>
 </div>
