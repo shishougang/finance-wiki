@@ -860,10 +860,10 @@ spreads might be:
 
 #+begin_verse
 buy 1 June 100 call 
-se111 June 105 cal1 
+sell 1 June 105 cal1 
 or 
 buy 1 March 105 put 
-se111 March 95 put
+sell 1 March 95 put
 #+end_verse
 
 If a trader wants to do a vertical spread, he has essentially four
@@ -919,7 +919,569 @@ the at-the-money optlon. If implied volatility is too high, vertical spreads
 should focus on selling the at-the-money options.
 #+end_quote
 
+A trader is not required to execute any vertical spread by first
+buying or selling the at-the-money option. Such spreads always involve
+two options, and a trader can choose to either execute the complete
+spread in one transaction, or leg into the spread by trading one
+option at a time. Regardless of how the spread is executed, the trader
+should focus on the at-the-money option, either buying it when implied
+volatility is too low, or selling it when implied volatility is too
+high.
+
+The choice of the at-the-money option is slightly different when we
+move to stock options. If we define the at-the-money option as the one
+whose de1ta is closest to 50, then we may find at the at-the-money
+option is not always the one whose exercise price is closest current
+price of the underlying contract. This ís because the option with a
+delta closest 50 will be the one whose exercise price ís closest
+to forward price of underlying contract. In stock options, the forward
+price is the current price of stock, plus carrying costs on the
+stock, less expected dividends. 
+
+Why míght a trader with a directional opinion prefer a vertical
+spread to an outright long or short posítíon in the underlying
+instrument? For one thing, a vertical spread is much less risky than
+an outright posítion. Atrader who wants to take a position which is
+500 deltas long can either buy fíve underlying contracts or buy 25
+vertical calI spreads with a delta of 20 each. The 25 vertical spreads
+may sound riskier than five underlying contracts, until we remember
+at a vertical spread has limited risk whíle the position in
+underlying has open-ended risk. Of course,greater risk also means
+greater reward. A trader with a long or short position in the
+underlyíng market can reap huge rewards if the market makes a large
+move in his favor. By contrast,the vertical spreader's profits are
+limited,but he will also be much less bloodied if the market makes an
+unexpected move in the wrong direction.
 
 * Option Arbitrage
 ** SYNTHETIC POSITIONS
++ synthetic long underlying = long call + short put
++ synthetic short underlying = short call + long put 
+where all options expire at the same time and have the same exercise
+price.
 
+Rearranging the components of a synthetic underling position, we can
+create four other synthetic relationships: 
++ synthetic long call = long an underlylng contract + long put 
++ synthetic short call = short an underlying contract + short put 
++ synthetic long put = short an underlying contract + long call 
++ synthetic short put = long an underlying contract + short call 
+
+The difference between the call and put price ís often referred to as
+the synthettc market. In the absence of any interest or dividend
+considerations, the value of the synthetic market can be expressed as: 
+
+call price -put price = underlying price - exercise price 
+
+If this equality holds, there ís no difference between taking a
+position in the underlying market, or taking an equivalent synthetic
+position in the option market.
+
+The three-sided relationship between a call, a put, and its underlying
+contract means that we can always express the value of any one of these
+contracts in terms of the other two: 
+
++ underlying price = call prîce - put prîce + exercíse price 
++ call prîce = underlying price + put príce - exercíse price 
++ put price = call prîce - underlying prîce + exercise price 
+
+This three-sided relationship is sometimes referred *put-call parity*. 
+** CONVERSIONS AND REVERSALS
+When a trader identifies two contracts which are essentially the same
+but which are trading at different prices, the natural course ís to
+execute an arbitrage by purchasing the cheaper contract and selling the
+more expensive. 
+
+No matter what happens in the underlying market, the underlying
+position will do exactly .25 better than the synthetìc position. The
+entire position wíll therefore show a profit of .25, regardless of
+movement in the underlying market. 
+
+The foregoing position, where the purchase of an underlying contract
+is offset by  the sale of a synthetic position, is known as a
+*conversion*. The opposíte position, where the sale of an underlying
+contract is offset by the purchase of a synthetic position, is known
+as a *reverse conversion* or, more commonly, a *reversal*. 
+
+Summarizing: 
+
+#+begin_quote
+conversion  =  long underlying + synthetlc short underlying 
+            =  long underlying + short call + long put 
+reversal    =  short underlying + synthetic long underlying 
+            =  short underlying + long call + short put 
+#+end_quote
+As before, we assume that the call and the put have the same exercise
+price and expiration date.
+
+Typically, an arbitrageur will attempt to simultaneously buy and sell
+the same items in different markets to take advantage of price
+discrepancies between the two markets.
+
+Synthetic positions are often used to  execute conversions and
+reversals, so traders sometimes refer to the synthetic market (the
+difference between the call price and put price) as the
+converston/reversal market. 
+
+All experienced traders are familiar with the price relationship
+between a synthetic position and its underlying contract, so that any
+imbalance in the conversion/reversal market is 1ikely to be
+short-lived. If the synthetic is overpriced, all traders will want to
+execute a conversion (buy the underlying, sell the call, buy the put).
+If the synthetic is underpriced, all traders will want to execute a
+reversal (sell the underlying, buy the call, sell the put). Such
+activity, where everyone is attempting to  do the same thing, will
+quickly force  the synthetic market back to  equilibrium. Indeed,
+imbalances in the conversion/reversal market are usually small and
+rarely last for  more than a few seconds.
+
+*** Futures Option Markets
+If the cash flow resulting from an option trade and a trade in the
+underlying instrument is identical, the synthetic relationship is
+simply:
+
+call price - put price = underlying price - exercise price 
+
+This will be true if  interest rates are zero, or in  futures  markets
+where both the underlying contract and options on that contract are
+subject to futures-type settlement.
+
+Assuming that all options are European (no early exercise permitted),
+we can now express the synthetic relationship in futures markets where
+the options are settle in cash as follows: 
+
+cal1 price - put price = futures price - exercise price - carrying costs 
+
+where the carrying costs are calculated on either the difference
+between the futures price and the exercise price, or the difference
+between the call price and put price, both of which will be
+approximately the same.
+
+*** Stock Option Markets
+Taking into consideration the interest rate component, we can express
+the synthetic relationship as: 
+
+call price - put price = stock price - exercise price + carrying costs
+
+where the carrying costs are calculated on the exercise price.
+
+call price -put price = stock price - exercise price + carrying
+costs - dividends 
+
+where the carrying costs are calculated on the exercise price and the
+dividends are those expected prior to expiration.
+
+** ARBITRAGE RISK
+*** Interest Rate Risk
+*** Execution Risk 
+Anytime a strategy is executed one leg at a time, there is always the
+risk of an adverse change in prices before the strategy can be
+completed.
+*** Pin Risk
+The practical solution is to avoid carrying conversions and reversals
+to expiration when there is a real possibility of expiration right at
+the exercise price.
+*** Settlement Risk in the Futures Market
+If al1 contracts are subject to futures-type settlement, any credit or
+debit resulting from changes in the price of the underlying futures
+contract wil1 be offset by an equal but opposite cash flow from
+changes in prices of the option contracts.
+
+*** Dividend Risk in the Stock Market
+** BOXES
+The risk arises because a synthetic position in options and an actual
+position in the underlying contract can have different characteristics，
+either in terms of settlement procedure, as in the futures option
+market, or in terms of the dividend payout, as in the stock option
+market. 
+
+How might we eliminate this risk?
+
+#+begin_quote
+short a call 
+long a put 
+long an underlying contract 
+#+end_quote
+
+replace the long underlyingpositlon with a deeply in-the-money call
+Now our position is: 
+#+begin_quote
+short a call 
+long a put 
+long a deeply in-the-money call 
+#+end_quote
+
+instead  of replacing the  underlying position with a deeply
+in-the-money call, we can sell a deeply in-the-money put: 
+#+begin_quote
+short a cal1 
+long a put 
+short a deeply in-the-money put 
+#+end_quote
+
+This type of position, where the underlying instrument in a conversion
+or reversal is replaced with a deeply in-the-money  option, is  known
+as a *three-way*.
+
+Suppose we also execute a reversal at 90: 
+#+begin_quote
+long a June 90 call 
+short a June 90 put 
+short an underlying contract 
+
+short a June 100 call 
+long a June 100 put 
+long an underlying contract 
+#+end_quote
+The long and short underlying contracts cancel out, leaving: 
+#+begin_quote
+long a June 90 call 
+short a June 90 put 
+
+short a June 100 call 
+long a June 100 put
+#+end_quote
+
+This position, known as a box, is similar to a conversion or reversal,
+except that any risk associated with holding a position in  the
+underlyíng contract has been eliminated because the underlying
+position has been replaced with a synthetic underlying position at a
+different exercise price.
+
+Since a box eliminates the risk associated with carrying a position in
+the underlying contract, boxes are even less risky than conversions
+and reversals, which are themselves low-risk strategies. 
+
+** JELLY ROLLS 
+Another method of eliminating a position in the underlying contract is
+to take a synthetic position in a different expiration month, rather
+than at a different exercise price as with a box. 
+
+For example, suppose we have executed the following reversal:
+#+begin_quote
+long a June 100 call 
+short a June 100 put 
+short an underlying contract 
+
+short a September 100 call 
+long a September 100 put 
+long an underlyíng contract
+#+end_quote
+
+If the underlyíng contract for bothJune and Septernber is identical,
+theywil1 cancel out, leaving us with: 
+#+begin_quote
+long a June 100 cal1 
+short a June 100 put 
+
+short a September 100 cal1 
+long a September 100 put
+#+end_quote
+These combined long and short synthetic positions taken at the same
+exercise prices but in different expiration months is known as a jelly
+roll or simplya roll.
+
+The value of the roll is the cost of holding the stock for the
+three-month period from June to September. 
+
+#+begin_quote
+jelly roll  = long-term synthetic - short-term synthetic 
+            = (long-term call-long-term put) - (short-term call-short-term put) 
+            = (long-term call-short-term call) - (long-term put - short-term put) 
+            = caηying costs - expected dividends 
+#+end_quote
+
+** USING SYNTHETICS IN VOLATILITY SPREADS
+the synthetic relationship: 
+
+synthetic short cal1 = short put + short underlying
+
+** TRADING WITHOUT THEORETICAL VALUES
+Regardless of the  exact theoretical value, there ought to  be a
+uniform progression of both individual option prices and spread prices
+in the marketplace. If this uniform progression is violated, a
+trader can take advantage of the situation by purchasing the option or
+spread which is relatively cheap and selling the option or spread
+which is relatively expensive. 
+
+The trader can start with conversions and reversals, then look at
+vertical spreads and butterflies, and finally consider straddles and
+time spreads.
+
+* Early Exercise of American Options
+1. Given the opportunìty, under what cìrcumstances might a trader
+   consìder exercising an American option prior to expiration? 
+
+2. How much more should a trader be wi1ling to pay for an American
+   option over an equivalent European option?
+
+** FUTURES OPTIONS
+option value = ìntrinsic value + volati1ìty value -interest rate
+value
+
+A trader who exercises a futures option early does so to capture the
+interest on the option's intrinsic value. This intrinsic value will be
+credited to his account only if the option is subject to stock-type
+settlement.  
+
+** STOCK OPTIONS
+*** Early Exercise of Calls for the Dividends
+call value = intrînsic value + interest rate value + volatility
+value - dividend value
+
+Since the only reason a trader would ever consider exercising a stock
+option call early is to receive the dividend, if a stock pays no
+dividend there is no reason to exercise a call early. If the stock
+does paya dividend, the only time a trader ought to consider early
+exercise is the day before the stock goes ex-dividend. At no other
+time in its life is a stock option call an early exercise candidate. 
+
+*** Early Exercise of Puts for Interest
+put value = intrinsic value - interest rate value + volatility value +
+dividend value
+
+Whereas a stock option call can only be an early exercise candidate on
+the day prior to the stock's ex-dividend date, a stock option put can
+become an early exercise candidate anytime the interest which can
+be earned through the sale of the stock at the exercise price is
+sufficiently large.
+
+*** Conditions for Early Exercise
+infer two conditions which are necessary before a trader considers
+exercising option early to capture is additional profit:
+
+1. The option must be trading at parity.
+2. The option must have a delta close to 100.
+
+The importance of early exercise is greatest when the underlying
+contract is a stock or physical commodity. In such a case there is a
+significant difference between the carrying cost on an option and the
+caπyi cost on underlying position. This difference will especially
+affect the difference between European and Am erican put values, since
+early exercise wil1 allow the trader to earn interest on the proceeds
+from the sale at the exercise price. An option trader in either the
+stock or physical commodity market will find that the additional
+accuracy offered by an American model, such as the Cox-Ross-Rubenstein
+or Whaley models,will indeed be worthwhile. 
+
+** THE EFFECT OF EARLY EXERCISE ON TRADING STRATEGIES 
+* Hedging with Options
+** PROTECTIVE CALLS AND PUTS
+The simplest wayωhedge an underlying position using optìons is to
+purchase either a call to protect a short position, or a put to
+protect a long position.
+
+Since each strategy combines an underlying position with an option
+position, it follows from Chapter 11 that the resulting protected
+position is a synthetic option:
+
+#+begin_quote
+short underlying + long call = long put
+long underlying + long put =  long call
+#+end_quote
+
+[[./files/protective-call.jpg]]
+
+[[./files/protective-put.jpg]]
+
+** COVERED WRITES
+The value of typical covered writes,also known as overwrites, are
+covered call and covered put. 
+
+As with the purchase of a protective optlon, a covered write consists
+of a position in the under ng and an option. It can therefore be
+expressed as a synthetic position:
+
+#+begin_quote
+long underlying + short call = short put
+short underlying + short put =short call
+#+end_quote
+
+[[./files/covered-call.jpg]]
+
+[[./files/covered-put.jpg]]
+
+** FENCES
+A popular strategy, known as a fence, is to simultaneously combine the
+purchase of a protective option with the sale ofa covered option. For
+example, with an underlying contract at 50, a hedger with a long
+position might choose to simultaneously sell a 55 call and purchase a
+45 put. 
+
+Fences are popular hedging tools because they offer known protection
+at alow cost, or even a credit. At the same time ，they still allow a
+hedger to participate, at least partially, in favorable market
+movement. Fences go by a variety of names: range forwards, tunnels,
+cylinders; among floor traders they are sometimes known as split
+price conversions and reversals.
+
+[[./files/long-fence.jpg]]
+
+[[./files/short-fence.jpg]]
+
+** COMPLEX HEDGING STRATEGIES
+As a first step in choosing a strategy, a hedger might consider the
+following:
+
+1. Does the hedge need to offer protection against a I'worst case"
+   scenario?
+2. How much of the current directional risk should the hedge
+   eliminate?
+3. What additional risks is the hedger willing to accept?
+
+ll otnel ctors being equal, in a high implied volatility market a hedger
+should buy as few options as possible and sell as many options as
+possible. Conversely, in a low implied volatility market a hedger
+should buy as many options as possible and sell as few options as
+possible.
+
+A hedger who constructs a position with unlimited risk in either
+direction is presumably taking a volatility position. There is nothing
+wrong with this, since volatility trading can be highly profitable.
+But a true hedger ought not lose sight of what his ultimate goal is:
+to protect an existing position, and to keep the cost of this
+protection as low as possible.
+
+[[./files/summary-of-hedging-strategies.jpg]]
+
+** PORTFOLIO INSURANCE
+if he wants to replicate the combination of the underlying asset and
+the 100 put, he must sell off 43% of his holdings in the asset. When
+he does that, he will have a position theoretically equivalent to
+owning a 100 call.
+
+This process ofcontinuously rehedging an underlying position to
+replicate an option position is often referred to as portfolio
+insurance. 
+
+If the mix of securities in a portfolio approximates an index, and
+futures contracts are available on that index, the manager can
+approximate the results of portfolio insurance by purchaslng or
+selling futures contracts to increase or decrease the holdings in his
+portfolio. 
+
+Even if options are available on an underlying asset, a hedger may
+still choose to effect a portfolio insurance strategy himself rather
+then purchasing the option in the marketplace. For one thing, he may
+consider the option too expensive. If he believes the option is
+theoretically overpriced, in the long run it will be cheaper to
+continuously rehedge the portfo1io. Or he may find insufficient
+liquidity in the option market to absorb the number of option contracts
+he needs to hedge his position. Finally, the expiration of options
+which are available may not exactly correspond to the period over
+which he wants to protect his position. If an option is available, but
+expires earlier than desired, the hedger might still choose to
+purchase options in marketplace, and then pursue a portfolio insurance
+strategy over the period following the option's expiration. 
+
+* Volatility Revisited
+** SOME VOLATILITY CHARACTERISTICS
+we might surmise at an underlying contract is likely to have a
+typicallong-term average,or mean volatility. Moreover,the volatility
+of the underlying contract appears to be mean reverting. When
+volatility rises above the mean, one can be fairly certain that it
+will eventually fall back to its mean; when volatility fal1 s below
+the mean, one can be fairly certain that it will eventual1y rise to
+its mean. 
+
+** VOLATILITY FORECASTING
+In addition ωthe mean reverting characteristic, volatility also tends
+to exhibit sen.al correlatton. The volatility over any given period is
+likely ωdepend on, or correlate with, the volatility over the
+previous period, assuming that both periods cover the same amount
+of time. If the volatilityofa contract over the last fourweeks was 15%
+, the volatility over the next four weeks is more likely to be close
+to 15% an far away from 15%. 
+
+** A PRACTICAL APPROACH
+Rather than asking what the correct volati1ity is, a trader might
+instead aSk, given the current volatiUty climate, what' right
+strategy? Rather than trying to forecast an exact volatility,a trader
+will try to pick a strategy that best fits the volatility conditions
+in the marketplace. To do this, a trader will want to consider several
+factors:
+
+1. What is long.term mean volatility of underlying contract?
+2. What has been the recent historical volatility in relation to em
+   volatility?
+3. What is trend in recent historical volatility?
+4. Where îs imp1ied volatility and what is its trend?
+5. Are we dealing wi options of shorter or longer duration?
+6. How stable does the volati1ity tend to be?
+
+** SOME THOUGHTS ON IMPLIED VOLATILITY
+*** Implied versus Historical Volatility
+
+Market participants are making the logical assumption that what has
+happened in the past is a good indicator of what will happen in the
+future. 
+
+the fluctuations in implied volatility were usually less than the
+fluctuations  in  historical volatility. When the historical
+volatility declined, the implied volatility rarely dec1ined by an
+equal amount. And when historical volatility increased, the implied
+volatility rarely increased byan equal amount. Because volatility
+tends to be mean reverting, when historical volati1ity is above its
+mean there is a greater likelihood that it will dec1ine, and when
+historical volatility is below its mean there is a greater likelihood
+that it will increase. 
+
+*** Implied versus Future Volatility
+* Stock Index Futures and Options
+professional arbitrageurs find at in spite of the highly liquid and
+usually efficient index markets, pricing disparities occur often
+enough to warrant close monitoring of these markets. When a disparity
+does exist,a trader can execute an arbitrage by hedging the mispriced
+index against either other stock indices or against a basket of
+stocks. Such arbitrage strategies are commonly refeηed to as *index
+arbitrage*.
+** CALCULATING AN INDEX
+There are several different methods of calculating stock index values,
+but the most common methods entail weighting the stocks either by
+price or by capitalization. 
+
+** REPLICATING AN INDEX
+the number of shares of each stock required to replicate an index
+
+for a price weighted index: point value / index divisor
+
+for a capitalization weighted index: outstanding shares x point value
+/ index divisor
+
+** STOCK INDEX FUTURES
+
+
+** INDEX ARBITRAGE
+
+** INDEX OPTIONS
+
+*** Options on Stock Index Futures
+
+*** Options on a Cash Index
+
+*** Evaluating a Cash Index Option
+
+*** A Phantom  Variable
+
+*** Synthetic Relationships
+
+*** Finding a Substitute for the Index
+
+** BIASES IN THE INDEX MARKET
+* Intermarket Spreading
+** AN INTERMARKET HEDGE
+** VOLATILITY RELATIONSHIPS
+** INTERMARKET VOLATILITY SPREADS
+** OPTIONS ON SPREADS
+* Position Analysis
+** SOME SIMPLE EXAMPLES
+** GRAPHING A POSITION
+** A COMPLEX POSITION
+** FUTURES OPTION POSITIONS
+* Models and the Real World
+
+
+* 1
+#+begin_quote
+
+#+end_quote
