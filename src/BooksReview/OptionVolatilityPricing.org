@@ -1449,37 +1449,91 @@ for a capitalization weighted index: outstanding shares x point value
 / index divisor
 
 ** STOCK INDEX FUTURES
-
+The purchase of a futures contract offers one important advantage over
+the purchase of the component stocks: no cash outlay ís required to
+purchase a futures contract. Consequently, there is an interest rate
+savings equal to the cost of borrowing sufficient cash to purchase all
+the stocks in the index.
 
 ** INDEX ARBITRAGE
+If the futures príce doesn't reflect the fair value, a trader can
+execute a profitable arbitrage by purchasing the undervalued asset,
+either the basket of stocks or the futures contract, and selling
+overvalued asset.
+
+This type of trading strategy, where one buys or sells a mispriced stock
+index futures contract and takes an opposing position in the
+underlying stocks, is one type of index arbitrage. Since computers can
+often be programmed to calculate the fair value of a futures contract,
+and to execute the arbitrage when the futures contract is mispriced,
+such astrategy is also commonly referred to as program trading. A buy
+prograrn consists of buying the stocks and selling the futures
+contract,and a sell program consists of selling the stocks and buying
+the futures contract.
 
 ** INDEX OPTIONS
+There are real1y two types of stock index options, those where the
+underlying is a stock index futures contract,and those where the
+underlying is the index itself
 
 *** Options on Stock Index Futures
+Although the ultirnate decision about the underlying price is
+trader's, in a stock index futures option rnarket a trader should be
+very careful about using an underlying futures price different from
+the quoted price. As we have already seen ，出 theoretical value of
+astock index futures contract depends information which rnay ot be
+readily available to the trader. If he 1s wrong about the price at
+which the index is actually trading because the individual stock
+prices do not reflect the true rnarket,his theoretical evaluation of
+the futures contract wil1 be incorrect.
 
 *** Options on a Cash Index
-
 *** Evaluating a Cash Index Option
-
 *** A Phantom  Variable
+It may seem odd, but in fact it doesn't matter whether the index
+opens the next morning at a higher price, lower price, or unchanged.
+What matters is that the marketplace believes that the market will
+change, and that all contracts are priced accordingly. In such a
+case, the trader rnust exercise those options which, given the
+perceived change in the underlying price,now have a value less than
+parity,and replace them with other contracts which are not limited by
+parity constraints.
 
 *** Synthetic Relationships
+Because it can be difficult to trade a complete and correctly
+proportioned basket of stocks, and because there is the additional
+risk of early exercise after an index arbitrage has been
+executed, mispriced synthetic relationships are not as easy to exploit
+ín index option markets as in other option markets.
 
 *** Finding a Substitute for the Index
 
 ** BIASES IN THE INDEX MARKET
 * Intermarket Spreading
 ** AN INTERMARKET HEDGE
+Refiners who purchase crude oil and refine it into gasoline and
+heating oil are often sensitive to the value of *crack spreads*,the
+spread between the price of crude oil and its derivative products. 
+
 ** VOLATILITY RELATIONSHIPS
 ** INTERMARKET VOLATILITY SPREADS
 ** OPTIONS ON SPREADS
+359
+
 * Position Analysis
 ** SOME SIMPLE EXAMPLES
 ** GRAPHING A POSITION
 ** A COMPLEX POSITION
 ** FUTURES OPTION POSITIONS
 * Models and the Real World
-
+** MARKETS ARE FRICTIONLESS
+** INTEREST RATES ARE CONSTANT OVER THE LIFE OF AN OPTION
+** VOLATILITY IS CONSTANT OVER THE LIFE OF THE OPTION
+** TRADING IS CONTINUOUS
+** VOLATIUTY IS INDEPENDENT OF THE PRICE OF THE UNDERLYING CONTRACT
+** SKEWNESS AND KURTOSIS
+** VOLATILITY SKEWS
+** A FINAL THOUGHT
 
 * 1
 #+begin_quote
