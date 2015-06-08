@@ -7,6 +7,7 @@
      + [[file:BooksReview/merck-manual.org][]]
      + [[file:BooksReview/how-to-make-money-in-stocks.org][How to Make Money in Stocks]]
      + [[file:BooksReview/OptionVolatilityPricing.org][Option Volatility & Pricing, Advanced Trading Strategies and Techniques]]
+     + [[file:BooksReview/Fisher-Investments-On-Series.org][the Fisher Investments On Series]]
    + Brokerages
      + InteractiveBrokers
        + [[file:Brokerages/InteractiveBrokers/forex.org][Forex of IB]]

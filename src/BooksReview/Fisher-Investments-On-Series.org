@@ -1,0 +1,19 @@
+#+OPTIONS: num:nil H:2 toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t TeX:t LaTeX:nil skip:nil d:t tags:not-in-toc
+#+TITLE: the Fisher Investments On Series
+
+
+
+
++ [[http://fisher-investments-press.wiley.com/books/fisher-investments-on-materials.html][Fisher Investments on Materials]]
++ [[http://fisher-investments-press.wiley.com/books/fisher-investments-on-energy.html][Fisher Investments on Energy]]
++ [[http://fisher-investments-press.wiley.com/books/fisher-investments-on-technology.html][Fisher Investments on Technology]]
++ [[http://fisher-investments-press.wiley.com/books/fisher-investments-on-consumer-staples.html][Fisher Investments on Consumer Staples]]
++ [[http://fisher-investments-press.wiley.com/books/fisher-investments-on-emerging-markets.html][Fisher Investments on Emerging Markets]]
++ [[http://fisher-investments-press.wiley.com/books/fisher-investments-on-industrials.html][Fisher Investments on Industrials]]
++ [[http://fisher-investments-press.wiley.com/books/fisher-investments-on-consumer-discretionary.html][Fisher Investments on Consumer Discretionary]]
++ [[http://fisher-investments-press.wiley.com/books/fisher-investments-on-telecom.html][Fisher Investments on Telecom]]
++ [[http://fisher-investments-press.wiley.com/books/fisher-investments-on-utilities.html][Fisher Investments on Utilities]]
++ [[http://fisher-investments-press.wiley.com/books/fisher-investments-on-financials.html][Fisher Investments on Financials]]
++ [[http://fisher-investments-press.wiley.com/books/fisher-investments-on-healthcare.html][Fisher Investments on Health Care]]
+
+
