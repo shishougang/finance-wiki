@@ -1607,17 +1607,104 @@ model:
    distribution of underlying prices at expiration
 
 ** MARKETS ARE FRICTIONLESS
+The underlying contract cannot a1ways be freely bought or sold; there
+are sometimes tax consequences; a trader cannot always borrow and lend
+money freely, nor at the same rate; there are always transaction
+costs.
+
+The most serious flaw in the frictionless markets hypothesis is the
+assumption at there are no transaction costs. While a strategy might
+or might not be affected by tax or interest rate considerations, there
+are always transaction costs.
 
 ** INTEREST RATES ARE CONSTANT OVER THE LIFE OF AN OPTION
+While a changing interest rate will cause the value of a trader's
+option position to change, interest rates usually do not change in a
+way which will have a significant impact on an option's value,at least
+in the short run. Since the effect of changing interest rates is a
+function of time to expiration,and si ce most listed options have
+terms of less than ni months, interest rates would have to change
+violently to have an impact on any but the most deeply in-the-money
+options.
+
+With the introduction of long-term equity options, known as LEAPs, the
+consequences of changing interest rates may well become more of a
+concern.
+
 ** VOLATILITY IS CONSTANT OVER THE LIFE OF THE OPTION
+even if one knows actual volatility over the life of an option,a model
+will tend to undervalue at-the-money options in a rtsing volatility
+market,and overvalue at-the-money options in a falling volatility
+market.
+
+We have only considered one alternative volatility scenario, where
+volatility is either increasing or decreasing. But there are an
+infinite number ofpaths which volatility might follow over life of an
+option. Atrader might even assume that volatility is itself random,
+and at predicting volatility with any degree of accuracy is not
+possible. Models which assume *stochastic volatility* do exist and
+might, under some conditions, be more suitable than a traditional
+pricing model. At the same time, such models add another dimension of
+complexity to a trader's life, and for this reason are not widely
+used.
+
 ** TRADING IS CONTINUOUS
+A diffusion process is a convenient, but clearly inexact,
+approximation of how prices change in the real world. Exchange-traded
+contracts cannot follow a pure diffusion process because exchanges are
+not open 24 hours per day. 
+
+A trader who is short straddles does not want to see a gap in the
+market. 
+
+Theoreticians tend to agree that underlying contracts in most markets
+follow a combination ofboth a diffusion process and a jump process.
+
+Avariation of the Black-Scholes model which assumes that the
+underlying contract follows a jump-diffusion process has in fact been
+developed. Unfortunately, the model is considerably more complex
+mathematically than the traditional Black-Scholes model. Moreover, in
+addition to the five customary inputs, the model also requires two new
+inputs: the average size of a jump in the underlying market, and the
+frequency with which such jumps are likely to occur.
+
 ** VOLATIUTY IS INDEPENDENT OF THE PRICE OF THE UNDERLYING CONTRACT
+In other words, the volatility ofa market is not independent of the
+price of the underlying contract. On the contrary, the volatility over
+time seems to be dependent on the direction of movement in the
+underlying contract. In some cases a trader expects the market to
+become more volatile if the movement is downward and less volatile if
+the movement is upward; in other cases a trader expects the market to
+become more volatile if the movement is upward and less volatile if
+the movement is downward.
+
+Because volatility in some markets does seem to be dependent on the
+price of the underlying contract, a further variation of the
+Black-Scholes model has been proposed. The constant-elastictty
+ofvariance,or CEV, mode1 8 is based on an assumed relationship between
+volatility and the price level of the underlying contract. This
+relationship determines the probability of price moves of various
+magnitudes at each moment in time. Price changes are stil1 random
+under a CEV assumption,but the randomness varies with the price of the
+underlying contract.
+
 ** SKEWNESS AND KURTOSIS
+A perfectly normal distribution can be fully described by its mean and
+standard deviation. But two other numbers, the skewness and kurtosis,
+are often used to describe the extent of the difference between an
+actual frequency distributlon and a true normal distribution.
+
+If a distribution is positively skewed, the right-hand tail is longer an
+the left-hand tail. If the distribution is negatively skewed,the
+left-hand tail is longer than the right-hand tail. A true normal
+distribution has askewness of zero. 
+
+Adistribution with a positive kurtosis has a tal1, pointed peak
+(leptokurtic), while a distribution with a negative kurtosis has a
+low, flat peak (platykurtlc). Aperfectly normal distribution has a
+kurtosis of zero (mesokurtlc).
+
 ** VOLATILITY SKEWS
 ** A FINAL THOUGHT
 
-* 1
-#+begin_quote
-
-#+end_quote
 

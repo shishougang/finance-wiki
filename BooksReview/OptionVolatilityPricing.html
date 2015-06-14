@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>Option Volatility &amp; Pricing, Advanced Trading Strategies and Techniques</title>
-<!-- 2015-06-10 Wed 23:50 -->
+<!-- 2015-06-14 Sun 13:05 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="Shi Shougang" />
@@ -241,7 +241,6 @@ for the JavaScript code in this tag.
 <li><a href="#sec-18-8">A FINAL THOUGHT</a></li>
 </ul>
 </li>
-<li><a href="#sec-19">1</a></li>
 </ul>
 </div>
 </div>
@@ -3088,39 +3087,161 @@ distribution of underlying prices at expiration
 
 <div id="outline-container-sec-18-1" class="outline-3">
 <h3 id="sec-18-1">MARKETS ARE FRICTIONLESS</h3>
+<div class="outline-text-3" id="text-18-1">
+<p>
+The underlying contract cannot a1ways be freely bought or sold; there
+are sometimes tax consequences; a trader cannot always borrow and lend
+money freely, nor at the same rate; there are always transaction
+costs.
+</p>
+
+<p>
+The most serious flaw in the frictionless markets hypothesis is the
+assumption at there are no transaction costs. While a strategy might
+or might not be affected by tax or interest rate considerations, there
+are always transaction costs.
+</p>
+</div>
 </div>
 
 <div id="outline-container-sec-18-2" class="outline-3">
 <h3 id="sec-18-2">INTEREST RATES ARE CONSTANT OVER THE LIFE OF AN OPTION</h3>
+<div class="outline-text-3" id="text-18-2">
+<p>
+While a changing interest rate will cause the value of a trader's
+option position to change, interest rates usually do not change in a
+way which will have a significant impact on an option's value,at least
+in the short run. Since the effect of changing interest rates is a
+function of time to expiration,and si ce most listed options have
+terms of less than ni months, interest rates would have to change
+violently to have an impact on any but the most deeply in-the-money
+options.
+</p>
+
+<p>
+With the introduction of long-term equity options, known as LEAPs, the
+consequences of changing interest rates may well become more of a
+concern.
+</p>
 </div>
+</div>
+
 <div id="outline-container-sec-18-3" class="outline-3">
 <h3 id="sec-18-3">VOLATILITY IS CONSTANT OVER THE LIFE OF THE OPTION</h3>
+<div class="outline-text-3" id="text-18-3">
+<p>
+even if one knows actual volatility over the life of an option,a model
+will tend to undervalue at-the-money options in a rtsing volatility
+market,and overvalue at-the-money options in a falling volatility
+market.
+</p>
+
+<p>
+We have only considered one alternative volatility scenario, where
+volatility is either increasing or decreasing. But there are an
+infinite number ofpaths which volatility might follow over life of an
+option. Atrader might even assume that volatility is itself random,
+and at predicting volatility with any degree of accuracy is not
+possible. Models which assume <b>stochastic volatility</b> do exist and
+might, under some conditions, be more suitable than a traditional
+pricing model. At the same time, such models add another dimension of
+complexity to a trader's life, and for this reason are not widely
+used.
+</p>
 </div>
+</div>
+
 <div id="outline-container-sec-18-4" class="outline-3">
 <h3 id="sec-18-4">TRADING IS CONTINUOUS</h3>
+<div class="outline-text-3" id="text-18-4">
+<p>
+A diffusion process is a convenient, but clearly inexact,
+approximation of how prices change in the real world. Exchange-traded
+contracts cannot follow a pure diffusion process because exchanges are
+not open 24 hours per day. 
+</p>
+
+<p>
+A trader who is short straddles does not want to see a gap in the
+market. 
+</p>
+
+<p>
+Theoreticians tend to agree that underlying contracts in most markets
+follow a combination ofboth a diffusion process and a jump process.
+</p>
+
+<p>
+Avariation of the Black-Scholes model which assumes that the
+underlying contract follows a jump-diffusion process has in fact been
+developed. Unfortunately, the model is considerably more complex
+mathematically than the traditional Black-Scholes model. Moreover, in
+addition to the five customary inputs, the model also requires two new
+inputs: the average size of a jump in the underlying market, and the
+frequency with which such jumps are likely to occur.
+</p>
 </div>
+</div>
+
 <div id="outline-container-sec-18-5" class="outline-3">
 <h3 id="sec-18-5">VOLATIUTY IS INDEPENDENT OF THE PRICE OF THE UNDERLYING CONTRACT</h3>
+<div class="outline-text-3" id="text-18-5">
+<p>
+In other words, the volatility ofa market is not independent of the
+price of the underlying contract. On the contrary, the volatility over
+time seems to be dependent on the direction of movement in the
+underlying contract. In some cases a trader expects the market to
+become more volatile if the movement is downward and less volatile if
+the movement is upward; in other cases a trader expects the market to
+become more volatile if the movement is upward and less volatile if
+the movement is downward.
+</p>
+
+<p>
+Because volatility in some markets does seem to be dependent on the
+price of the underlying contract, a further variation of the
+Black-Scholes model has been proposed. The constant-elastictty
+ofvariance,or CEV, mode1 8 is based on an assumed relationship between
+volatility and the price level of the underlying contract. This
+relationship determines the probability of price moves of various
+magnitudes at each moment in time. Price changes are stil1 random
+under a CEV assumption,but the randomness varies with the price of the
+underlying contract.
+</p>
 </div>
+</div>
+
 <div id="outline-container-sec-18-6" class="outline-3">
 <h3 id="sec-18-6">SKEWNESS AND KURTOSIS</h3>
+<div class="outline-text-3" id="text-18-6">
+<p>
+A perfectly normal distribution can be fully described by its mean and
+standard deviation. But two other numbers, the skewness and kurtosis,
+are often used to describe the extent of the difference between an
+actual frequency distributlon and a true normal distribution.
+</p>
+
+<p>
+If a distribution is positively skewed, the right-hand tail is longer an
+the left-hand tail. If the distribution is negatively skewed,the
+left-hand tail is longer than the right-hand tail. A true normal
+distribution has askewness of zero. 
+</p>
+
+<p>
+Adistribution with a positive kurtosis has a tal1, pointed peak
+(leptokurtic), while a distribution with a negative kurtosis has a
+low, flat peak (platykurtlc). Aperfectly normal distribution has a
+kurtosis of zero (mesokurtlc).
+</p>
 </div>
+</div>
+
 <div id="outline-container-sec-18-7" class="outline-3">
 <h3 id="sec-18-7">VOLATILITY SKEWS</h3>
 </div>
 <div id="outline-container-sec-18-8" class="outline-3">
 <h3 id="sec-18-8">A FINAL THOUGHT</h3>
-</div>
-</div>
-
-<div id="outline-container-sec-19" class="outline-2">
-<h2 id="sec-19">1</h2>
-<div class="outline-text-2" id="text-19">
-<blockquote>
-<p>
-
-</p>
-</blockquote>
 </div>
 </div>
 </div>
