@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<title>index</title>
+<title>Operation of IB</title>
 <!-- 2015-10-14 Wed 21:15 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
@@ -101,78 +101,63 @@ for the JavaScript code in this tag.
 </script>
 </div>
 <div id="content">
-<h1 class="title">index</h1>
-<ul class="org-ul">
-<li>Analysis
-<ul class="org-ul">
-<li><a href="Analysis/Materials-sector.html">Materials Sector</a>
-</li>
-<li><a href="Analysis/websites.html">websites</a>
-</li>
-<li><a href="Analysis/医药行业.html">医药行业</a>
-</li>
+<h1 class="title">Operation of IB</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">Orders</a>
+<ul>
+<li><a href="#sec-1-1">stop and limit order</a></li>
 </ul>
-</li>
-<li>BooksReview
-<ul class="org-ul">
-<li><a href="BooksReview/how-to-make-money-in-stocks.html">How to Make Money in Stocks</a>
-</li>
-<li><a href="BooksReview/OptionVolatilityPricing.html">Option Volatility &amp; Pricing, Advanced Trading Strategies and Techniques</a>
-</li>
-<li><a href="BooksReview/Fisher-Investments-On-Series.html">the Fisher Investments On Series</a>
-</li>
-<li><a href="BooksReview/merck-manual.html">默克家庭诊疗手册</a>
-</li>
-</ul>
-</li>
-<li>Brokerages
-<ul class="org-ul">
-<li>InteractiveBrokers
-<ul class="org-ul">
-<li><a href="Brokerages/InteractiveBrokers/forex.html">Forex of IB</a>
-</li>
-<li><a href="Brokerages/InteractiveBrokers/interative-brokers-overview.html">Interactive Brokers Overview</a>
-</li>
-<li><a href="Brokerages/InteractiveBrokers/operation.html">Operation of IB</a>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Equity
-<ul class="org-ul">
-<li><a href="Equity/american-bond.html">American Bond</a>
-</li>
-<li><a href="Equity/etf-overview.html">ETF Overview</a>
-</li>
-<li><a href="Equity/us-stock-overview.html">US Stock Overview</a>
-</li>
-</ul>
-</li>
-<li>Futures
-<ul class="org-ul">
-<li><a href="Futures/futures-overview.html">Futures Overview</a>
-</li>
-</ul>
-</li>
-<li>Misc
-<ul class="org-ul">
-<li><a href="Misc/investing.html">Investing Overview</a>
-</li>
-</ul>
-</li>
-<li>Options
-<ul class="org-ul">
-<li><a href="Options/options-overview.html">Options Overview</a>
-</li>
-<li><a href="Options/options-strategies.html">Options Strategies</a>
-</li>
-</ul>
-</li>
-<li>[[<a href="template.html">template.html</a>][]]
 </li>
 </ul>
 </div>
+</div>
+
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1">Orders</h2>
+<div class="outline-text-2" id="text-1">
+</div><div id="outline-container-sec-1-1" class="outline-3">
+<h3 id="sec-1-1">stop and limit order</h3>
+<div class="outline-text-3" id="text-1-1">
+<ul class="org-ul">
+<li>Stop orders are triggered when the market trades at or through the
+stop price (depending upon trigger method, the default for
+non-NASDAQ listed stock is last price), and then a market order is
+transmitted to the exchange.<sup><a id="fnr.1" name="fnr.1" class="footref" href="#fn.1">1</a></sup>
+</li>
+<li>When the stop price is triggered, the limit order is sent to the
+exchange.  A limit order will then be working, at or better than
+the limit price you entered.<sup><a id="fnr.2" name="fnr.2" class="footref" href="#fn.2">2</a></sup>
+</li>
+<li>Trailing Stop Limit Orders(追踪止损限价定单)
+追踪止损限价卖出定单与市场价格一起移动，并根据用户定义的“追踪”金额，连续地以低于市价的固定金额重新计算止损触发价格。限价定单价格同样根据限价抵消被连续地计算。随着市场价格上涨，止损价格和限价的上涨幅度分别为追踪金额和限价抵消，但如果股票价格下跌，止损价格保持不变，当止损价格被触及时，一份限价定单将以最后计算的限价被提交。<sup><a id="fnr.3" name="fnr.3" class="footref" href="#fn.3">3</a></sup>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
+
+<div class="footdef"><sup><a id="fn.1" name="fn.1" class="footnum" href="#fnr.1">1</a></sup> <p class="footpara">
+<a href="https://www.interactivebrokers.com/cn/?b=cn&f=/cn/trading/orders/stop.php">止损定单</a>
+</p></div>
+
+<div class="footdef"><sup><a id="fn.2" name="fn.2" class="footnum" href="#fnr.2">2</a></sup> <p class="footpara">
+<a href="https://www.interactivebrokers.com/cn/?b=cn&f=/cn/trading/orders/stopLimit.php">止损限价单</a>
+</p></div>
+
+<div class="footdef"><sup><a id="fn.3" name="fn.3" class="footnum" href="#fnr.3">3</a></sup> <p class="footpara">
+<a href="https://www.interactivebrokers.com/cn/?b=cn&f=/cn/trading/orders/trailingStopLimit.php?ib_entity=llc">追踪止损限价定单</a>
+</p></div>
+
+
+</div>
+</div></div>
 <div id="postamble" class="status">
 <div id="disqus_thread"></div>
 <script type="text/javascript">

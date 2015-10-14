@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>默克家庭诊疗手册</title>
-<!-- 2015-06-14 Sun 13:05 -->
+<!-- 2015-10-14 Wed 21:15 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="Shi Shougang" />
@@ -60,6 +60,23 @@ for the JavaScript code in this tag.
  }
 /*]]>*///-->
 </script>
+<script type="text/javascript">
+    function rpl(expr,a,b) {
+      var i=0
+      while (i!=-1) {
+         i=expr.indexOf(a,i);
+         if (i>=0) {
+            expr=expr.substring(0,i)+b+expr.substring(i+a.length);
+            i+=b.length;
+         }
+      }
+      return expr
+    }
+
+    function show_org_source(){
+       document.location.href = rpl(document.location.href,"html","org.html");
+    }
+</script>
 </head>
 <body>
 <div id="preamble" class="status">
@@ -107,6 +124,7 @@ for the JavaScript code in this tag.
 <li><a href="#sec-3-1">骨骼、关节和肌肉</a></li>
 <li><a href="#sec-3-2">骨质疏松症</a></li>
 <li><a href="#sec-3-3">关节和结缔组织疾病</a></li>
+<li><a href="#sec-3-4">痛风和假性痛风</a></li>
 </ul>
 </li>
 </ul>
@@ -247,6 +265,19 @@ Diabinese(氯磺丙脲的商品名)用于治疗糖尿病，而Flexeril(三碘季
 <div class="outline-text-3" id="text-3-3">
 <p>
 累及关节、肌肉、骨、软骨和肌腱的疾病被称为结缔组织疾病，因为上述结构包含了大 量的结缔组织。然而，许多结缔组织疾病实际上又是一类自身免疫性疾病，因为这类疾病涉 及免疫反应，即结缔组织激发了免疫系统来对抗自身组织并产生异常抗体附着在这些组织上 （自身性抗体）
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-3-4" class="outline-3">
+<h3 id="sec-3-4">痛风和假性痛风</h3>
+<div class="outline-text-3" id="text-3-4">
+<p>
+痛风是一种突然发作且极易复发并伴有剧烈疼痛的关节炎性疾病，因血中尿酸含量过高（高尿酸血症）而导致单钠尿酸盐结晶沉积在关节内。
+</p>
+
+<p>
+　　关节炎症常可转为慢性，且在本病反复发作后出现关节畸形。约20％的痛风患者有肾结石。在正常情况下，尿酸是细胞新陈代射的副产品，食物中因含有尿酸的前体物质，所以尿酸会出现在正常人的血中。当肾脏发生病变或某些药物妨碍了肾脏清除尿酸的能力，以及因酶异常的遗传性疾病或血癌等疾病使细胞复制和破坏速度加快，造成血中尿酸水平异常增高，从而导致痛风。
 </p>
 </div>
 </div>

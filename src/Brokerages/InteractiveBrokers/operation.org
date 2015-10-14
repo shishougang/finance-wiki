@@ -1,0 +1,36 @@
+#+OPTIONS: num:nil H:2 toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t TeX:t LaTeX:nil skip:nil d:t tags:not-in-toc
+#+TITLE: Operation of IB
+
+
+* Orders
+** stop and limit order
++ Stop orders are triggered when the market trades at or through the
+  stop price (depending upon trigger method, the default for
+  non-NASDAQ listed stock is last price), and then a market order is
+  transmitted to the exchange.[fn:1]
++ When the stop price is triggered, the limit order is sent to the
+  exchange.  A limit order will then be working, at or better than
+  the limit price you entered.[fn:2]
++ Trailing Stop Limit Orders(追踪止损限价定单)
+  追踪止损限价卖出定单与市场价格一起移动，并根据用户定义的“追踪”金额，
+  连续地以低于市价的固定金额重新计算止损触发价格。限价定单价格同样根据
+  限价抵消被连续地计算。随着市场价格上涨，止损价格和限价的上涨幅度分别
+  为追踪金额和限价抵消，但如果股票价格下跌，止损价格保持不变，当止损价
+  格被触及时，一份限价定单将以最后计算的限价被提交。[fn:3]
+
+* Footnotes
+
+[fn:1] [[https://www.interactivebrokers.com/cn/?b=cn&f=/cn/trading/orders/stop.php][止损定单]]
+
+[fn:2] [[https://www.interactivebrokers.com/cn/?b=cn&f=/cn/trading/orders/stopLimit.php][止损限价单]]
+
+[fn:3] [[https://www.interactivebrokers.com/cn/?b=cn&f=/cn/trading/orders/trailingStopLimit.php?ib_entity=llc][追踪止损限价定单]]
+
+
+
+
+ 
+
+
+
+
