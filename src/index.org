@@ -2,6 +2,8 @@
 
    + Analysis
      + [[file:Analysis/Materials-sector.org][Materials Sector]]
+     + [[file:Analysis/oil-stocks.org][Oil stocks]]
+     + [[file:Analysis/Uranium-stocks.org][Uranium stocks]]
      + [[file:Analysis/websites.org][websites]]
      + [[file:Analysis/医药行业.org][医药行业]]
    + BooksReview

@@ -1,0 +1,81 @@
+#+OPTIONS: num:nil H:2 toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t TeX:t LaTeX:nil skip:nil d:t tags:not-in-toc
+#+TITLE: Oil stocks
+
+* 5 high debt loads:[fn:1][fn:2]
+in 2014
+
++ Halcon Resources (NYSE:HK)
+  + total liabilities in the third quarter of $4,416 million versus
+    shareholders' equity of only $1,518 million. 
+  + a very high 3 to 1 debt to equity ratio. 
+  + revenues would come out to $1,224 million. The company's debt
+    level is almost 3 times its annual revenues. 
++ Oasis Petroleum (NYSE:OAS)
+  + liabilities in the third quarter of $3,272 million versus
+    shareholder equity of only $1,520 million
+  + a high 2 to 1 debt to equity ratio
+  + an annualized basis revenues would come out to $1,400 million. The
+    company's debt is more than 2 times its annual revenue.
+  + debt will be in 2019
++ Sanchez Energy (NYSE:SN)
+  + total liabilities of $2,026 million versus shareholder equity of $1,079.
+  + almost a 2 to 1 debt to equity ratio.
+  + annualized basis revenues:  $827 million, debt almost 2 1/2 times
+    its annualized revenues
++ Triangle Petroleum (NYSEMKT:TPLM)   
+  +  total liabilities of $1,015 million versus $536 million in
+     shareholder equity
+  + a relatively high debt to equity ratio of 2 to 1. 
+  + a very high 3 to 1 debt to revenue ratio
++ Goodrich Petroleum (NYSE:GDP)
+  + $798 million in liabilities versus just $215 million in shareholder equity
+  + debt to equity ratio is almost 4 to 1.
+  + annualized basis is $220 million, debt is almost 4 times higher than their revenue
+  + They had success, but the wells are very expensive and
+    unfortunately are uneconomic in the current energy commodity price
+    structure.
+
+* 5 low debt levels
++ Matador Resources (NYSE:MTDR)
+  + total liabilities of $459 million, but the company had shareholder
+    equity of $818 million.
+  + approximately a 1 to 2 debt to shareholder equity ratio.
+  + on an annualized basis totals $388 million. The company had around
+    a 1 to 1 ratio of its debt compared to the amount of its
+    annualized revenue.
+
++ Callon Petroleum (NYSE:CPE)
+  + Callon has $176 million in total liabilities versus $415 million
+    in shareholders' equity.
+  + $1 in debt for every $3 in equity.
+  + annualizes to $160 million. This is also an almost 1 to 1 debt to
+    revenue ratio.
++ Contango (NYSEMKT:MCF)
+  + $277 million in total liabilities versus shareholder equity of
+    $595 million.
+  + 1 to 2 debt to equity ratio
+  + annualized basis would total $268 million. almost 1 to 1 debt to
+    revenue ratio. 
++ U.S. Energy (NASDAQ:USEG)
+  + $16 million in total liabilities versus $110 million in
+    shareholders' equity
+  + debt to equity ratio almost 1 to 7
+  + $40 million in revenue, approximately 1 time debt to 3 times
+    revenue.
++ Abraxas (NASDAQ:AXAS)
+  + total liabilities of $141 million and total shareholders' equity
+    of $176 million
+  + debt to equity ratio of less than 1 to 1
+  + revenue would be $176 million, the debt to revenue ratio would
+    also be less than 1 debt to 1 times revenue
+
+* Footnotes
+
+[fn:1] http://seekingalpha.com/article/2832036-buy-these-5-small-cap-oil-stocks-with-low-debt-levels
+
+[fn:2] http://seekingalpha.com/article/3364925-keep-buying-5-small-cap-oil-stocks-with-low-debt-levels
+
+
+
+
+
