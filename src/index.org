@@ -14,6 +14,7 @@
    + Brokerages
      + InteractiveBrokers
        + [[file:Brokerages/InteractiveBrokers/forex.org][Forex of IB]]
+       + [[file:Brokerages/InteractiveBrokers/interative-brokers-api.org][IB Application Programming Interfaces]]
        + [[file:Brokerages/InteractiveBrokers/interative-brokers-overview.org][Interactive Brokers Overview]]
        + [[file:Brokerages/InteractiveBrokers/operation.org][Operation of IB]]
    + Equity

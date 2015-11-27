@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>IB Application Programming Interfaces</title>
+<!-- 2015-11-27 Fri 22:44 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="Shi Shougang" />
+<link rel="stylesheet" href="/stylesheets/bootstrap.min.css" media="screen" />
+<link rel="stylesheet" href="/stylesheets/bootstrap-responsive.min.css" media="screen" />
+<link rel="stylesheet" href="/stylesheets/org.css" type="text/css" />
+<link rel="SHORTCUT ICON" href="/favicon.png" type="image/x-icon" />
+<link rel="icon" href="/favicon.png" type="image/ico" />
+<script src="/javascripts/bootstrap.min.js"></script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="preamble" class="status">
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-60502031-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+  document.addEventListener('DOMContentLoaded',function() {
+      document.getElementById("table-of-contents").onclick = function() {
+          var elem = document.getElementById("text-table-of-contents");
+          elem.style.display = elem.style.display == "block" ? "none" : "block";
+      }
+  });
+</script>
+</div>
+<div id="content">
+<h1 class="title">IB Application Programming Interfaces</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">Overview</a></li>
+<li><a href="#sec-2">FIX CTCI</a>
+<ul>
+<li><a href="#sec-2-1">FIX CTCI Connection Types</a></li>
+</ul>
+</li>
+<li><a href="#sec-3">IB Discussion Boards</a></li>
+<li><a href="#sec-4">IB API</a>
+<ul>
+<li><a href="#sec-4-1">Enable TWS to support the C++ API</a></li>
+</ul>
+</li>
+<li><a href="#sec-5">webinars</a></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1">Overview</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+IB offers several alternatives for connecting directly to our trading
+system, including:
+</p>
+
+<ol class="org-ol">
+<li>A proprietary Application Program Interface (API) which operates
+through the Trader Workstation and does not require additional
+technical overhead such as a dedicated FIX server.
+</li>
+
+<li>An industry standard FIX solution for customers who can support a
+FIX Computer-to-Computer Interface (CTCI) infrastructure.
+</li>
+</ol>
+
+<p>
+Our CTCI connection supports FIX versions 4.1 and 4.2, with support
+for selected 4.3, 4.4 and custom IB tags
+</p>
+
+
+<div class="figure">
+<p><img src="./Files/ib_connectivity.jpeg" alt="ib_connectivity.jpeg" />
+</p>
+</div>
+
+<p>
+<a href="http://www.bearcave.com/software/market_trading/resources_and_notes/">http://www.bearcave.com/software/market_trading/resources_and_notes/</a>
+</p>
+
+<p>
+<a href="http://www.bearcave.com/software/market_trading/resources_and_notes/Architecture%20of%20an%20Interactive%20Brokers%20Based%20Trading%20System.html">http://www.bearcave.com/software/market_trading/resources_and_notes/Architecture%20of%20an%20Interactive%20Brokers%20Based%20Trading%20System.html</a>
+</p>
+
+<p>
+<a href="http://www.bearcave.com/software/market_trading/resources_and_notes/Interactive%20Brokers%20and%20the%20TWS%20API.html">http://www.bearcave.com/software/market_trading/resources_and_notes/Interactive%20Brokers%20and%20the%20TWS%20API.html</a>
+</p>
+</div>
+</div>
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2">FIX CTCI<sup><a id="fnr.1" name="fnr.1" class="footref" href="#fn.1">1</a></sup></h2>
+<div class="outline-text-2" id="text-2">
+</div><div id="outline-container-sec-2-1" class="outline-3">
+<h3 id="sec-2-1">FIX CTCI Connection Types</h3>
+<div class="outline-text-3" id="text-2-1">
+<ul class="org-ul">
+<li>Internet        Standard connection through public internet. Requires
+IB Gateway connection interface.
+</li>
+
+<li>Extranet        A T1 line routed to one of IB's extranet providers,
+Radianz TNS or Savvis. They route directly to IB over a secure
+private line.
+</li>
+
+<li>VPN        IB supports a dedicated Virtual Private Network (VPN) tunnel
+from the client's data center directly to one of IB's Data Centers.
+A VPN provides a secure method of connecting over the public
+Internet without the need to maintain a dedicated leased line or
+extranet connection.
+</li>
+
+<li>Dedicated Line        Client pays for a T1 line that connects
+directly to one of IB's Data Centers, which are located throughout
+the world. A dedicated lease line connects users directly into the
+IB system and facilitates a quicker and more secure connection than
+a regular Internet line.
+</li>
+
+<li>Cross-Connect        Equinix NY4 colocation facility (tier 4 datacenter) is
+located in Secaucus, New Jersey. IB has a client point of presence
+at this datacenter. Clients who are also located in this datacenter
+can order a cross-connect from the datacenter to IB's client facing
+servers there. The client is responsible for the costs of the
+cross-connect. Once the cross-connect is ordered by the client (with
+NY4), IB's network engineers will work with the client and the
+datacenter.
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3">IB Discussion Boards</h2>
+<div class="outline-text-2" id="text-3">
+<ul class="org-ul">
+<li><a href="https://www.interactivebrokers.com/fluxbb/index.php">Independent Brokers hosted discussion board</a>
+</li>
+<li><a href="https://groups.yahoo.com/neo/groups/twsapi/info">yahoo IB message board</a>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4">IB API<sup><a id="fnr.2" name="fnr.2" class="footref" href="#fn.2">2</a></sup></h2>
+<div class="outline-text-2" id="text-4">
+</div><div id="outline-container-sec-4-1" class="outline-3">
+<h3 id="sec-4-1">Enable TWS to support the C++ API</h3>
+<div class="outline-text-3" id="text-4-1">
+<p>
+Now look up at the top of the trading window, and you'll see the menu
+bar. Click the Edit menu, and then click Global Configuration. In the
+Configuration window, click APIin the left pane, then click Settings,
+which reveals several options on the right side of the window. Check
+the <code>Enable ActiveX and Socket Clients</code> check box and click OK.
+</p>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-sec-5" class="outline-2">
+<h2 id="sec-5">webinars<sup><a id="fnr.3" name="fnr.3" class="footref" href="#fn.3">3</a></sup></h2>
+</div>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
+
+<div class="footdef"><sup><a id="fn.1" name="fn.1" class="footnum" href="#fnr.1">1</a></sup> <p class="footpara">
+<a href="https://www.interactivebrokers.com/en/index.php?f=4988&ns=T">https://www.interactivebrokers.com/en/index.php?f=4988&ns=T</a>
+</p></div>
+
+<div class="footdef"><sup><a id="fn.2" name="fn.2" class="footnum" href="#fnr.2">2</a></sup> <p class="footpara">
+<a href="https://www.interactivebrokers.com/en/index.php?f=5041&ns=T">https://www.interactivebrokers.com/en/index.php?f=5041&ns=T</a>
+</p></div>
+
+<div class="footdef"><sup><a id="fn.3" name="fn.3" class="footnum" href="#fnr.3">3</a></sup> <p class="footpara">
+<a href="https://www.interactivebrokers.com/en/index.php?f=14509&ns=T#webinars">https://www.interactivebrokers.com/en/index.php?f=14509&ns=T#webinars</a>
+</p></div>
+
+
+</div>
+</div></div>
+<div id="postamble" class="status">
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'finance-wiki';
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+</div>
+</body>
+</html>
