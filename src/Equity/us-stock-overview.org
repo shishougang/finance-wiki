@@ -65,6 +65,6 @@
   + opinions and analysis
 + [[http://www.estimize.com/calendar][Estimize Earnings Calendar]]
 + [[http://www.zerohedge.com/][Zero Hedge]]
-
++ [[http://marketrealist.com/][Market Realist - Investment Research & Analytics]]
 
 
