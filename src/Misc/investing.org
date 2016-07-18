@@ -1,9 +1,6 @@
 #+OPTIONS: num:nil H:2 toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t TeX:t LaTeX:nil skip:nil d:t tags:not-in-toc
 #+TITLE: Investing Overview
 
-
-
-
 * Learning
 + [[http://www.investopedia.com/][Investopedia]]
 * Reading

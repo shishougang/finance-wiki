@@ -5,8 +5,6 @@
 (setq make-backup-files nil
       vc-handled-backends nil)
 
-(setq org-startup-folded  t)
-
 (setq org-export-default-language "en"
       org-export-html-extension "html"
       org-export-with-timestamps nil
@@ -107,8 +105,3 @@
         `("fin"
            :components ("fin-notes" "fin-static")
            :author "shougangshi@gmail.com"))
-
-(defun publish-fin ()
-   "Publish org."
-   (interactive)
-     (org-publish-project "fin"))
