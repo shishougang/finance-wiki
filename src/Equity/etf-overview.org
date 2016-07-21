@@ -234,14 +234,22 @@ SVXY的管理费是0.95%，比XIV的管理费1.35%低一些。
 ** 黄金相关ETF
 + 黄金ETF-SPDR(AMEX:GLD)
   + GLD is the largest, if not the cheapest, of the five ETFs that
-    invest directly in physical gold. 
+    invest directly in physical gold.
 + 黄金ETF-PowerShares DB两倍做多(DGP)
 + 黄金ETF-ProShares两倍做多(UGL)
 + 黄金ETF-PowerShares DB两倍做空(DZZ)
 + 黄金ETF-ProShares两倍做空(GLL)
-+ Direxion Daily Gold Miners Bull 3X ETF(AMEX:NUGT)
-+ Direxion Daily Jr Gld Mnrs Bull 3X ETF(AMEX:JNUG)
-+ 金矿指数ETF-Market Vectors 美交所(AMEX:GDX)
++ 金矿指数ETF-Market Vectors 美交所(GDX) 是跟踪金矿相关企业股票的指数
++ 金矿指数ETF-Market Vectors(GDXJ) 是跟踪小金矿企业股票的指数
++ DIREXION SHS ETF TR(DUST)是金矿指数ETF-Market Vectors 美交所(GDX)的
+  三倍做空
++ Direxion Daily Gold Miners Bull 3X ETF(NUGT)是金矿指数ETF-Market
+  Vectors 美交所(GDX)的三倍做多
++ Direxion Daily Jr Gld Mnrs Bear 3X ETF(JDST)是金矿指数ETF-Market
+  Vectors(GDXJ) 的三倍做空
++ Direxion Daily Jr Gld Mnrs Bull 3X ETF(JNUG)是金矿指数ETF-Market
+  Vectors(GDXJ)的三倍做多
+
 ** 铜
 + 铜分类指数ETF-iPath Dow Jones-UBS(AMEX:JJC)
 + 铜矿ETF-Global X(AMEX:COPX)
